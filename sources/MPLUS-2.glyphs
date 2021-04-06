@@ -2,7 +2,7 @@
 .appVersion = "1356";
 DisplayStrings = (
 "!\"#$%&'()*+,-.//\0120123456789:;<=>?\012@ABCDEFGHIJKLMNO\012PQRSTUVWXYZ[/backslash ]^_\012`abcdefghijklmno\012pqrstuvwxyz{|}~\012\012",
-"/a-hira/_cross/a-hira/sa-kata/za-kata/sa-kata/za-kata/sa-kata \012/_cross/sa-kata/_cross/a-hira/sa-kata/a-hira/za-kata/a-hira \012/a-hira/_cross/a-hira/sa-kata/sa-kata/sa-kata/za-kata/za-kata/space/za-kata.001/sa-kata.001"
+"/a-hira/_cross/a-hira/sa-kata/za-kata/sa-kata/za-kata/sa-kata \012/_cross/sa-kata/_cross/a-hira/sa-kata/a-hira/za-kata/a-hira \012/a-hira/_cross/a-hira/sa-kata/sa-kata/sa-kata/za-kata/za-kata/space/za-kata.001/sa-kata.001 \012PRPRRRBRBR"
 );
 copyright = "Copyright © 2021 by Coji Morishita. All rights reserved.";
 customParameters = (
@@ -148,8 +148,7 @@ horizontalStems = (
 iconName = Light_SemiExtended;
 id = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 userData = {
-GSOffsetHorizontal = 10;
-GSOffsetMakeStroke = 1;
+GSOffsetHorizontal = -20;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
@@ -9812,7 +9811,7 @@ unicode = 0051;
 {
 color = 10;
 glyphname = R;
-lastChange = "2021-03-11 08:23:19 +0000";
+lastChange = "2021-04-06 07:33:13 +0000";
 layers = (
 {
 anchors = (
@@ -9842,9 +9841,13 @@ nodes = (
 "503 422 OFFCURVE",
 "446 384 OFFCURVE",
 "310 384 CURVE SMOOTH",
-"140 384 LINE",
-"140 288 LINE",
-"305 288 LINE SMOOTH",
+"266 384 OFFCURVE",
+"216 388 OFFCURVE",
+"142 397 CURVE",
+"123 298 LINE",
+"184 292 OFFCURVE",
+"253 288 OFFCURVE",
+"305 288 CURVE SMOOTH",
 "520 288 OFFCURVE",
 "615 357 OFFCURVE",
 "615 514 CURVE SMOOTH",
@@ -9861,9 +9864,9 @@ nodes = (
 closed = 1;
 nodes = (
 "655 0 LINE",
-"320 334 LINE",
-"181 334 LINE",
-"512 0 LINE"
+"279 345 LINE",
+"140 345 LINE",
+"511 0 LINE"
 );
 }
 );
@@ -9894,12 +9897,16 @@ nodes = (
 "400 580 OFFCURVE",
 "435 552 OFFCURVE",
 "435 489 CURVE SMOOTH",
-"435 421 OFFCURVE",
+"435 426 OFFCURVE",
 "400 398 OFFCURVE",
 "322 398 CURVE SMOOTH",
-"160 398 LINE",
-"160 252 LINE",
-"312 252 LINE SMOOTH",
+"286 398 OFFCURVE",
+"219 404 OFFCURVE",
+"170 412 CURVE",
+"162 258 LINE",
+"207 255 OFFCURVE",
+"268 252 OFFCURVE",
+"312 252 CURVE SMOOTH",
 "537 252 OFFCURVE",
 "640 329 OFFCURVE",
 "640 496 CURVE SMOOTH",
@@ -9916,9 +9923,9 @@ nodes = (
 closed = 1;
 nodes = (
 "690 0 LINE",
-"422 327 LINE",
-"208 327 LINE",
-"466 0 LINE"
+"421 327 LINE",
+"203 327 LINE",
+"462 0 LINE"
 );
 }
 );
@@ -9952,9 +9959,13 @@ nodes = (
 "570 413 OFFCURVE",
 "492 360 OFFCURVE",
 "297 360 CURVE SMOOTH",
-"120 360 LINE",
-"120 340 LINE",
-"297 340 LINE SMOOTH",
+"243 360 OFFCURVE",
+"194 364 OFFCURVE",
+"121 373 CURVE",
+"118 353 LINE",
+"192 344 OFFCURVE",
+"244 340 OFFCURVE",
+"297 340 CURVE SMOOTH",
 "502 340 OFFCURVE",
 "590 400 OFFCURVE",
 "590 540 CURVE SMOOTH",
@@ -9971,8 +9982,8 @@ nodes = (
 closed = 1;
 nodes = (
 "620 0 LINE",
-"183 350 LINE",
-"150 350 LINE",
+"150 363 LINE",
+"117 363 LINE",
 "587 0 LINE"
 );
 }
