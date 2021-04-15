@@ -2,7 +2,7 @@
 .appVersion = "1356";
 DisplayStrings = (
 "!\"#$%&'()*+,-.//\0120123456789:;<=>?\012@ABCDEFGHIJKLMNO\012PQRSTUVWXYZ[/backslash ]^_\012`abcdefghijklmno\012pqrstuvwxyz{|}~\012\012",
-"/a-hira/_cross/a-hira/sa-kata/za-kata/sa-kata/za-kata/sa-kata \012/_cross/sa-kata/_cross/a-hira/sa-kata/a-hira/za-kata/a-hira \012/a-hira/_cross/a-hira/sa-kata/sa-kata/sa-kata/za-kata/za-kata/space/sa-kata.001/space"
+"/a-hira/_cross/a-hira/re-hira/ko-hira/mo-hira/ma-hira \012/_cross/sa-kata/_cross/a-hira/sa-kata/a-hira/za-kata/a-hira \012/a-hira/_cross/a-hira/sa-kata/sa-kata/sa-kata/za-kata/za-kata/space/sa-kata.001/space"
 );
 copyright = "Copyright © 2021 by Coji Morishita. All rights reserved.";
 customParameters = (
@@ -81893,7 +81893,7 @@ unicode = 2074;
 {
 color = 11;
 glyphname = fraction;
-lastChange = "2021-03-04 02:08:33 +0000";
+lastChange = "2021-04-15 12:20:38 +0000";
 layers = (
 {
 layerId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
@@ -81916,14 +81916,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"118 0 LINE",
-"518 730 LINE",
-"413 730 LINE",
+"124 0 LINE",
+"514 730 LINE",
+"403 730 LINE",
 "13 0 LINE"
 );
 }
 );
-width = 531;
+width = 527;
 },
 {
 layerId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
@@ -81931,14 +81931,14 @@ paths = (
 {
 closed = 1;
 nodes = (
-"156 0 LINE",
-"536 730 LINE",
-"386 730 LINE",
+"186 0 LINE",
+"546 730 LINE",
+"366 730 LINE",
 "6 0 LINE"
 );
 }
 );
-width = 542;
+width = 552;
 }
 );
 leftKerningGroup = A;
@@ -91574,58 +91574,38 @@ unicode = 2219;
 {
 color = 11;
 glyphname = divisionslash;
-lastChange = "2021-03-04 02:08:33 +0000";
+lastChange = "2021-04-15 12:28:38 +0000";
 layers = (
 {
+components = (
+{
+name = slash;
+}
+);
 layerId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
-paths = (
-{
-closed = 1;
-nodes = (
-"44 0 LINE",
-"360 730 LINE",
-"338 730 LINE",
-"22 0 LINE"
-);
-}
-);
-width = 382;
+width = 417;
 },
 {
+components = (
+{
+name = slash;
+}
+);
 layerId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
-paths = (
-{
-closed = 1;
-nodes = (
-"124 0 LINE",
-"444 730 LINE",
-"333 730 LINE",
-"13 0 LINE"
-);
-}
-);
-width = 457;
+width = 492;
 },
 {
-layerId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
-paths = (
+components = (
 {
-closed = 1;
-nodes = (
-"186 0 LINE",
-"509 730 LINE",
-"329 730 LINE",
-"6 0 LINE"
-);
+name = slash;
 }
 );
-width = 515;
+layerId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
+width = 551;
 }
 );
 leftKerningGroup = A;
-leftMetricsKey = "=slash";
 rightKerningGroup = V;
-rightMetricsKey = "=|";
 unicode = 2215;
 },
 {
