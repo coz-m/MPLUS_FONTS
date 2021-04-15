@@ -2,7 +2,8 @@
 .appVersion = "1356";
 DisplayStrings = (
 "!\"#$%&'()*+,-.//\0120123456789:;<=>?\012@ABCDEFGHIJKLMNO\012PQRSTUVWXYZ[/backslash ]^_\012/gravecomb `abcdefghijklmno\012pqrstuvwxyz{|}~\012\012",
-"/a-hira/_cross/a-hira/re-hira/ko-hira/mo-hira/ma-hira \012/_cross/mo-hira/_cross/a-hira/mo-hira/a-hira/mo-hira/a-hira \012/a-hira/_cross/a-hira/mo-hira/mo-hira/mo-hira/space/mo-hira.001 \012"
+"/a-hira/_cross/a-hira/re-hira/ko-hira/mo-hira/ma-hira \012/_cross/mo-hira/_cross/a-hira/mo-hira/a-hira/mo-hira/a-hira \012/a-hira/_cross/a-hira/mo-hira/mo-hira/mo-hira/space/mo-hira.001 \012",
+"/ydotbelow/space y"
 );
 copyright = "Copyright © 2021 by Coji Morishita. All rights reserved.";
 customParameters = (
@@ -6079,7 +6080,7 @@ unicode = 0136;
 {
 color = 1;
 glyphname = L;
-lastChange = "2021-03-06 03:01:01 +0000";
+lastChange = "2021-04-13 06:01:04 +0000";
 layers = (
 {
 anchors = (
@@ -6413,7 +6414,7 @@ unicode = 013B;
 {
 color = 11;
 glyphname = Ldot;
-lastChange = "2021-03-11 12:41:34 +0000";
+lastChange = "2021-04-13 06:00:51 +0000";
 layers = (
 {
 components = (
@@ -28084,7 +28085,7 @@ unicode = 0078;
 {
 color = 10;
 glyphname = y;
-lastChange = "2021-03-11 12:36:19 +0000";
+lastChange = "2021-04-15 05:34:02 +0000";
 layers = (
 {
 anchors = (
@@ -28094,7 +28095,7 @@ position = "{270, 0}";
 },
 {
 name = dotR;
-position = "{420, 0}";
+position = "{420, 20}";
 },
 {
 name = top;
@@ -28135,7 +28136,7 @@ position = "{299, 0}";
 },
 {
 name = dotR;
-position = "{500, 0}";
+position = "{500, 20}";
 },
 {
 name = top;
@@ -28175,7 +28176,7 @@ position = "{256, 0}";
 },
 {
 name = dotR;
-position = "{340, 0}";
+position = "{340, 20}";
 },
 {
 name = top;
@@ -28366,7 +28367,7 @@ unicode = 00FF;
 {
 color = 11;
 glyphname = ydotbelow;
-lastChange = "2021-03-11 12:36:19 +0000";
+lastChange = "2021-04-15 05:34:02 +0000";
 layers = (
 {
 components = (
@@ -28376,7 +28377,7 @@ name = y;
 {
 anchor = dotR;
 name = dotbelowcomb;
-transform = "{1, 0, 0, 1, 283, -44}";
+transform = "{1, 0, 0, 1, 283, -24}";
 }
 );
 layerId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
@@ -28390,7 +28391,7 @@ name = y;
 {
 anchor = dotR;
 name = dotbelowcomb;
-transform = "{1, 0, 0, 1, 328, -22}";
+transform = "{1, 0, 0, 1, 328, -2}";
 }
 );
 layerId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
@@ -28404,7 +28405,7 @@ name = y;
 {
 anchor = dotR;
 name = dotbelowcomb;
-transform = "{1, 0, 0, 1, 376, -10}";
+transform = "{1, 0, 0, 1, 376, 10}";
 }
 );
 layerId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
