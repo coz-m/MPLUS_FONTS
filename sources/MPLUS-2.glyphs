@@ -60,7 +60,7 @@ name = ccmp;
 },
 {
 automatic = 1;
-code = "lookup locl_latn_0 {\012	script latn;\012	language AZE;\012	language CRT;\012	language KAZ;\012	language TAT;\012	language TRK;\012	sub i by idotaccent;\012} locl_latn_0;\012\012lookup locl_latn_1 {\012	script latn;\012	language ROM;\012	language MOL;\012	sub Scedilla by Scommaaccent;\012	sub scedilla by scommaaccent;\012	sub Tcedilla by Tcommaaccent;\012	sub tcedilla by tcommaaccent;\012} locl_latn_1;\012\012lookup locl_latn_2 {\012	script latn;\012	language CAT;\012	sub l periodcentered' l by periodcentered.loclCAT;\012	sub L periodcentered' L by periodcentered.loclCAT;\012} locl_latn_2;\012";
+code = "lookup locl_latn_0 {\012	script latn;\012	language AZE;\012	sub i by idotaccent;\012	language CRT;\012	sub i by idotaccent;\012	language KAZ;\012	sub i by idotaccent;\012	language TAT;\012	sub i by idotaccent;\012	language TRK;\012	sub i by idotaccent;\012} locl_latn_0;\012\012lookup locl_latn_1 {\012	script latn;\012	language ROM;\012	sub Scedilla by Scommaaccent;\012	sub scedilla by scommaaccent;\012	sub Tcedilla by Tcommaaccent;\012	sub tcedilla by tcommaaccent;\012	language MOL;\012	sub Scedilla by Scommaaccent;\012	sub scedilla by scommaaccent;\012	sub Tcedilla by Tcommaaccent;\012	sub tcedilla by tcommaaccent;\012} locl_latn_1;\012\012lookup locl_latn_2 {\012	script latn;\012	language CAT;\012	sub l periodcentered' l by periodcentered.loclCAT;\012	sub L periodcentered' L by periodcentered.loclCAT;\012} locl_latn_2;\012";
 name = locl;
 },
 {
@@ -92131,7 +92131,7 @@ unicode = FF15;
 {
 color = 1;
 glyphname = six.full;
-lastChange = "2021-03-06 03:01:01 +0000";
+lastChange = "2021-04-18 05:00:39 +0000";
 layers = (
 {
 components = (
@@ -92175,14 +92175,14 @@ components = (
 {
 alignment = -1;
 name = six;
-transform = "{1, 0, 0, 1, 200, 0}";
+transform = "{1, 0, 0, 1, 187, 0}";
 }
 );
 layerId = "845DCEEE-3ADF-4F33-90C0-AD90A8FDC575";
-leftMetricsKey = "=six+200";
-rightMetricsKey = "=six+200";
+leftMetricsKey = "=six+187";
+rightMetricsKey = "=six+186";
 name = "Light {232}";
-width = 1027;
+width = 1000;
 }
 );
 leftMetricsKey = six;
@@ -92284,7 +92284,7 @@ unicode = FF18;
 {
 color = 1;
 glyphname = nine.full;
-lastChange = "2021-03-06 03:01:01 +0000";
+lastChange = "2021-04-18 05:01:02 +0000";
 layers = (
 {
 components = (
@@ -92328,14 +92328,14 @@ components = (
 {
 alignment = -1;
 name = nine;
-transform = "{1, 0, 0, 1, 200, 0}";
+transform = "{1, 0, 0, 1, 186, 0}";
 }
 );
 layerId = "C1D949CF-B0AC-4BB9-A6D4-47AECFE5B5F6";
-leftMetricsKey = "=nine+200";
-rightMetricsKey = "=nine+200";
+leftMetricsKey = "=nine+186";
+rightMetricsKey = "=nine+187";
 name = "Light {232}";
-width = 1027;
+width = 1000;
 }
 );
 leftMetricsKey = nine;
@@ -114419,10 +114419,10 @@ name = Thin;
 weightClass = Thin;
 },
 {
-interpolationWeight = 232;
+interpolationWeight = 234;
 instanceInterpolations = {
-"9527F797-22C1-480E-A1FE-2CDBEBE1FD4C" = 0.33;
-"D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1" = 0.67;
+"9527F797-22C1-480E-A1FE-2CDBEBE1FD4C" = 0.335;
+"D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1" = 0.665;
 };
 name = Light;
 weightClass = Light;
@@ -114453,10 +114453,10 @@ name = Bold;
 weightClass = Bold;
 },
 {
-interpolationWeight = 767;
+interpolationWeight = 766;
 instanceInterpolations = {
-"9527F797-22C1-480E-A1FE-2CDBEBE1FD4C" = 0.3325;
-"9E6B41AB-2970-4C41-8B35-4DBE0D296A43" = 0.6675;
+"9527F797-22C1-480E-A1FE-2CDBEBE1FD4C" = 0.335;
+"9E6B41AB-2970-4C41-8B35-4DBE0D296A43" = 0.665;
 };
 name = ExtraBold;
 weightClass = ExtraBold;
