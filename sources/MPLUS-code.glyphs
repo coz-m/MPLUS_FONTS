@@ -50946,7 +50946,7 @@ unicode = 0076;
 {
 color = 6;
 glyphname = w;
-lastChange = "2021-04-21 08:14:09 +0000";
+lastChange = "2021-04-24 03:28:11 +0000";
 layers = (
 {
 anchors = (
@@ -51082,16 +51082,16 @@ nodes = (
 "302 300 LINE",
 "337 0 LINE",
 "503 0 LINE",
-"570 520 LINE",
-"432 520 LINE",
+"590 520 LINE",
+"452 520 LINE",
 "397 150 LINE",
 "393 150 LINE",
 "355 520 LINE",
 "245 520 LINE",
 "207 150 LINE",
 "203 150 LINE",
-"168 520 LINE",
-"30 520 LINE",
+"148 520 LINE",
+"10 520 LINE",
 "97 0 LINE"
 );
 }
@@ -51120,16 +51120,16 @@ nodes = (
 "302 465 LINE",
 "357 0 LINE",
 "477 0 LINE",
-"565 520 LINE",
-"485 520 LINE",
+"575 520 LINE",
+"495 520 LINE",
 "420 60 LINE",
 "416 60 LINE",
 "361 520 LINE",
 "239 520 LINE",
 "184 60 LINE",
 "180 60 LINE",
-"115 520 LINE",
-"35 520 LINE",
+"105 520 LINE",
+"25 520 LINE",
 "123 0 LINE"
 );
 }
@@ -53212,6 +53212,242 @@ width = 600;
 leftKerningGroup = z;
 rightKerningGroup = z;
 unicode = 017C;
+},
+{
+color = 9;
+glyphname = w.001;
+lastChange = "2021-04-24 03:25:07 +0000";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+position = "{250, 0}";
+},
+{
+name = top;
+position = "{250, 520}";
+}
+);
+layerId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
+paths = (
+{
+closed = 1;
+nodes = (
+"147 0 LINE",
+"248 500 LINE",
+"252 500 LINE",
+"353 0 LINE",
+"391 0 LINE",
+"485 520 LINE",
+"464 520 LINE",
+"374 20 LINE",
+"370 20 LINE",
+"268 520 LINE",
+"232 520 LINE",
+"130 20 LINE",
+"126 20 LINE",
+"36 520 LINE",
+"15 520 LINE",
+"109 0 LINE"
+);
+}
+);
+width = 500;
+},
+{
+anchors = (
+{
+name = bottom;
+position = "{250, 0}";
+},
+{
+name = top;
+position = "{250, 520}";
+}
+);
+layerId = "E27A6A66-A1F8-4E1B-8224-7C0FE77551F2";
+paths = (
+{
+closed = 1;
+nodes = (
+"203 0 LINE",
+"248 465 LINE",
+"252 465 LINE",
+"297 0 LINE",
+"417 0 LINE",
+"490 520 LINE",
+"410 520 LINE",
+"360 60 LINE",
+"356 60 LINE",
+"311 520 LINE",
+"189 520 LINE",
+"144 60 LINE",
+"140 60 LINE",
+"90 520 LINE",
+"10 520 LINE",
+"83 0 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 500;
+},
+{
+anchors = (
+{
+name = bottom;
+position = "{250, 0}";
+},
+{
+name = top;
+position = "{250, 520}";
+}
+);
+layerId = "FC9CFCDA-9E80-4E73-BA51-8504D15957FA";
+paths = (
+{
+closed = 1;
+nodes = (
+"220 0 LINE",
+"248 290 LINE",
+"252 290 LINE",
+"280 0 LINE",
+"443 0 LINE",
+"495 520 LINE",
+"357 520 LINE",
+"347 160 LINE",
+"343 160 LINE",
+"303 520 LINE",
+"197 520 LINE",
+"157 160 LINE",
+"153 160 LINE",
+"143 520 LINE",
+"5 520 LINE",
+"57 0 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 500;
+},
+{
+anchors = (
+{
+name = bottom;
+position = "{300, 0}";
+},
+{
+name = top;
+position = "{300, 520}";
+}
+);
+layerId = "0F1A0AC1-B8D5-4257-ADED-894CB2B827EF";
+paths = (
+{
+closed = 1;
+nodes = (
+"263 0 LINE",
+"298 300 LINE",
+"302 300 LINE",
+"337 0 LINE",
+"503 0 LINE",
+"570 520 LINE",
+"432 520 LINE",
+"397 150 LINE",
+"393 150 LINE",
+"355 520 LINE",
+"245 520 LINE",
+"207 150 LINE",
+"203 150 LINE",
+"168 520 LINE",
+"30 520 LINE",
+"97 0 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 600;
+},
+{
+anchors = (
+{
+name = bottom;
+position = "{300, 0}";
+},
+{
+name = top;
+position = "{300, 520}";
+}
+);
+layerId = "72F02222-BF87-41FD-9A7E-0ABB550ED2DB";
+paths = (
+{
+closed = 1;
+nodes = (
+"243 0 LINE",
+"298 465 LINE",
+"302 465 LINE",
+"357 0 LINE",
+"477 0 LINE",
+"565 520 LINE",
+"485 520 LINE",
+"420 60 LINE",
+"416 60 LINE",
+"361 520 LINE",
+"239 520 LINE",
+"184 60 LINE",
+"180 60 LINE",
+"115 520 LINE",
+"35 520 LINE",
+"123 0 LINE"
+);
+}
+);
+vertWidth = 1000;
+width = 600;
+},
+{
+anchors = (
+{
+name = bottom;
+position = "{300, 0}";
+},
+{
+name = top;
+position = "{300, 520}";
+}
+);
+layerId = "D0C1F23C-2F9F-4D30-8C4D-098ED54EEF3D";
+paths = (
+{
+closed = 1;
+nodes = (
+"187 0 LINE",
+"298 500 LINE",
+"302 500 LINE",
+"413 0 LINE",
+"451 0 LINE",
+"560 520 LINE",
+"539 520 LINE",
+"434 20 LINE",
+"430 20 LINE",
+"318 520 LINE",
+"282 520 LINE",
+"170 20 LINE",
+"166 20 LINE",
+"61 520 LINE",
+"40 520 LINE",
+"149 0 LINE"
+);
+}
+);
+width = 600;
+}
+);
+leftKerningGroup = v;
+rightKerningGroup = v;
+rightMetricsKey = "=|";
 },
 {
 color = 10;
