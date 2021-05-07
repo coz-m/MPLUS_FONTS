@@ -53,10 +53,7 @@ def make_static(instance_descriptor, generator, prefix):
     style_name = instance.info.styleName
 
     if prefix == "MplusLatin":
-        if "50" in style_name:
-            prefix == "MplusLatin50"
-        elif "60" in style_name:
-            prefix == "MplusLatin60"
+        prefix = instance_descriptor.familyName
 
     DSIG_modification(static_ttf)
     print ("["+prefix+"-"+str(style_name).replace(" ","")+"] Saving")
@@ -82,13 +79,19 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
     if type == "latin":
         for instance in ds.instances:
-            instance.familyname = instance.familyname.replace("MplusCode", "MplusLatin")
+            instance.familyName = instance.familyName.replace("Code", "Latin")
         varFont = ufo2ft.compileVariableTTF(ds)
         styleSpace = statmake.classes.Stylespace.from_file("sources/Latin_STAT.plist")
         statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
         DSIG_modification(varFont)
-        varFont.save(output/"MplusLatin[wght,wdth].ttf")
-        autohint(output/"MplusLatin[wght,wdth].ttf")
+        
+        varFont["name"].setName("Mplus Latin", 1, 3, 1, 1033)
+        varFont["name"].setName("UFDN;MplusLatin-Regular", 3, 3, 1, 1033)
+        varFont["name"].setName("Mplus Latin Regular", 4, 3, 1, 1033)
+        varFont["name"].setName("MplusLatin-Regular", 6, 3, 1, 1033)
+
+        varFont.save(output/"MplusLatin[wdth,wght].ttf")
+        autohint(output/"MplusLatin[wdth,wght].ttf")
         prefix = "MplusLatin"
 
     if type == "one" or type == "two":
@@ -128,17 +131,17 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         for source in ds.sources:
             if "{" not in source.name:
                 step_merge_glyphs_from_ufo(
-                    Path("sources/MPlus1-"+str(source.name).split(" ")[2][:-3]+".ufo"), source.font,
+                    Path("sources/Mplus1-"+str(source.name).split(" ")[2]+".ufo"), source.font,
                     "sources/kana_glyphs.txt"
                 )
 
                 step_merge_glyphs_from_ufo(
-                    Path("sources/M+1p-"+str(source.name).split(" ")[2][:-3]+".ufo"), source.font
+                    Path("sources/M+1p-"+str(source.name).split(" ")[2]+".ufo"), source.font
                 )
             source.font.features.text = Path("sources/code.fea").read_text()
 
         for instance in ds.instances:
-            instance.familyname = "MplusCode"
+            instance.familyName = "MplusCode"
 
         print ("[MPLUS "+type+"] Importing Kanji replacement rules")      
         kanji_ds = DesignSpaceDocument.fromfile("sources/MPLUS-Kanji.designspace")
@@ -155,7 +158,7 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         print ("[MPLUS "+type+"] Saving")      
         varFont.save(output/"MplusCode[wght].ttf")
         autohint(output/"MplusCode[wght].ttf")
-        prefix = "MPlusCode"
+        prefix = "MplusCode"
 
     generator = fontmake.instantiator.Instantiator.from_designspace(ds)
 
@@ -223,10 +226,10 @@ if __name__ == "__main__":
         for instance in kanaDS.instances:
             if instance.name == "Mplus 1 Regular":
                 kanaR = generator1.generate_instance(instance)
-                kanaR.save("sources/MPlus1-Regular.ufo", overwrite = True)
+                kanaR.save("sources/Mplus1-Regular.ufo", overwrite = True)
             if instance.name == "Mplus 1 Bold":
                 kanaB = generator1.generate_instance(instance)
-                kanaB.save("sources/MPlus1-Bold.ufo", overwrite = True)
+                kanaB.save("sources/Mplus1-Bold.ufo", overwrite = True)
 
         kanjiDS = DesignSpaceDocument.fromfile(sources / "MPLUS-Kanji.designspace")
         kanjiDS.loadSourceFonts(ufoLib2.Font.open)

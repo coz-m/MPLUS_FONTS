@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="4.1">
   <axes>
-    <axis tag="wght" name="Weight" minimum="100" maximum="700" default="100">
+    <axis tag="wght" name="Weight" minimum="100" maximum="700" default="400">
       <map input="100" output="100"/>
       <map input="300" output="232"/>
       <map input="400" output="367"/>
@@ -35,33 +35,33 @@
     </rule>
   </rules>
   <sources>
-    <source filename="Mpluscode-Thin-50.ufo" name="Mplus code Thin-50" familyname="Mplus code" stylename="Thin-50">
+    <source filename="MplusCode-Thin.ufo" name="Mplus Code Thin" familyname="Mplus Code" stylename="Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Thin.ufo" name="Mplus Code Thin Light-50 {232}" layer="Light-50 {232}">
+      <location>
+        <dimension name="Weight" xvalue="232"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Regular.ufo" name="Mplus Code Regular" familyname="Mplus Code" stylename="Regular">
       <lib copy="1"/>
       <groups copy="1"/>
       <features copy="1"/>
       <info copy="1"/>
       <location>
-        <dimension name="Weight" xvalue="100"/>
-      </location>
-    </source>
-    <source filename="Mpluscode-Thin-50.ufo" name="Mplus code Thin-50 Light-50 {232}" layer="Light-50 {232}">
-      <location>
-        <dimension name="Weight" xvalue="232"/>
-      </location>
-    </source>
-    <source filename="Mpluscode-Regular-50.ufo" name="Mplus code Regular-50" familyname="Mplus code" stylename="Regular-50">
-      <location>
         <dimension name="Weight" xvalue="367"/>
       </location>
     </source>
-    <source filename="Mpluscode-Bold-50.ufo" name="Mplus code Bold-50" familyname="Mplus code" stylename="Bold-50">
+    <source filename="MplusCode-Bold.ufo" name="Mplus Code Bold" familyname="Mplus Code" stylename="Bold">
       <location>
         <dimension name="Weight" xvalue="633"/>
       </location>
     </source>
   </sources>
   <instances>
-    <instance name="MPlusCode50 Thin" familyname="MPlusCode50" stylename="Thin" filename="instance_ufos/MPlusCode50-Thin.ufo">
+    <instance name="MplusCode Thin" familyname="MplusCode" stylename="Thin" filename="instance_ufos/MplusCode-Thin.ufo">
       <location>
         <dimension name="Weight" xvalue="100"/>
       </location>
@@ -85,7 +85,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="MPlusCode50 Light" familyname="MPlusCode50" stylename="Light" filename="instance_ufos/MPlusCode50-Light.ufo">
+    <instance name="MplusCode Light" familyname="MplusCode" stylename="Light" filename="instance_ufos/MplusCode-Light.ufo">
       <location>
         <dimension name="Weight" xvalue="232"/>
       </location>
@@ -111,7 +111,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="MPlusCode50 Regular" familyname="MPlusCode50" stylename="Regular" filename="instance_ufos/MPlusCode50-Regular.ufo">
+    <instance name="MplusCode Regular" familyname="MplusCode" stylename="Regular" filename="instance_ufos/MplusCode-Regular.ufo">
       <location>
         <dimension name="Weight" xvalue="367"/>
       </location>
@@ -135,7 +135,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="MPlusCode50 Medium" familyname="MPlusCode50" stylename="Medium" filename="instance_ufos/MPlusCode50-Medium.ufo">
+    <instance name="MplusCode Medium" familyname="MplusCode" stylename="Medium" filename="instance_ufos/MplusCode-Medium.ufo">
       <location>
         <dimension name="Weight" xvalue="500"/>
       </location>
@@ -161,7 +161,7 @@
         </dict>
       </lib>
     </instance>
-    <instance name="MPlusCode50 Bold" familyname="MPlusCode50" stylename="Bold" filename="instance_ufos/MPlusCode50-Bold.ufo" stylemapfamilyname="MPlusCode50" stylemapstylename="bold">
+    <instance name="MplusCode Bold" familyname="MplusCode" stylename="Bold" filename="instance_ufos/MplusCode-Bold.ufo" stylemapfamilyname="MplusCode" stylemapstylename="bold">
       <location>
         <dimension name="Weight" xvalue="633"/>
       </location>
