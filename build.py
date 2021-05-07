@@ -79,7 +79,10 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
     if type == "latin":
         for instance in ds.instances:
+            instance.name = instance.name.replace("Code", "Latin")
             instance.familyName = instance.familyName.replace("Code", "Latin")
+            if instance.styleMapFamilyName:
+                instance.styleMapFamilyName = str(instance.styleMapFamilyName).replace("Code", "Latin")
         varFont = ufo2ft.compileVariableTTF(ds)
         styleSpace = statmake.classes.Stylespace.from_file("sources/Latin_STAT.plist")
         statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
