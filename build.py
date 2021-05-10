@@ -52,7 +52,7 @@ def make_static(instance_descriptor, generator, prefix):
 
     style_name = instance.info.styleName
 
-    if prefix == "MplusLatin":
+    if prefix == "Mplus Code Latin":
         prefix = instance_descriptor.familyName
 
     DSIG_modification(static_ttf)
@@ -79,23 +79,23 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
     if type == "latin":
         for instance in ds.instances:
-            instance.name = instance.name.replace("Code", "Latin")
-            instance.familyName = instance.familyName.replace("Code", "Latin")
+            instance.name = instance.name.replace("Code", "Code Latin")
+            instance.familyName = instance.familyName.replace("Code", "Code Latin")
             if instance.styleMapFamilyName:
-                instance.styleMapFamilyName = str(instance.styleMapFamilyName).replace("Code", "Latin")
+                instance.styleMapFamilyName = str(instance.styleMapFamilyName).replace("Code", "Code Latin")
         varFont = ufo2ft.compileVariableTTF(ds)
         styleSpace = statmake.classes.Stylespace.from_file("sources/Latin_STAT.plist")
         statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
         DSIG_modification(varFont)
         
-        varFont["name"].setName("Mplus Latin", 1, 3, 1, 1033)
-        varFont["name"].setName("UFDN;MplusLatin-Regular", 3, 3, 1, 1033)
-        varFont["name"].setName("Mplus Latin Regular", 4, 3, 1, 1033)
-        varFont["name"].setName("MplusLatin-Regular", 6, 3, 1, 1033)
+        varFont["name"].setName("Mplus Code Latin", 1, 3, 1, 1033)
+        varFont["name"].setName("UFDN;MplusCodeLatin-Regular", 3, 3, 1, 1033)
+        varFont["name"].setName("Mplus Code Latin Regular", 4, 3, 1, 1033)
+        varFont["name"].setName("MplusCodeLatin-Regular", 6, 3, 1, 1033)
 
-        varFont.save(output/"MplusLatin[wdth,wght].ttf")
-        autohint(output/"MplusLatin[wdth,wght].ttf")
-        prefix = "MplusLatin"
+        varFont.save(output/"Mplus Code Latin[wdth,wght].ttf")
+        autohint(output/"Mplus Code Latin[wdth,wght].ttf")
+        prefix = "Mplus Code Latin"
 
     if type == "one" or type == "two":
         print ("[MPLUS "+type+"] Importing Kanji")      
@@ -129,9 +129,16 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
             prefix = "Mplus2"
 
     if type == "code":
-        
+
+        for instance in ds.instances:
+            instance.name = instance.name.replace("Mplus", "Mplus1")
+            instance.familyName = instance.familyName.replace("Mplus", "Mplus1")
+            if instance.styleMapFamilyName:
+                instance.styleMapFamilyName = instance.styleMapFamilyName.replace("MplusCode", "Mplus1 Code")
+
         print ("[MPLUS "+type+"] Importing glyphs")
         for source in ds.sources:
+            source.name = source.name.replace("Mplus", "Mplus1")
             if "{" not in source.name:
                 step_merge_glyphs_from_ufo(
                     Path("sources/Mplus1-"+str(source.name).split(" ")[2]+".ufo"), source.font,
@@ -143,14 +150,10 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
                 )
             source.font.features.text = Path("sources/code.fea").read_text()
 
-        for instance in ds.instances:
-            instance.familyName = "MplusCode"
-
         print ("[MPLUS "+type+"] Importing Kanji replacement rules")      
         kanji_ds = DesignSpaceDocument.fromfile("sources/MPLUS-Kanji.designspace")
         for rule in kanji_ds.rules:
             ds.rules.append(rule)
-
 
         print ("[MPLUS "+type+"] Building")
         varFont = ufo2ft.compileVariableTTF(ds)
@@ -158,10 +161,15 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
         DSIG_modification(varFont)
 
+        varFont["name"].setName("Mplus1 Code", 1, 3, 1, 1033)
+        varFont["name"].setName("UFDN;Mplus1Code-Regular", 3, 3, 1, 1033)
+        varFont["name"].setName("Mplus1 Code Regular", 4, 3, 1, 1033)
+        varFont["name"].setName("Mplus1Code-Regular", 6, 3, 1, 1033)
+
         print ("[MPLUS "+type+"] Saving")      
-        varFont.save(output/"MplusCode[wght].ttf")
-        autohint(output/"MplusCode[wght].ttf")
-        prefix = "MplusCode"
+        varFont.save(output/"Mplus1 Code[wght].ttf")
+        autohint(output/"Mplus1 Code[wght].ttf")
+        prefix = "Mplus1 Code"
 
     generator = fontmake.instantiator.Instantiator.from_designspace(ds)
 
