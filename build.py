@@ -57,7 +57,7 @@ def make_static(instance_descriptor, generator, prefix):
 
     DSIG_modification(static_ttf)
     print ("["+prefix+"-"+str(style_name).replace(" ","")+"] Saving")
-    output = "fonts/ttf/"+prefix+"-"+str(style_name).replace(" ","")+".ttf"
+    output = "fonts/ttf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".ttf"
     static_ttf.save(output)
     autohint(output)
 
@@ -93,8 +93,8 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         varFont["name"].setName("Mplus Code Latin Regular", 4, 3, 1, 1033)
         varFont["name"].setName("MplusCodeLatin-Regular", 6, 3, 1, 1033)
 
-        varFont.save(output/"Mplus Code Latin[wdth,wght].ttf")
-        autohint(output/"Mplus Code Latin[wdth,wght].ttf")
+        varFont.save(output/"MplusCodeLatin[wdth,wght].ttf")
+        autohint(output/"MplusCodeLatin[wdth,wght].ttf")
         prefix = "MplusCodeLatin"
 
     if type == "one" or type == "two":
@@ -131,8 +131,8 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
     if type == "code":
 
         for instance in ds.instances:
-            instance.name = instance.name.replace("Mplus", "Mplus 1")
-            instance.familyName = instance.familyName.replace("Mplus", "Mplus 1")
+            instance.name = instance.name.replace("Mplus", "Mplus 1 ")
+            instance.familyName = instance.familyName.replace("Mplus", "Mplus 1 ")
             if instance.styleMapFamilyName:
                 instance.styleMapFamilyName = instance.styleMapFamilyName.replace("MplusCode", "Mplus 1 Code")
 
@@ -232,6 +232,8 @@ if __name__ == "__main__":
         print ("[MPLUS] Generating Japanese instances for code use") #these are needed as MPlus1 & Kanji don't have the same master positions as Code
 
         kanaDS = DesignSpaceDocument.fromfile(sources / "MPLUS-1.designspace")
+        #delete the substitution rules because we don't want the generator to swap masters when generating instances
+        kanaDS.rules = [] 
         kanaDS.loadSourceFonts(ufoLib2.Font.open)
         generator1 = fontmake.instantiator.Instantiator.from_designspace(kanaDS)
         for instance in kanaDS.instances:
