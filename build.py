@@ -11,8 +11,8 @@ import ufo2ft, ufoLib2, os, glob
 import statmake.classes
 import statmake.lib
 import fontmake.instantiator
-import psautohint
-import cffsubr
+import psautohint.__main__
+import cffsubr.__main__
 
 def DSIG_modification(font:TTFont):
     font["DSIG"] = newTable("DSIG")     #need that stub dsig
@@ -76,7 +76,7 @@ def make_static(instance_descriptor, generator, prefix):
 
     psautohint.__main__.main([outputOTF])
     cffsubr.__main__.main(["-i", outputOTF])
-    
+
 
 def autohint(file):
     print ("["+str(file).split("/")[2]+"] Autohinting")
