@@ -69,7 +69,7 @@ def make_static(instance_descriptor, generator, prefix):
     DSIG_modification(static_ttf)
     print ("["+prefix+"-"+str(style_name).replace(" ","")+"] Saving")
     output = "fonts/ttf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".ttf"
-    outputOTF = "fonts/ttf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".otf"
+    outputOTF = "fonts/otf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".otf"
     static_ttf.save(output)
     static_otf.save(outputOTF)
     autohint(output)
