@@ -11,6 +11,8 @@ import ufo2ft, ufoLib2, os, glob
 import statmake.classes
 import statmake.lib
 import fontmake.instantiator
+import psautohint
+import cffsubr
 
 def DSIG_modification(font:TTFont):
     font["DSIG"] = newTable("DSIG")     #need that stub dsig
@@ -50,6 +52,15 @@ def make_static(instance_descriptor, generator, prefix):
         useProductionNames=True,
     )
 
+    static_otf = ufo2ft.compileOTF(
+        instance, 
+        removeOverlaps=True, 
+        overlapsBackend="pathops", 
+        useProductionNames=True,
+        inplace=True,
+        optimizeCFF=ufo2ft.CFFOptimization.NONE,
+    )
+
     style_name = instance.info.styleName
 
     if prefix == "MplusCodeLatin":
@@ -58,8 +69,14 @@ def make_static(instance_descriptor, generator, prefix):
     DSIG_modification(static_ttf)
     print ("["+prefix+"-"+str(style_name).replace(" ","")+"] Saving")
     output = "fonts/ttf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".ttf"
+    outputOTF = "fonts/ttf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".otf"
     static_ttf.save(output)
+    static_otf.save(outputOTF)
     autohint(output)
+
+    psautohint.__main__.main([outputOTF])
+    cffsubr.__main__.main(["-i", outputOTF])
+    
 
 def autohint(file):
     print ("["+str(file).split("/")[2]+"] Autohinting")
