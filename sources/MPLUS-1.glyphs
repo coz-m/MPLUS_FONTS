@@ -1,7 +1,8 @@
 {
-.appVersion = "1342";
+.appVersion = "1352";
 DisplayStrings = (
-U
+U,
+"/peso"
 );
 copyright = "Copyright 2021 The M+ FONTS Project Authors (https://github.com/coz-m/MPLUS_FONTS)";
 customParameters = (
@@ -80540,7 +80541,7 @@ unicode = 20A7;
 },
 {
 glyphname = peso;
-lastChange = "2021-05-05 05:27:35 +0000";
+lastChange = "2021-05-11 15:14:25 +0000";
 layers = (
 {
 components = (
@@ -80690,6 +80691,15 @@ paths = (
 {
 closed = 1;
 nodes = (
+"753 517 LINE",
+"753 607 LINE",
+"591 607 LINE",
+"591 517 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
 "190 367 LINE",
 "190 457 LINE",
 "28 457 LINE",
@@ -80712,15 +80722,6 @@ nodes = (
 "753 457 LINE",
 "591 457 LINE",
 "591 367 LINE"
-);
-},
-{
-closed = 1;
-nodes = (
-"753 517 LINE",
-"753 607 LINE",
-"591 607 LINE",
-"591 517 LINE"
 );
 }
 );
@@ -80806,6 +80807,15 @@ paths = (
 {
 closed = 1;
 nodes = (
+"789 490 LINE",
+"789 610 LINE",
+"584 610 LINE",
+"584 490 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
 "224 320 LINE",
 "224 440 LINE",
 "19 440 LINE",
@@ -80829,15 +80839,6 @@ nodes = (
 "584 440 LINE",
 "584 320 LINE"
 );
-},
-{
-closed = 1;
-nodes = (
-"789 490 LINE",
-"789 610 LINE",
-"584 610 LINE",
-"584 490 LINE"
-);
 }
 );
 width = 794;
@@ -80856,10 +80857,10 @@ paths = (
 {
 closed = 1;
 nodes = (
-"156 575 LINE",
-"156 595 LINE",
-"36 595 LINE",
-"36 575 LINE"
+"716 575 LINE",
+"716 595 LINE",
+"606 595 LINE",
+"606 575 LINE"
 );
 },
 {
@@ -80874,19 +80875,19 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"716 425 LINE",
-"716 445 LINE",
-"606 445 LINE",
-"606 425 LINE"
+"156 575 LINE",
+"156 595 LINE",
+"36 595 LINE",
+"36 575 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"716 575 LINE",
-"716 595 LINE",
-"606 595 LINE",
-"606 575 LINE"
+"716 425 LINE",
+"716 445 LINE",
+"606 445 LINE",
+"606 425 LINE"
 );
 }
 );
