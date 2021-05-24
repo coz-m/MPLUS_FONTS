@@ -1,2 +1,2 @@
-<img src="documents/MPLUS_FONTS.svg" width="40%">
+<img src="documents/description.svg" width="100%">
 https://mplusfonts.github.io
