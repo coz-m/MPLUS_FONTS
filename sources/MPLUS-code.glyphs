@@ -1,5 +1,5 @@
 {
-.appVersion = "1352";
+.appVersion = "1349";
 DisplayStrings = (
 m
 );
@@ -89978,6 +89978,22 @@ name = familyName;
 value = "Mplus Code 50";
 }
 );
+interpolationWeight = 165;
+interpolationWidth = 50;
+instanceInterpolations = {
+"D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1" = 0.75655;
+"E27A6A66-A1F8-4E1B-8224-7C0FE77551F2" = 0.24345;
+};
+name = ExtraLight;
+weightClass = ExtraLight;
+},
+{
+customParameters = (
+{
+name = familyName;
+value = "Mplus Code 50";
+}
+);
 interpolationWeight = 232;
 interpolationWidth = 50;
 instanceInterpolations = {
@@ -90024,6 +90040,22 @@ name = familyName;
 value = "Mplus Code 50";
 }
 );
+interpolationWeight = 565;
+interpolationWidth = 50;
+instanceInterpolations = {
+"E27A6A66-A1F8-4E1B-8224-7C0FE77551F2" = 0.25564;
+"FC9CFCDA-9E80-4E73-BA51-8504D15957FA" = 0.74436;
+};
+name = SemiBold;
+weightClass = SemiBold;
+},
+{
+customParameters = (
+{
+name = familyName;
+value = "Mplus Code 50";
+}
+);
 interpolationWeight = 633;
 interpolationWidth = 50;
 instanceInterpolations = {
@@ -90047,6 +90079,23 @@ instanceInterpolations = {
 };
 name = Thin;
 weightClass = Thin;
+widthClass = Expanded;
+},
+{
+customParameters = (
+{
+name = familyName;
+value = "Mplus Code 60";
+}
+);
+interpolationWeight = 165;
+interpolationWidth = 60;
+instanceInterpolations = {
+"72F02222-BF87-41FD-9A7E-0ABB550ED2DB" = 0.24345;
+"D0C1F23C-2F9F-4D30-8C4D-098ED54EEF3D" = 0.75655;
+};
+name = ExtraLight;
+weightClass = ExtraLight;
 widthClass = Expanded;
 },
 {
@@ -90096,6 +90145,23 @@ instanceInterpolations = {
 };
 name = Medium;
 weightClass = Medium;
+widthClass = Expanded;
+},
+{
+customParameters = (
+{
+name = familyName;
+value = "Mplus Code 60";
+}
+);
+interpolationWeight = 565;
+interpolationWidth = 60;
+instanceInterpolations = {
+"0F1A0AC1-B8D5-4257-ADED-894CB2B827EF" = 0.74436;
+"72F02222-BF87-41FD-9A7E-0ABB550ED2DB" = 0.25564;
+};
+name = SemiBold;
+weightClass = SemiBold;
 widthClass = Expanded;
 },
 {

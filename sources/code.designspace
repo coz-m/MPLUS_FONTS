@@ -3,9 +3,11 @@
   <axes>
     <axis tag="wght" name="Weight" minimum="100" maximum="700" default="400">
       <map input="100" output="100"/>
+      <map input="200" output="165"/>
       <map input="300" output="232"/>
       <map input="400" output="367"/>
       <map input="500" output="500"/>
+      <map input="600" output="565"/>
       <map input="700" output="633"/>
     </axis>
   </axes>
@@ -159,6 +161,32 @@
         </dict>
       </lib>
     </instance>
+    <instance name="MplusCode ExtraLight" familyname="MplusCode" stylename="ExtraLight" filename="instance_ufos/MplusCode-ExtraLight.ufo">
+      <location>
+        <dimension name="Weight" xvalue="165"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+            <real>0.75655</real>
+            <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+            <real>0.24345</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>ExtraLight</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
     <instance name="MplusCode Light" familyname="MplusCode" stylename="Light" filename="instance_ufos/MplusCode-Light.ufo">
       <location>
         <dimension name="Weight" xvalue="232"/>
@@ -230,6 +258,32 @@
           <false/>
           <key>com.schriftgestaltung.weight</key>
           <string>Medium</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="MplusCode SemiBold" familyname="MplusCode" stylename="SemiBold" filename="instance_ufos/MplusCode-SemiBold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="565"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+            <real>0.25564</real>
+            <key>FC9CFCDA-9E80-4E73-BA51-8504D15957FA</key>
+            <real>0.74436</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>SemiBold</string>
           <key>com.schriftgestaltung.width</key>
           <string>Medium (normal)</string>
         </dict>
