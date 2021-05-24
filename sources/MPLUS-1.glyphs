@@ -1,5 +1,5 @@
 {
-.appVersion = "1352";
+.appVersion = "1349";
 DisplayStrings = (
 U,
 "/peso"
@@ -90600,6 +90600,15 @@ name = Thin;
 weightClass = Thin;
 },
 {
+interpolationWeight = 165;
+instanceInterpolations = {
+"9527F797-22C1-480E-A1FE-2CDBEBE1FD4C" = 0.1625;
+"D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1" = 0.8375;
+};
+name = ExtraLight;
+weightClass = ExtraLight;
+},
+{
 interpolationWeight = 232;
 instanceInterpolations = {
 "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C" = 0.33;
@@ -90623,6 +90632,15 @@ instanceInterpolations = {
 };
 name = Medium;
 weightClass = Medium;
+},
+{
+interpolationWeight = 565;
+instanceInterpolations = {
+"9527F797-22C1-480E-A1FE-2CDBEBE1FD4C" = 0.8375;
+"9E6B41AB-2970-4C41-8B35-4DBE0D296A43" = 0.1625;
+};
+name = SemiBold;
+weightClass = SemiBold;
 },
 {
 interpolationWeight = 633;
