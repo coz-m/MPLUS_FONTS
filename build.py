@@ -22,6 +22,13 @@ def DSIG_modification(font:TTFont):
     font["DSIG"].signatureRecords = []
     font["head"].flags |= 1 << 3        #sets flag to always round PPEM to integer
 
+def GASP_set(font:TTFont):
+    if "gasp" not in font:
+        font["gasp"] = newTable("gasp")
+        font["gasp"].gaspRange = {}
+    if font["gasp"].gaspRange != {65535: 0x000A}:
+        font["gasp"].gaspRange = {65535: 0x000A}
+
 def step_merge_glyphs_from_ufo(path: Path, instance: ufoLib2.Font, *args) -> None:
     textfile = ""
     for ar in args:
@@ -70,9 +77,12 @@ def make_static(instance_descriptor, generator, prefix):
     print ("["+prefix+"-"+str(style_name).replace(" ","")+"] Saving")
     output = "fonts/ttf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".ttf"
     outputOTF = "fonts/otf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".otf"
+    if "1" in str(output) or "2" in str(output):
+        GASP_set(static_ttf)
     static_ttf.save(output)
     static_otf.save(outputOTF)
-    autohint(output)
+    if "Latin" in output:
+        autohint(output)
 
     psautohint.__main__.main([outputOTF])
     cffsubr.__main__.main(["-i", outputOTF])
@@ -134,15 +144,14 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         styleSpace = statmake.classes.Stylespace.from_file("sources/MPLUS_STAT.plist")
         statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
         DSIG_modification(varFont)
+        GASP_set(varFont)
 
         print ("[MPLUS "+type+"] Saving")      
         if type == "one":
             varFont.save(output/"Mplus1[wght].ttf")
-            autohint(output/"Mplus1[wght].ttf")
             prefix = "Mplus1"
         elif type == "two":
             varFont.save(output/"Mplus2[wght].ttf")
-            autohint(output/"Mplus2[wght].ttf")
             prefix = "Mplus2"
 
     if type == "code":
@@ -177,6 +186,7 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         styleSpace = statmake.classes.Stylespace.from_file("sources/MPLUS_STAT.plist")
         statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
         DSIG_modification(varFont)
+        GASP_set(varFont)
 
         varFont["name"].setName("Mplus 1 Code", 1, 3, 1, 1033)
         varFont["name"].setName("UFDN;Mplus1Code-Regular", 3, 3, 1, 1033)
@@ -185,7 +195,6 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
         print ("[MPLUS "+type+"] Saving")      
         varFont.save(output/"Mplus1Code[wght].ttf")
-        autohint(output/"Mplus1Code[wght].ttf")
         prefix = "Mplus1Code"
 
     generator = fontmake.instantiator.Instantiator.from_designspace(ds)
