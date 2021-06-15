@@ -46,6 +46,9 @@ def step_merge_glyphs_from_ufo(path: Path, instance: ufoLib2.Font, *args) -> Non
 
 def make_static(instance_descriptor, generator, prefix):
     instance = generator.generate_instance(instance_descriptor)
+    
+    if prefix == "MplusCodeLatin":
+        instance.info.openTypeOS2Panose = [2,0,0,9,0,0,0,0,0,0]
 
     instance.lib['com.github.googlei18n.ufo2ft.filters'] = [{ # extra safe :)
         "name": "flattenComponents",
@@ -161,6 +164,7 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
             instance.familyName = instance.familyName.replace("Mplus", "Mplus 1 ")
             if instance.styleMapFamilyName:
                 instance.styleMapFamilyName = instance.styleMapFamilyName.replace("MplusCode", "Mplus 1 Code")
+            instance.postscriptIsFixedPitch = False
 
         print ("[MPLUS "+type+"] Importing glyphs")
         for source in ds.sources:
@@ -175,6 +179,9 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
                 )
             source.name = source.name.replace("Mplus", "Mplus 1")
             source.font.features.text = Path("sources/code.fea").read_text()
+            source.font.info.postscriptIsFixedPitch = False
+            source.font.info.openTypeOS2Panose = [0,0,0,0,0,0,0,0,0,0]
+
 
         print ("[MPLUS "+type+"] Importing Kanji replacement rules")      
         kanji_ds = DesignSpaceDocument.fromfile("sources/MPLUS-Kanji.designspace")
