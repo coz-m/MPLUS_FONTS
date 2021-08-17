@@ -13,6 +13,8 @@ import statmake.lib
 import fontmake.instantiator
 import psautohint.__main__
 import cffsubr.__main__
+from gftools.stat import gen_stat_tables_from_config
+import yaml
 
 def DSIG_modification(font:TTFont):
     font["DSIG"] = newTable("DSIG")     #need that stub dsig
@@ -28,6 +30,14 @@ def GASP_set(font:TTFont):
         font["gasp"].gaspRange = {}
     if font["gasp"].gaspRange != {65535: 0x000A}:
         font["gasp"].gaspRange = {65535: 0x000A}
+
+def fixStat(font:Path, STAT:str):
+    fontSTAT = [TTFont(f) for f in [str(font)]]
+    config = yaml.load(open(STAT), Loader=yaml.SafeLoader)
+    gen_stat_tables_from_config(config, fontSTAT)
+
+    for font in fontSTAT:
+        font.save(font.reader.file.name)
 
 def step_merge_glyphs_from_ufo(path: Path, instance: ufoLib2.Font, *args) -> None:
     textfile = ""
@@ -108,14 +118,16 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
     output = Path("fonts/ttf")
 
     if type == "latin":
-        for instance in ds.instances:
+
+        ds_modified = DesignSpaceDocument.fromfile(sources / "MPLUS-latin_gf.designspace")
+        ds_modified.loadSourceFonts(ufoLib2.Font.open)
+
+        for instance in ds_modified.instances:
             instance.name = instance.name.replace("Code", "Code Latin")
             instance.familyName = instance.familyName.replace("Code", "Code Latin")
             if instance.styleMapFamilyName:
                 instance.styleMapFamilyName = str(instance.styleMapFamilyName).replace("Code", "Code Latin")
-        varFont = ufo2ft.compileVariableTTF(ds)
-        styleSpace = statmake.classes.Stylespace.from_file("sources/Latin_STAT.plist")
-        statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
+        varFont = ufo2ft.compileVariableTTF(ds_modified)
         DSIG_modification(varFont)
         
         varFont["name"].setName("Mplus Code Latin", 1, 3, 1, 1033)
@@ -124,6 +136,7 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         varFont["name"].setName("MplusCodeLatin-Regular", 6, 3, 1, 1033)
 
         varFont.save(output/"MplusCodeLatin[wdth,wght].ttf")
+        fixStat(output/"MplusCodeLatin[wdth,wght].ttf","sources/MPLUS_STAT.yaml")
         autohint(output/"MplusCodeLatin[wdth,wght].ttf")
         prefix = "MplusCodeLatin"
 
@@ -144,8 +157,6 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
         print ("[MPLUS "+type+"] Building")
         varFont = ufo2ft.compileVariableTTF(ds)
-        styleSpace = statmake.classes.Stylespace.from_file("sources/MPLUS_STAT.plist")
-        statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
         DSIG_modification(varFont)
         GASP_set(varFont)
 
@@ -153,9 +164,11 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         if type == "one":
             varFont.save(output/"Mplus1[wght].ttf")
             prefix = "Mplus1"
+            fixStat(output/"Mplus1[wght].ttf","sources/MPLUS_STAT.yaml")
         elif type == "two":
             varFont.save(output/"Mplus2[wght].ttf")
             prefix = "Mplus2"
+            fixStat(output/"Mplus2[wght].ttf","sources/MPLUS_STAT.yaml")
 
     if type == "code":
 
@@ -190,8 +203,6 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
         print ("[MPLUS "+type+"] Building")
         varFont = ufo2ft.compileVariableTTF(ds)
-        styleSpace = statmake.classes.Stylespace.from_file("sources/MPLUS_STAT.plist")
-        statmake.lib.apply_stylespace_to_variable_font(styleSpace, varFont, {})
         DSIG_modification(varFont)
         GASP_set(varFont)
 
@@ -202,6 +213,7 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
         print ("[MPLUS "+type+"] Saving")      
         varFont.save(output/"Mplus1Code[wght].ttf")
+        fixStat(output/"Mplus1Code[wght].ttf","sources/MPLUS_STAT.yaml")
         prefix = "Mplus1Code"
 
     generator = fontmake.instantiator.Instantiator.from_designspace(ds)
