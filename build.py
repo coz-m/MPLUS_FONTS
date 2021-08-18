@@ -130,10 +130,10 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         varFont = ufo2ft.compileVariableTTF(ds_modified)
         DSIG_modification(varFont)
         
-        varFont["name"].setName("Mplus Code Latin", 1, 3, 1, 1033)
-        varFont["name"].setName("UFDN;MplusCodeLatin-Regular", 3, 3, 1, 1033)
-        varFont["name"].setName("Mplus Code Latin Regular", 4, 3, 1, 1033)
-        varFont["name"].setName("MplusCodeLatin-Regular", 6, 3, 1, 1033)
+        varFont["name"].setName("M PLUS Code Latin", 1, 3, 1, 1033)
+        varFont["name"].setName("UFDN;MPLUSCodeLatin-Regular", 3, 3, 1, 1033)
+        varFont["name"].setName("M PLUS Code Latin Regular", 4, 3, 1, 1033)
+        varFont["name"].setName("MPLUSCodeLatin-Regular", 6, 3, 1, 1033)
 
         varFont.save(output/"MplusCodeLatin[wdth,wght].ttf")
         fixStat(output/"MplusCodeLatin[wdth,wght].ttf","sources/MPLUS_STAT.yaml")
@@ -173,24 +173,24 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
     if type == "code":
 
         for instance in ds.instances:
-            instance.name = instance.name.replace("Mplus", "Mplus 1 ")
-            instance.familyName = instance.familyName.replace("Mplus", "Mplus 1 ")
+            instance.name = instance.name.replace("M PLUS", "M PLUS 1 ")
+            instance.familyName = instance.familyName.replace("M PLUS", "M PLUS 1 ")
             if instance.styleMapFamilyName:
-                instance.styleMapFamilyName = instance.styleMapFamilyName.replace("MplusCode", "Mplus 1 Code")
+                instance.styleMapFamilyName = instance.styleMapFamilyName.replace("M PLUS Code", "M PLUS 1 Code")
             instance.postscriptIsFixedPitch = False
 
         print ("[MPLUS "+type+"] Importing glyphs")
         for source in ds.sources:
             if "{" not in source.name:
                 step_merge_glyphs_from_ufo(
-                    Path("sources/Mplus1-"+str(source.name).split(" ")[2]+".ufo"), source.font,
+                    Path("sources/MPLUS1-"+str(source.name).split(" ")[3]+".ufo"), source.font,
                     "sources/kana_glyphs.txt"
                 )
 
                 step_merge_glyphs_from_ufo(
-                    Path("sources/M+1p-"+str(source.name).split(" ")[2]+".ufo"), source.font
+                    Path("sources/M+1p-"+str(source.name).split(" ")[3]+".ufo"), source.font
                 )
-            source.name = source.name.replace("Mplus", "Mplus 1")
+            source.name = source.name.replace("M PLUS", "M PLUS 1")
             source.font.features.text = Path("sources/code.fea").read_text()
             source.font.info.postscriptIsFixedPitch = False
             source.font.info.openTypeOS2Panose = [0,0,0,0,0,0,0,0,0,0]
@@ -206,10 +206,10 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         DSIG_modification(varFont)
         GASP_set(varFont)
 
-        varFont["name"].setName("Mplus 1 Code", 1, 3, 1, 1033)
-        varFont["name"].setName("UFDN;Mplus1Code-Regular", 3, 3, 1, 1033)
-        varFont["name"].setName("Mplus 1 Code Regular", 4, 3, 1, 1033)
-        varFont["name"].setName("Mplus1Code-Regular", 6, 3, 1, 1033)
+        varFont["name"].setName("M PLUS 1 Code", 1, 3, 1, 1033)
+        varFont["name"].setName("UFDN;MPLUS1Code-Regular", 3, 3, 1, 1033)
+        varFont["name"].setName("M PLUS 1 Code Regular", 4, 3, 1, 1033)
+        varFont["name"].setName("MPLUS1Code-Regular", 6, 3, 1, 1033)
 
         print ("[MPLUS "+type+"] Saving")      
         varFont.save(output/"Mplus1Code[wght].ttf")
@@ -282,12 +282,12 @@ if __name__ == "__main__":
         kanaDS.loadSourceFonts(ufoLib2.Font.open)
         generator1 = fontmake.instantiator.Instantiator.from_designspace(kanaDS)
         for instance in kanaDS.instances:
-            if instance.name == "Mplus 1 Regular":
+            if instance.name == "M PLUS 1 Regular":
                 kanaR = generator1.generate_instance(instance)
-                kanaR.save("sources/Mplus1-Regular.ufo", overwrite = True)
-            if instance.name == "Mplus 1 Bold":
+                kanaR.save("sources/MPLUS1-Regular.ufo", overwrite = True)
+            if instance.name == "M PLUS 1 Bold":
                 kanaB = generator1.generate_instance(instance)
-                kanaB.save("sources/Mplus1-Bold.ufo", overwrite = True)
+                kanaB.save("sources/MPLUS1-Bold.ufo", overwrite = True)
 
         kanjiDS = DesignSpaceDocument.fromfile(sources / "MPLUS-Kanji.designspace")
         kanjiDS.loadSourceFonts(ufoLib2.Font.open)
