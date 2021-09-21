@@ -195,7 +195,6 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
             source.font.info.postscriptIsFixedPitch = False
             source.font.info.openTypeOS2Panose = [0,0,0,0,0,0,0,0,0,0]
 
-
         print ("[MPLUS "+type+"] Importing Kanji replacement rules")      
         kanji_ds = DesignSpaceDocument.fromfile("sources/MPLUS-Kanji.designspace")
         for rule in kanji_ds.rules:
