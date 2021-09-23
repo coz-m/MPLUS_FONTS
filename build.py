@@ -304,6 +304,10 @@ if __name__ == "__main__":
             source.lib['com.github.googlei18n.ufo2ft.filters'] = [{
                 "name": "flattenComponents",
                 "pre": 1,
+            },
+            {
+                "name": "decomposeTransformedComponents",
+                "pre": 1,
             }]
             ufoLib2.Font.save(source)
 
