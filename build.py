@@ -215,28 +215,28 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         fixStat(output/"Mplus1Code[wght].ttf","sources/MPLUS_STAT.yaml")
         prefix = "Mplus1Code"
 
-    # generator = fontmake.instantiator.Instantiator.from_designspace(ds)
+    generator = fontmake.instantiator.Instantiator.from_designspace(ds)
 
-    # pool = multiprocessing.pool.Pool(processes=multiprocessing.cpu_count())
-    # processes = []
+    pool = multiprocessing.pool.Pool(processes=multiprocessing.cpu_count())
+    processes = []
 
-    # for instance_descriptor in ds.instances: # GOTTA GO FAST
-    #     processes.append(
-    #         pool.apply_async(
-    #             make_static,
-    #             (
-    #                 instance_descriptor,
-    #                 generator,
-    #                 prefix
-    #             ),
-    #         )
-    #     )
+    for instance_descriptor in ds.instances: # GOTTA GO FAST
+        processes.append(
+            pool.apply_async(
+                make_static,
+                (
+                    instance_descriptor,
+                    generator,
+                    prefix
+                ),
+            )
+        )
 
-    # pool.close()
-    # pool.join()
-    # for process in processes:
-    #     process.get()
-    # del processes, pool
+    pool.close()
+    pool.join()
+    for process in processes:
+        process.get()
+    del processes, pool
 
 def cleanup():
     # Cleanup
