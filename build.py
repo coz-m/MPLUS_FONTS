@@ -195,7 +195,6 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
             source.font.info.postscriptIsFixedPitch = False
             source.font.info.openTypeOS2Panose = [0,0,0,0,0,0,0,0,0,0]
 
-
         print ("[MPLUS "+type+"] Importing Kanji replacement rules")      
         kanji_ds = DesignSpaceDocument.fromfile("sources/MPLUS-Kanji.designspace")
         for rule in kanji_ds.rules:
@@ -304,6 +303,10 @@ if __name__ == "__main__":
             source = ufoLib2.Font.open(ufo)
             source.lib['com.github.googlei18n.ufo2ft.filters'] = [{
                 "name": "flattenComponents",
+                "pre": 1,
+            },
+            {
+                "name": "decomposeTransformedComponents",
                 "pre": 1,
             }]
             ufoLib2.Font.save(source)
