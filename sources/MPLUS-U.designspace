@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="100">
+      <map input="100" output="100"/>
+      <map input="200" output="165"/>
+      <map input="300" output="232"/>
+      <map input="400" output="367"/>
+      <map input="500" output="500"/>
+      <map input="600" output="565"/>
+      <map input="700" output="633"/>
+      <map input="800" output="767"/>
+      <map input="900" output="900"/>
+    </axis>
+  </axes>
+  <rules>
+    <rule name="BRACKET.160.380">
+      <conditionset>
+        <condition name="Weight" minimum="160" maximum="380"/>
+      </conditionset>
+      <sub name="won" with="won.BRACKET.160"/>
+    </rule>
+    <rule name="BRACKET.231.632">
+      <conditionset>
+        <condition name="Weight" minimum="231" maximum="632"/>
+      </conditionset>
+      <sub name="ga-kata" with="ga-kata.BRACKET.231"/>
+    </rule>
+    <rule name="BRACKET.231.900">
+      <conditionset>
+        <condition name="Weight" minimum="231" maximum="900"/>
+      </conditionset>
+      <sub name="po-kata" with="po-kata.BRACKET.231"/>
+    </rule>
+    <rule name="BRACKET.232.367">
+      <conditionset>
+        <condition name="Weight" minimum="232" maximum="367"/>
+      </conditionset>
+      <sub name="za-hira" with="za-hira.BRACKET.232"/>
+    </rule>
+    <rule name="BRACKET.340.660">
+      <conditionset>
+        <condition name="Weight" minimum="340" maximum="660"/>
+      </conditionset>
+      <sub name="naira" with="naira.BRACKET.340"/>
+    </rule>
+    <rule name="BRACKET.366.900">
+      <conditionset>
+        <condition name="Weight" minimum="366" maximum="900"/>
+      </conditionset>
+      <sub name="bi-kata" with="bi-kata.BRACKET.366"/>
+      <sub name="bo-kata" with="bo-kata.BRACKET.366"/>
+      <sub name="di-kata" with="di-kata.BRACKET.366"/>
+    </rule>
+    <rule name="BRACKET.367.900">
+      <conditionset>
+        <condition name="Weight" minimum="367" maximum="900"/>
+      </conditionset>
+      <sub name="ge-kata" with="ge-kata.BRACKET.367"/>
+      <sub name="gi-kata" with="gi-kata.BRACKET.367"/>
+      <sub name="za-hira" with="za-hira.BRACKET.367"/>
+    </rule>
+    <rule name="BRACKET.380.900">
+      <conditionset>
+        <condition name="Weight" minimum="380" maximum="900"/>
+      </conditionset>
+      <sub name="won" with="won.BRACKET.380"/>
+    </rule>
+    <rule name="BRACKET.440.900">
+      <conditionset>
+        <condition name="Weight" minimum="440" maximum="900"/>
+      </conditionset>
+      <sub name="peso" with="peso.BRACKET.440"/>
+    </rule>
+    <rule name="BRACKET.499.900">
+      <conditionset>
+        <condition name="Weight" minimum="499" maximum="900"/>
+      </conditionset>
+      <sub name="bo-hira" with="bo-hira.BRACKET.499"/>
+      <sub name="da-kata" with="da-kata.BRACKET.499"/>
+      <sub name="de-kata" with="de-kata.BRACKET.499"/>
+      <sub name="di-hira" with="di-hira.BRACKET.499"/>
+      <sub name="dollar" with="dollar.BRACKET.499"/>
+      <sub name="gu-kata" with="gu-kata.BRACKET.499"/>
+      <sub name="pa-hira" with="pa-hira.BRACKET.499"/>
+      <sub name="pi-kata" with="pi-kata.BRACKET.499"/>
+      <sub name="za-kata" with="za-kata.BRACKET.499"/>
+      <sub name="ze-hira" with="ze-hira.BRACKET.499"/>
+      <sub name="ze-kata" with="ze-kata.BRACKET.499"/>
+      <sub name="zo-hira" with="zo-hira.BRACKET.499"/>
+      <sub name="zu-kata" with="zu-kata.BRACKET.499"/>
+    </rule>
+    <rule name="BRACKET.500.900">
+      <conditionset>
+        <condition name="Weight" minimum="500" maximum="900"/>
+      </conditionset>
+      <sub name="Racute" with="Racute.BRACKET.500"/>
+      <sub name="Rcaron" with="Rcaron.BRACKET.500"/>
+      <sub name="Rcommaaccent" with="Rcommaaccent.BRACKET.500"/>
+      <sub name="Rdblgrave" with="Rdblgrave.BRACKET.500"/>
+      <sub name="Rinvertedbreve" with="Rinvertedbreve.BRACKET.500"/>
+      <sub name="bi-hira" with="bi-hira.BRACKET.500"/>
+      <sub name="bu-hira" with="bu-hira.BRACKET.500"/>
+      <sub name="ge-hira" with="ge-hira.BRACKET.500"/>
+      <sub name="pi-hira" with="pi-hira.BRACKET.500"/>
+      <sub name="vi-kata" with="vi-kata.BRACKET.500"/>
+    </rule>
+    <rule name="BRACKET.632.900">
+      <conditionset>
+        <condition name="Weight" minimum="632" maximum="900"/>
+      </conditionset>
+      <sub name="asmall-kata" with="asmall-kata.BRACKET.632"/>
+      <sub name="bu-kata" with="bu-kata.BRACKET.632"/>
+      <sub name="da-hira" with="da-hira.BRACKET.632"/>
+      <sub name="du-hira" with="du-hira.BRACKET.632"/>
+      <sub name="ga-kata" with="ga-kata.BRACKET.632"/>
+      <sub name="gi-hira" with="gi-hira.BRACKET.632"/>
+      <sub name="go-kata" with="go-kata.BRACKET.632"/>
+      <sub name="va-kata" with="va-kata.BRACKET.632"/>
+      <sub name="ve-kata" with="ve-kata.BRACKET.632"/>
+      <sub name="vo-kata" with="vo-kata.BRACKET.632"/>
+      <sub name="vu-kata" with="vu-kata.BRACKET.632"/>
+      <sub name="we-kata" with="we-kata.BRACKET.632"/>
+    </rule>
+    <rule name="BRACKET.633.900">
+      <conditionset>
+        <condition name="Weight" minimum="633" maximum="900"/>
+      </conditionset>
+      <sub name="ba-hira" with="ba-hira.BRACKET.633"/>
+    </rule>
+    <rule name="BRACKET.660.900">
+      <conditionset>
+        <condition name="Weight" minimum="660" maximum="900"/>
+      </conditionset>
+      <sub name="naira" with="naira.BRACKET.660"/>
+    </rule>
+    <rule name="BRACKET.766.900">
+      <conditionset>
+        <condition name="Weight" minimum="766" maximum="900"/>
+      </conditionset>
+      <sub name="do-hira" with="do-hira.BRACKET.766"/>
+      <sub name="zu-hira" with="zu-hira.BRACKET.766"/>
+    </rule>
+    <rule name="BRACKET.767.900">
+      <conditionset>
+        <condition name="Weight" minimum="767" maximum="900"/>
+      </conditionset>
+      <sub name="a-kata" with="a-kata.BRACKET.767"/>
+    </rule>
+  </rules>
+  <sources>
+    <source filename="MPLUS1-Thin.ufo" name="M PLUS 1 Thin" familyname="M PLUS 1" stylename="Thin">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="MPLUS1-Thin.ufo" name="M PLUS 1 Thin Light {232}" layer="Light {232}">
+      <location>
+        <dimension name="Weight" xvalue="232"/>
+      </location>
+    </source>
+    <source filename="MPLUS1-Medium.ufo" name="M PLUS 1 Medium" familyname="M PLUS 1" stylename="Medium">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </source>
+    <source filename="MPLUS1-Medium.ufo" name="M PLUS 1 Medium ExtraBold {767}" layer="ExtraBold {767}">
+      <location>
+        <dimension name="Weight" xvalue="767"/>
+      </location>
+    </source>
+    <source filename="MPLUS1-Black.ufo" name="M PLUS 1 Black" familyname="M PLUS 1" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="M PLUS 1 Thin" familyname="M PLUS 1" stylename="Thin" filename="instance_ufos/MPLUS1-Thin.ufo">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Thin</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS 1 ExtraLight" familyname="M PLUS 1" stylename="ExtraLight" filename="instance_ufos/MPLUS1-ExtraLight.ufo">
+      <location>
+        <dimension name="Weight" xvalue="165"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+            <real>0.1625</real>
+            <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+            <real>0.8375</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>ExtraLight</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS 1 Light" familyname="M PLUS 1" stylename="Light" filename="instance_ufos/MPLUS1-Light.ufo">
+      <location>
+        <dimension name="Weight" xvalue="232"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+            <real>0.33</real>
+            <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+            <real>0.67</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Light</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS 1 Regular" familyname="M PLUS 1" stylename="Regular" filename="instance_ufos/MPLUS1-Regular.ufo">
+      <location>
+        <dimension name="Weight" xvalue="367"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+            <real>0.6675</real>
+            <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+            <real>0.3325</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Regular</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS 1 Medium" familyname="M PLUS 1" stylename="Medium" filename="instance_ufos/MPLUS1-Medium.ufo">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Medium</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS 1 SemiBold" familyname="M PLUS 1" stylename="SemiBold" filename="instance_ufos/MPLUS1-SemiBold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="565"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+            <real>0.8375</real>
+            <key>9E6B41AB-2970-4C41-8B35-4DBE0D296A43</key>
+            <real>0.1625</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>SemiBold</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS 1 Bold" familyname="M PLUS 1" stylename="Bold" filename="instance_ufos/MPLUS1-Bold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="633"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+            <real>0.6675</real>
+            <key>9E6B41AB-2970-4C41-8B35-4DBE0D296A43</key>
+            <real>0.3325</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Bold</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS 1 ExtraBold" familyname="M PLUS 1" stylename="ExtraBold" filename="instance_ufos/MPLUS1-ExtraBold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="767"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+            <real>0.3325</real>
+            <key>9E6B41AB-2970-4C41-8B35-4DBE0D296A43</key>
+            <real>0.6675</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>ExtraBold</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS 1 Black" familyname="M PLUS 1" stylename="Black" filename="instance_ufos/MPLUS1-Black.ufo">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>9E6B41AB-2970-4C41-8B35-4DBE0D296A43</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Black</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+        <dict>
+          <key>HH</key>
+          <string>100</string>
+          <key>HV</key>
+          <string>110</string>
+          <key>OH</key>
+          <string>100</string>
+          <key>OV</key>
+          <string>113</string>
+          <key>nV</key>
+          <string>108</string>
+          <key>oH</key>
+          <string>90</string>
+          <key>oV</key>
+          <string>108</string>
+          <key>tH</key>
+          <string>90</string>
+        </dict>
+        <key>9E6B41AB-2970-4C41-8B35-4DBE0D296A43</key>
+        <dict>
+          <key>HH</key>
+          <string>170</string>
+          <key>HV</key>
+          <string>200</string>
+          <key>OH</key>
+          <string>170</string>
+          <key>OV</key>
+          <string>205</string>
+          <key>nV</key>
+          <string>196</string>
+          <key>nd</key>
+          <string>160</string>
+          <key>oH</key>
+          <string>140</string>
+          <key>oV</key>
+          <string>196</string>
+          <key>tH</key>
+          <string>140</string>
+        </dict>
+        <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+        <dict>
+          <key>HH</key>
+          <string>20</string>
+          <key>HV</key>
+          <string>20</string>
+          <key>OH</key>
+          <string>20</string>
+          <key>OV</key>
+          <string>20</string>
+          <key>nV</key>
+          <string>20</string>
+          <key>nd</key>
+          <string>20</string>
+          <key>oH</key>
+          <string>20</string>
+          <key>oV</key>
+          <string>20</string>
+          <key>tH</key>
+          <string>20</string>
+        </dict>
+      </dict>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>G.001</string>
+        <string>S.001</string>
+        <string>_cross</string>
+        <string>a.001</string>
+        <string>guarani.001</string>
+        <string>one.001</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>
