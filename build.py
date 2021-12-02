@@ -135,10 +135,10 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         varFont["name"].setName("M PLUS Code Latin Regular", 4, 3, 1, 1033)
         varFont["name"].setName("MPLUSCodeLatin-Regular", 6, 3, 1, 1033)
 
-        varFont.save(output/"MplusCodeLatin[wdth,wght].ttf")
-        fixStat(output/"MplusCodeLatin[wdth,wght].ttf","sources/MPLUS_STAT.yaml")
-        autohint(output/"MplusCodeLatin[wdth,wght].ttf")
-        prefix = "MplusCodeLatin"
+        varFont.save(output/"MPLUSCodeLatin[wdth,wght].ttf")
+        fixStat(output/"MPLUSCodeLatin[wdth,wght].ttf","sources/MPLUS_STAT.yaml")
+        autohint(output/"MPLUSCodeLatin[wdth,wght].ttf")
+        prefix = "MPLUSCodeLatin"
 
     if type == "one" or type == "two":
         print ("[MPLUS "+type+"] Importing Kanji")      
@@ -162,13 +162,13 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
         print ("[MPLUS "+type+"] Saving")      
         if type == "one":
-            varFont.save(output/"Mplus1[wght].ttf")
-            prefix = "Mplus1"
-            fixStat(output/"Mplus1[wght].ttf","sources/MPLUS_STAT.yaml")
+            varFont.save(output/"MPLUS1[wght].ttf")
+            prefix = "MPLUS1"
+            fixStat(output/"MPLUS1[wght].ttf","sources/MPLUS_STAT.yaml")
         elif type == "two":
-            varFont.save(output/"Mplus2[wght].ttf")
-            prefix = "Mplus2"
-            fixStat(output/"Mplus2[wght].ttf","sources/MPLUS_STAT.yaml")
+            varFont.save(output/"MPLUS2[wght].ttf")
+            prefix = "MPLUS2"
+            fixStat(output/"MPLUS2[wght].ttf","sources/MPLUS_STAT.yaml")
 
     if type == "code":
 
@@ -211,9 +211,9 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
         varFont["name"].setName("MPLUS1Code-Regular", 6, 3, 1, 1033)
 
         print ("[MPLUS "+type+"] Saving")      
-        varFont.save(output/"Mplus1Code[wght].ttf")
-        fixStat(output/"Mplus1Code[wght].ttf","sources/MPLUS_STAT.yaml")
-        prefix = "Mplus1Code"
+        varFont.save(output/"MPLUS1Code[wght].ttf")
+        fixStat(output/"MPLUS1Code[wght].ttf","sources/MPLUS_STAT.yaml")
+        prefix = "MPLUS1Code"
 
     generator = fontmake.instantiator.Instantiator.from_designspace(ds)
 
