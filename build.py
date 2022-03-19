@@ -173,8 +173,8 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
     if type == "code":
 
         for instance in ds.instances:
-            instance.name = instance.name.replace("M PLUS", "M PLUS 1 ")
-            instance.familyName = instance.familyName.replace("M PLUS", "M PLUS 1 ")
+            instance.name = instance.name.replace("M PLUS", "M PLUS 1")
+            instance.familyName = instance.familyName.replace("M PLUS", "M PLUS 1")
             if instance.styleMapFamilyName:
                 instance.styleMapFamilyName = instance.styleMapFamilyName.replace("M PLUS Code", "M PLUS 1 Code")
             instance.postscriptIsFixedPitch = False
