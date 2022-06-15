@@ -1,27 +1,14 @@
 {
-.appVersion = "3132";
+.appVersion = "1361";
 copyright = "Copyright 2021 The M+ FONTS Project Authors (https://github.com/coz-m/MPLUS_FONTS)";
 customParameters = (
-{
-name = "Enforce Compatibility Check";
-value = 1;
-},
-{
-name = fsType;
-value = (
-);
-},
 {
 name = vendorID;
 value = UFDN;
 },
 {
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
+name = "Enforce Compatibility Check";
+value = 1;
 },
 {
 name = Axes;
@@ -35,6 +22,19 @@ Tag = wght;
 {
 name = note;
 value = "%:    60% (Black +20, Thin 20, Medium +20)\012ord*: 80% (Black +10, Thin 20, Medium +10)\012*sup: 60% (Black +20, Thin 20, Medium +20)\012©®:   60% (Black +20, Thin 20, Medium +20)\012TM:   50% (Black +0~10, Thin 20, Medium +20)\012\012*sml: X100、Y-8、W80%、H80% (Black +20, Thin 20, Medium +6)\012\012full-width bracket pairs: X1000, Y720 Rotate180";
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+},
+{
+name = licenseURL;
+value = "https://scripts.sil.org/OFL";
 }
 );
 date = "2021-02-26 07:42:34 +0000";
@@ -176,8 +176,7 @@ value = 0;
 );
 descender = -140;
 horizontalStems = (
-20,
-0
+20
 );
 iconName = Light_SemiExtended;
 id = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
@@ -187,8 +186,7 @@ GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
 verticalStems = (
-20,
-0
+20
 );
 xHeight = 520;
 },
@@ -6246,16 +6244,14 @@ unicode = 0139;
 },
 {
 glyphname = Lcaron;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = L;
 },
 {
-alignment = -1;
 name = quoteright;
 transform = "{1, 0, 0, 1, 360, 0}";
 }
@@ -6267,7 +6263,6 @@ width = 646;
 {
 components = (
 {
-alignment = -1;
 name = L;
 },
 {
@@ -6283,11 +6278,9 @@ width = 627;
 {
 components = (
 {
-alignment = -1;
 name = L;
 },
 {
-alignment = -1;
 name = quoteright;
 transform = "{1, 0, 0, 1, 300, 0}";
 }
@@ -9897,7 +9890,7 @@ transform = "{1, 0, 0, 1, 247, 210}";
 }
 );
 layerId = "9ADA17E6-8037-4B0F-A6EF-1A98B39CCDF6";
-name = "[500]";
+name = "Medium [500]";
 width = 689;
 },
 {
@@ -9922,7 +9915,7 @@ transform = "{1, 0, 0, 1, 228, 210}";
 }
 );
 layerId = "9DE38111-E29E-4F33-8F74-95DA348566CD";
-name = "[500]";
+name = "Black [500]";
 width = 714;
 },
 {
@@ -9947,7 +9940,7 @@ transform = "{1, 0, 0, 1, 266, 210}";
 }
 );
 layerId = "42C1C100-0320-40FA-B01A-01369ADC9E58";
-name = "[500]";
+name = "Thin [500]";
 width = 664;
 }
 );
@@ -10050,7 +10043,7 @@ transform = "{1, 0, 0, 1, 131, 210}";
 }
 );
 layerId = "A63FA486-ACB3-4DDD-B069-361B687AAED6";
-name = "[500]";
+name = "Thin [500]";
 width = 664;
 },
 {
@@ -10075,7 +10068,7 @@ transform = "{1, 0, 0, 1, 100, 210}";
 }
 );
 layerId = "9F156BD0-7676-45B4-9569-7D778AE8279A";
-name = "[500]";
+name = "Medium [500]";
 width = 689;
 },
 {
@@ -10100,7 +10093,7 @@ transform = "{1, 0, 0, 1, 61, 210}";
 }
 );
 layerId = "B610886B-575F-41AE-984D-3607928A4335";
-name = "[500]";
+name = "Black [500]";
 width = 714;
 }
 );
@@ -10203,7 +10196,7 @@ transform = "{1, 0, 0, 1, 144, 0}";
 }
 );
 layerId = "151EF473-6C43-46D8-A89B-8E777709B961";
-name = "[500]";
+name = "Thin [500]";
 width = 664;
 },
 {
@@ -10228,7 +10221,7 @@ transform = "{1, 0, 0, 1, 141, 0}";
 }
 );
 layerId = "E94B2617-64CC-463B-AEB5-F482DF3C6B89";
-name = "[500]";
+name = "Medium [500]";
 width = 689;
 },
 {
@@ -10253,7 +10246,7 @@ transform = "{1, 0, 0, 1, 137, 0}";
 }
 );
 layerId = "98277912-451B-4852-8007-D23FF04CC4B9";
-name = "[500]";
+name = "Black [500]";
 width = 714;
 }
 );
@@ -10356,7 +10349,7 @@ transform = "{1, 0, 0, 1, 121, 210}";
 }
 );
 layerId = "1613B0DC-AC0A-49DD-B833-A7D38CB3D646";
-name = "[500]";
+name = "Thin [500]";
 width = 664;
 },
 {
@@ -10381,7 +10374,7 @@ transform = "{1, 0, 0, 1, 90, 210}";
 }
 );
 layerId = "C644C4CB-BCF3-4BF5-9459-B1C37BCE6FBD";
-name = "[500]";
+name = "Medium [500]";
 width = 689;
 },
 {
@@ -10406,7 +10399,7 @@ transform = "{1, 0, 0, 1, 58, 210}";
 }
 );
 layerId = "4C3B87BE-325D-4B74-BAF1-BDEF62023B57";
-name = "[500]";
+name = "Black [500]";
 width = 714;
 }
 );
@@ -10509,7 +10502,7 @@ transform = "{1, 0, 0, 1, 125, 210}";
 }
 );
 layerId = "45CEF8F4-677B-43C8-AA66-E002B11FACCC";
-name = "[500]";
+name = "Thin [500]";
 width = 664;
 },
 {
@@ -10534,7 +10527,7 @@ transform = "{1, 0, 0, 1, 108, 210}";
 }
 );
 layerId = "9285897E-8A60-481A-92A8-902918DA89D5";
-name = "[500]";
+name = "Medium [500]";
 width = 689;
 },
 {
@@ -10559,7 +10552,7 @@ transform = "{1, 0, 0, 1, 91, 210}";
 }
 );
 layerId = "6338C5F8-CE67-4ED3-8100-DDFEB282D23A";
-name = "[500]";
+name = "Black [500]";
 width = 714;
 }
 );
@@ -14751,7 +14744,7 @@ position = "{255, 520}";
 );
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "37E9DD48-F59F-412B-917A-B9493104890B";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -16631,7 +16624,7 @@ width = 641;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "4577C09C-2268-4FDD-969E-4BC558CAFA0A";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -17180,7 +17173,7 @@ transform = "{-1, 0, 0, 1, 598, 0}";
 }
 );
 layerId = "C5D611FF-0575-4F1C-8DB0-17A7EA9D41F9";
-name = "{232}";
+name = "Light {232}";
 width = 598;
 }
 );
@@ -17370,7 +17363,7 @@ width = 615;
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "7EB7DD1D-0E67-4B53-AED1-36A39ED50BF4";
 rightMetricsKey = "=d*.3";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -17435,16 +17428,14 @@ unicode = 00F0;
 },
 {
 glyphname = dcaron;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = d;
 },
 {
-alignment = -1;
 name = quoteright;
 transform = "{1, 0, 0, 1, 470, 0}";
 }
@@ -17472,11 +17463,9 @@ width = 796;
 {
 components = (
 {
-alignment = -1;
 name = d;
 },
 {
-alignment = -1;
 name = quoteright;
 transform = "{1, 0, 0, 1, 570, 0}";
 }
@@ -19163,7 +19152,7 @@ position = "{297, 520}";
 );
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "2CB2E316-DF26-4020-8926-4C268D4E13F3";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -19628,7 +19617,7 @@ position = "{297, 730}";
 );
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "02FE662A-EEF6-4625-B8CE-6C497DD97EB0";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -21371,16 +21360,14 @@ unicode = 013A;
 },
 {
 glyphname = lcaron;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = l;
 },
 {
-alignment = -1;
 name = quoteright;
 transform = "{1, 0, 0, 1, 130, 0}";
 }
@@ -21391,7 +21378,6 @@ width = 380;
 {
 components = (
 {
-alignment = -1;
 name = l;
 },
 {
@@ -21406,11 +21392,9 @@ width = 466;
 {
 components = (
 {
-alignment = -1;
 name = l;
 },
 {
-alignment = -1;
 name = quoteright;
 transform = "{1, 0, 0, 1, 250, 0}";
 }
@@ -21802,7 +21786,7 @@ width = 867;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "0CBD3FAB-BA75-4DFC-AD86-B9F788B7BCE9";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -21999,7 +21983,7 @@ position = "{304, 520}";
 );
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "899DC2DC-F451-4B84-9275-F30D30733E24";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -22360,7 +22344,7 @@ position = "{303, 520}";
 );
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "79FE56B5-3AAC-4AE6-A914-FF8F134DF163";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -24706,7 +24690,7 @@ transform = "{1, 0, 0, -1, 0, 520}";
 }
 );
 layerId = "7F3BC6AE-6F22-4A97-B0EB-8F0F5CC638FE";
-name = "{232}";
+name = "Light {232}";
 width = 598;
 }
 );
@@ -24867,7 +24851,7 @@ width = 641;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "0BCAABAB-37FB-445D-B33E-60B4C38D96A8";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -25072,7 +25056,7 @@ width = 641;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "3D84F023-FBE7-4969-BDA9-8AD3C0F95158";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -25212,7 +25196,7 @@ position = "{235, 520}";
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "657C252B-5EEF-4E2C-9A2A-557819CBA416";
 rightMetricsKey = "=|*.2";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -26419,16 +26403,14 @@ unicode = 0167;
 },
 {
 glyphname = tcaron;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = t;
 },
 {
-alignment = -1;
 name = quoteright;
 transform = "{1, 0, 0, 1, 380, 0}";
 }
@@ -26439,7 +26421,6 @@ width = 630;
 {
 components = (
 {
-alignment = -1;
 name = t;
 },
 {
@@ -26454,11 +26435,9 @@ width = 681;
 {
 components = (
 {
-alignment = -1;
 name = t;
 },
 {
-alignment = -1;
 name = quoteright;
 transform = "{1, 0, 0, 1, 430, 0}";
 }
@@ -26760,7 +26739,7 @@ position = "{449, 480}";
 );
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "245D3822-9188-491B-8A3B-367571E408B0";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -29240,7 +29219,7 @@ position = "{255, 520}";
 );
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "37E9DD48-F59F-412B-917A-B9493104890B";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -30398,7 +30377,7 @@ width = 467;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "02CE7075-E2BA-495E-B00B-7DF72736FD8B";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -30791,7 +30770,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "ED9AD003-790A-45B3-87D4-A016D5568221";
-name = "{767}";
+name = "ExtraBold {767}";
 paths = (
 {
 closed = 1;
@@ -33396,7 +33375,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "3D3D1ADD-3769-4D6E-B929-7E5A7AF17768";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -33574,7 +33553,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "28CFECCD-178B-41F8-8F03-AF7D959BA33A";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -33752,7 +33731,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "A4B5C6CB-9284-4D41-9F3B-B78DBFA92D2C";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -34377,7 +34356,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "F6098370-5681-4445-A06E-76A0D1F9311A";
-name = "[500]";
+name = "Medium [500]";
 paths = (
 {
 closed = 1;
@@ -34537,7 +34516,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "083D859D-87E3-42AC-8438-B5C5961DDFBF";
-name = "[500]";
+name = "Black [500]";
 paths = (
 {
 closed = 1;
@@ -34618,7 +34597,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "A3A9DF99-7FCD-4239-A1AF-44E69F494A2F";
-name = "[500]";
+name = "Thin [500]";
 paths = (
 {
 closed = 1;
@@ -35226,7 +35205,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "415FD836-D8BD-429E-BD6A-6F5BB2536B96";
-name = "[232]";
+name = "Thin [232]";
 paths = (
 {
 closed = 1;
@@ -35307,7 +35286,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "3D9776B2-B96F-4534-9275-80F437E8B759";
-name = "[367]";
+name = "Thin [367]";
 paths = (
 {
 closed = 1;
@@ -35467,7 +35446,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "8253527E-78FD-405A-8174-2D7D952DD03C";
-name = "[232]";
+name = "Medium [232]";
 paths = (
 {
 closed = 1;
@@ -35548,7 +35527,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "0B47ED2B-63BC-42DF-B29A-03E697AAE69E";
-name = "[367]";
+name = "Medium [367]";
 paths = (
 {
 closed = 1;
@@ -35708,7 +35687,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "F63905F6-95F3-4628-9F53-9C34ACF8C968";
-name = "[232]";
+name = "Black [232]";
 paths = (
 {
 closed = 1;
@@ -35789,7 +35768,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "44837E77-3D61-4887-BAED-F0461AB253AB";
-name = "[367]";
+name = "Black [367]";
 paths = (
 {
 closed = 1;
@@ -36218,7 +36197,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "2678E0ED-3260-4BA2-8F75-D278C925562A";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -36477,7 +36456,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "4C8E557C-D6C9-4DE2-A964-2C4FA8342784";
-name = "[766]";
+name = "Medium [766]";
 paths = (
 {
 closed = 1;
@@ -36571,7 +36550,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "5142259D-6448-4F08-8131-7A26CA5124DF";
-name = "[766]";
+name = "Black [766]";
 paths = (
 {
 closed = 1;
@@ -36757,7 +36736,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "F32B0472-A145-4E59-82C6-11AD792C9C6A";
-name = "[766]";
+name = "Thin [766]";
 paths = (
 {
 closed = 1;
@@ -36851,7 +36830,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "2E1B3B03-4F61-4F82-A6ED-1FE73CD7347A";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -36947,7 +36926,7 @@ unicode = 305A;
 },
 {
 glyphname = "se-hira";
-lastChange = "2022-06-15 05:56:40 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 layerId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
@@ -37046,10 +37025,10 @@ nodes = (
 "792 239 OFFCURVE",
 "792 328 CURVE SMOOTH",
 "792 795 LINE",
-"687 795 LINE",
-"687 362 LINE SMOOTH",
-"687 313 OFFCURVE",
-"686 310 OFFCURVE",
+"685 795 LINE",
+"685 362 LINE SMOOTH",
+"685 312 OFFCURVE",
+"683 310 OFFCURVE",
 "662 310 CURVE SMOOTH",
 "624 310 OFFCURVE",
 "587 317 OFFCURVE",
@@ -37125,7 +37104,7 @@ unicode = 305B;
 },
 {
 glyphname = "ze-hira";
-lastChange = "2022-06-15 06:00:12 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 layerId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
@@ -37256,12 +37235,12 @@ nodes = (
 "792 543 LINE",
 "792 543 LINE",
 "792 635 LINE",
-"687 635 LINE",
-"687 543 LINE",
-"687 543 LINE",
-"687 352 LINE SMOOTH",
-"687 303 OFFCURVE",
-"686 300 OFFCURVE",
+"685 635 LINE",
+"685 543 LINE",
+"685 543 LINE",
+"685 352 LINE SMOOTH",
+"685 302 OFFCURVE",
+"683 300 OFFCURVE",
 "662 300 CURVE SMOOTH",
 "624 300 OFFCURVE",
 "587 307 OFFCURVE",
@@ -37391,7 +37370,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "1DD544BD-FE51-48FF-98C2-319E1CD944B6";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -37480,7 +37459,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "58691330-3E76-4C8E-9060-A402D62B1EA2";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -37521,12 +37500,12 @@ nodes = (
 "782 568 LINE",
 "782 568 LINE",
 "782 695 LINE",
-"677 695 LINE",
-"677 568 LINE",
-"677 568 LINE",
-"677 352 LINE SMOOTH",
-"677 303 OFFCURVE",
-"676 300 OFFCURVE",
+"675 695 LINE",
+"675 568 LINE",
+"675 568 LINE",
+"675 352 LINE SMOOTH",
+"675 302 OFFCURVE",
+"673 300 OFFCURVE",
 "652 300 CURVE SMOOTH",
 "614 300 OFFCURVE",
 "577 307 OFFCURVE",
@@ -37569,7 +37548,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "EE5B9CE4-1D97-488B-80F5-D5AAB5441002";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -37809,7 +37788,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "40D49EE9-1B5C-455D-A8D5-46F6BA07F5EE";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -37940,7 +37919,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "F389730B-7ED2-4B9E-8FEC-828D879DD728";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -38090,7 +38069,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "466DF67C-C76F-450D-8083-D6D9C36D3707";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -38240,7 +38219,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "21C811FE-ECD3-4B02-B391-22964BE21460";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -38316,7 +38295,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "D8CAE77B-CFD1-47AC-A0B3-BD93584F3381";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -38788,7 +38767,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "3A212F56-9FA8-4BF9-964D-07B03804299E";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -38974,7 +38953,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "78C0387D-2250-46B4-9877-7FF6EB5AF573";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -39068,7 +39047,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "8D17B779-E908-4F70-9813-CB204C62BB3D";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -39578,7 +39557,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "EF70A127-57DE-40F8-923D-3B77FB59BB75";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -39660,7 +39639,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "5CDDC195-A9F0-4863-8967-20C1BFD8AF39";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -39742,7 +39721,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "42D4131C-C524-4883-9423-FD1232DCAF31";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -40088,7 +40067,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "886D0A88-F500-4B57-B990-C54B8426983F";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -40261,7 +40240,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "9BAEB24D-EE47-4F83-B019-0F806D0707C3";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -40320,7 +40299,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "44724FE8-B91E-47AA-97D6-B7413DA85CA4";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -40846,7 +40825,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "93DB00CE-345B-4D82-ABB5-D329B3E887C6";
-name = "[766]";
+name = "Medium [766]";
 paths = (
 {
 closed = 1;
@@ -41058,7 +41037,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "BEFAC29F-9023-41F8-B8F9-835A10BE638C";
-name = "[766]";
+name = "Black [766]";
 paths = (
 {
 closed = 1;
@@ -41130,7 +41109,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "C61D79ED-74CE-4D50-ADE1-16AEA140671B";
-name = "[766]";
+name = "Thin [766]";
 paths = (
 {
 closed = 1;
@@ -42694,7 +42673,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "380042AE-AFA8-47B1-BA3D-35FB9509919E";
-name = "[633]";
+name = "Thin [633]";
 paths = (
 {
 closed = 1;
@@ -42793,7 +42772,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "1BDE54D5-498F-4B70-B9C3-551EFE2C1CC6";
-name = "[633]";
+name = "Black [633]";
 paths = (
 {
 closed = 1;
@@ -42892,7 +42871,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "9BDF707A-D68A-4F90-AF64-20DC8F121B54";
-name = "[633]";
+name = "Medium [633]";
 paths = (
 {
 closed = 1;
@@ -43192,7 +43171,7 @@ transform = "{0.98, 0, 0, 1, -18, -10}";
 }
 );
 layerId = "AEB9DF0D-F821-4A7C-AFA7-11F405C74688";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -43384,7 +43363,7 @@ transform = "{0.96, 0, 0, 1, -26, -10}";
 }
 );
 layerId = "A0A5BACC-396C-4FF5-989D-FB80CDB9DCCA";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -43480,7 +43459,7 @@ transform = "{0.9999, 0, 0, 1, -10, -10}";
 }
 );
 layerId = "16E5D740-2C48-46B8-B29D-4D6A18D3069E";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -43806,7 +43785,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "BC52ED71-8071-4597-BA97-C7F3D22E8704";
-name = "[500]";
+name = "Medium [500]";
 paths = (
 {
 closed = 1;
@@ -44033,7 +44012,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "AC3CE6CE-D81A-49DC-A91A-11A71773BC28";
-name = "[500]";
+name = "Thin [500]";
 paths = (
 {
 closed = 1;
@@ -44110,7 +44089,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "E52C54DC-714F-4D96-BECC-08C5E11AA5DE";
-name = "[500]";
+name = "Black [500]";
 paths = (
 {
 closed = 1;
@@ -44277,7 +44256,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "BD0F7CA9-70AE-4FB9-8624-E2DA64A8EA11";
-name = "[500]";
+name = "Medium [500]";
 paths = (
 {
 closed = 1;
@@ -44528,7 +44507,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "847A2BB4-C1BD-41DF-BE92-D71321FD01E8";
-name = "[500]";
+name = "Thin [500]";
 paths = (
 {
 closed = 1;
@@ -44613,7 +44592,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "CF95658C-1930-4EFB-86BF-369EEE88B197";
-name = "[500]";
+name = "Black [500]";
 paths = (
 {
 closed = 1;
@@ -44851,7 +44830,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "BC06B59F-72C4-4BB7-BF36-413A7B4A353B";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -45105,7 +45084,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "C214D47A-7B08-4BA4-836D-2E1B0935410E";
-name = "[500]";
+name = "Thin [500]";
 paths = (
 {
 closed = 1;
@@ -45305,7 +45284,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "6FBBCFCA-57B1-4590-AF63-FFF3409CA0FF";
-name = "[500]";
+name = "Medium [500]";
 paths = (
 {
 closed = 1;
@@ -45505,7 +45484,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "919DB4DB-20C4-4510-9B04-6D97B753767D";
-name = "[500]";
+name = "Black [500]";
 paths = (
 {
 closed = 1;
@@ -46443,7 +46422,7 @@ transform = "{0.9999, 0, 0, 1, -35, -10}";
 }
 );
 layerId = "38BA3D72-E0D4-4619-8EF9-E6B18E393B25";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -46530,7 +46509,7 @@ transform = "{0.97, 0, 0, 1, -18, -10}";
 }
 );
 layerId = "F3A0ABE7-C46C-46FA-A393-2BEC39B7BF43";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -46702,7 +46681,7 @@ transform = "{0.94, 0, 0, 1, -20, -10}";
 }
 );
 layerId = "C244ECC1-CE41-40CC-A847-27CA3B4463EB";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -47611,7 +47590,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "F8A3B6F2-1788-436A-B59A-39C31F37C819";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -49588,7 +49567,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "938DC8AF-7CEC-4899-8912-B96B4751356C";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -51227,7 +51206,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "71F8FE03-784A-44E8-B590-1D45EE031C01";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -51696,7 +51675,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "029797BA-388D-42B6-BE83-736329090EF5";
-name = "[767]";
+name = "Medium [767]";
 paths = (
 {
 closed = 1;
@@ -51827,7 +51806,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "0B7C2E75-10E1-42CF-B3C6-8C243436920A";
-name = "[767]";
+name = "Black [767]";
 paths = (
 {
 closed = 1;
@@ -51872,7 +51851,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "565D258F-8A4D-4261-81E1-F2F9F58B3C58";
-name = "[767]";
+name = "Thin [767]";
 paths = (
 {
 closed = 1;
@@ -52010,7 +51989,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "D1FE3B9B-48E0-41F6-A612-E43842FCCCD5";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -52098,7 +52077,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "B7C6E928-B0B5-4F0F-81AC-B4F780C2AC99";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -52143,7 +52122,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "C5EC4ED9-5FF2-4E8E-8521-F050814D0884";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -53360,7 +53339,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "720707AC-8378-4CCD-8E8E-9A1C58CF030B";
-name = "[231]";
+name = "Thin [231]";
 paths = (
 {
 closed = 1;
@@ -53431,7 +53410,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "3B897727-6F90-46B1-9505-FEF2C424D269";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -53571,7 +53550,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "D08D4ACC-F509-4ACC-8964-68A8D1138282";
-name = "[231]";
+name = "Medium [231]";
 paths = (
 {
 closed = 1;
@@ -53642,7 +53621,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "79DA38BA-B836-4DED-A98F-CAB22F9B8AF1";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -53782,7 +53761,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "0FFD1AC8-4C3B-4348-A7DB-740A72331563";
-name = "[231]";
+name = "Black [231]";
 paths = (
 {
 closed = 1;
@@ -53853,7 +53832,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "B30364E7-349D-4EE6-BB4A-B134ED253919";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -54096,7 +54075,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "2FAE83C5-A238-4F78-BF6A-632ECCF29973";
-name = "[367]";
+name = "Thin [367]";
 paths = (
 {
 closed = 1;
@@ -54157,7 +54136,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "D588C0E5-AD4A-4D4D-A9FD-1C4505DD2DA3";
-name = "[367]";
+name = "Medium [367]";
 paths = (
 {
 closed = 1;
@@ -54336,7 +54315,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "8C683736-F89C-4F17-8EB0-10F0558A5E79";
-name = "[367]";
+name = "Black [367]";
 paths = (
 {
 closed = 1;
@@ -54582,7 +54561,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "C9F7B8E2-F75F-46D9-9854-D7791E1AB253";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -54710,7 +54689,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "F1A1CBCA-E1F3-4ADA-8C59-AB03F7C06010";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -54838,7 +54817,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "F395DFA2-8CD2-46F6-B6C4-A12400CC6C2F";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -55251,7 +55230,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "A87364A5-4108-4D89-AB0E-21A3FB1717AC";
-name = "[367]";
+name = "Thin [367]";
 paths = (
 {
 closed = 1;
@@ -55460,7 +55439,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "0773B6F0-9EF0-4E3A-9FAB-D4701B9EBB3B";
-name = "[367]";
+name = "Medium [367]";
 paths = (
 {
 closed = 1;
@@ -55531,7 +55510,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "F782ABBD-2AFB-4390-A6DD-8FBE66AC4CA2";
-name = "[367]";
+name = "Black [367]";
 paths = (
 {
 closed = 1;
@@ -55727,7 +55706,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "9E57C4EB-E288-4ABB-A31E-04725479CE74";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -55825,7 +55804,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "799FE591-9617-46D7-846F-1295D2829B6C";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -55923,7 +55902,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "CF3777BC-E776-41F0-B722-A581947B23B1";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -56311,7 +56290,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "E43EAF9E-8B5A-4332-8D16-A06D9273FE2D";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -56382,7 +56361,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "4BDC7FE0-1FCA-40FC-A132-823E027599E5";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -56453,7 +56432,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "8FFB493A-E25F-430C-A2BF-0651ACDFF9E0";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -57071,7 +57050,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "F85DD104-C7B1-4D8D-9A9A-0A8524F0BEB8";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -57262,7 +57241,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "FADE538B-D812-411E-B63D-9C6B33B51454";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -57327,7 +57306,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "37A50119-CC1A-4152-971B-2D6AFC461C65";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -57629,7 +57608,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "636DC8EB-DDA4-463F-A5D1-5FBF47EDD3F5";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -57859,7 +57838,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "1016700D-04E8-4778-9360-78544A079E62";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -57937,7 +57916,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "50656227-E268-4224-A4AC-7CD35F1FFE96";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -58536,7 +58515,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "394307F6-E7EF-4E54-BE82-2AD4A599D615";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -58690,7 +58669,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "C7C8C667-11CA-4608-9E4E-6C0EDFE38D79";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -58844,7 +58823,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "70BB23EF-7633-4067-AA92-F8BF345DEEA2";
-name = "[499]";
+name = "Bold [499]";
 paths = (
 {
 closed = 1;
@@ -59134,7 +59113,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "1E1E3F03-806B-4F3B-9731-F1DE3EB9EC08";
-name = "[366]";
+name = "Thin [366]";
 paths = (
 {
 closed = 1;
@@ -59343,7 +59322,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "495155D9-B9B3-473A-8E40-990B939F7863";
-name = "[366]";
+name = "Medium [366]";
 paths = (
 {
 closed = 1;
@@ -59414,7 +59393,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "A6018C18-FF38-4310-B64A-24677741A8B9";
-name = "[366]";
+name = "Black [366]";
 paths = (
 {
 closed = 1;
@@ -60165,7 +60144,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "2889286F-66B4-4D6D-B19B-D7C6C47943A3";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -60287,7 +60266,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "C31A0981-0B26-43AB-A209-34075A111B26";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -60409,7 +60388,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "B52AD7A2-8F92-4768-81FA-0322F3C4C6A4";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -61812,7 +61791,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "8D08FAE9-54D5-41B4-BD32-7E3F8EF46193";
-name = "[366]";
+name = "Thin [366]";
 paths = (
 {
 closed = 1;
@@ -61946,7 +61925,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "FD47EEB3-589B-4EA1-BD77-FF67A7FEF5E8";
-name = "[366]";
+name = "Medium [366]";
 paths = (
 {
 closed = 1;
@@ -62014,7 +61993,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "81F46C04-D3F1-4487-86E1-046A6A5B22B5";
-name = "[366]";
+name = "Black [366]";
 paths = (
 {
 closed = 1;
@@ -62229,7 +62208,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "6AF977C8-132D-4319-B764-8B5CA36DD2E7";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -62379,7 +62358,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "8D0DD2C3-3114-426B-A285-8C122BA89BE1";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -62529,7 +62508,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "B7F090FE-D91F-4E8D-9665-8C024FF10313";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -62737,7 +62716,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "EB49CAEF-D4C2-49A6-BEB0-362A2E335917";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -62886,7 +62865,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "6DFF7CCB-5F8E-43BF-84C2-3E5C4212CAE9";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -62937,7 +62916,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "E5429B6C-8BED-42BC-8F2E-1C8CA0239171";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -63680,7 +63659,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "09D180DB-F612-4A4B-B0DB-BEC926BDAD12";
-name = "[366]";
+name = "Thin [366]";
 paths = (
 {
 closed = 1;
@@ -63858,7 +63837,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "8B71DA6D-BA6C-4D21-8747-C32E539AE03C";
-name = "[366]";
+name = "Medium [366]";
 paths = (
 {
 closed = 1;
@@ -64036,7 +64015,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "143CB6D2-2F5C-45A0-9BB7-A01599D11AB1";
-name = "[366]";
+name = "Black [366]";
 paths = (
 {
 closed = 1;
@@ -64230,7 +64209,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "F5D8A002-0A26-40A3-8498-69E68AA1B1A1";
-name = "[231]";
+name = "Thin [231]";
 paths = (
 {
 closed = 1;
@@ -64426,7 +64405,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "9056EB8F-AB0F-4CD2-B5B7-8770D6C0E832";
-name = "[231]";
+name = "Medium [231]";
 paths = (
 {
 closed = 1;
@@ -64622,7 +64601,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "7C8EC197-0437-495C-B015-97AFD329EF6F";
-name = "[231]";
+name = "Black [231]";
 paths = (
 {
 closed = 1;
@@ -66652,7 +66631,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "01C387DA-3630-4741-88A5-7FA9C441000F";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -66810,7 +66789,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "7FEB8975-924E-4991-9953-C909D3D12178";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -66864,7 +66843,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "401B2AEA-67D8-4D03-9C3C-EB8F408F902E";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -67118,7 +67097,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "5BCD338D-1861-40EF-B663-1C63C92299C0";
-name = "[500]";
+name = "Thin [500]";
 paths = (
 {
 closed = 1;
@@ -67186,7 +67165,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "77E6834C-E693-4E62-A444-99DEEF0FCC62";
-name = "[500]";
+name = "Medium [500]";
 paths = (
 {
 closed = 1;
@@ -67386,7 +67365,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "20A99F6B-7290-446A-8A99-C1CDB4740C83";
-name = "[500]";
+name = "Black [500]";
 paths = (
 {
 closed = 1;
@@ -67543,7 +67522,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "79E374AE-149B-49C8-8377-773D0FD0D9A9";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -67627,7 +67606,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "63239101-7798-4E28-9666-1E89AD4ED0EB";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -67670,7 +67649,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "2492E27C-659B-4DAC-B312-69253FE534CF";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -67921,7 +67900,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "46445716-283E-4929-B5E6-B3F71791C864";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -67990,7 +67969,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "C7C1AD5A-B993-4C35-86EC-AF1DFD1AFBAB";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -68059,7 +68038,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "660E4465-2ACD-44E4-8655-50CE2FE3BDF0";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -68296,7 +68275,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "B5DB8AEE-ADCE-4971-90D6-432F34A5209B";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -68472,7 +68451,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "8264831C-A10B-4F98-9F69-B14188A7DFE2";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -68532,7 +68511,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "6FCA7D8F-1CA9-4379-8181-E18090E4C32D";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -68870,7 +68849,7 @@ width = 1000;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "386E1662-5234-4F6E-B564-63099D1689F6";
-name = "[632]";
+name = "Medium [632]";
 paths = (
 {
 closed = 1;
@@ -68928,7 +68907,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "96CDF6B6-3B96-471F-8D10-AB5C811A50C5";
-name = "[632]";
+name = "Thin [632]";
 paths = (
 {
 closed = 1;
@@ -68986,7 +68965,7 @@ width = 1000;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "34F323E4-5FC2-41CA-AF2B-7523284AE4D5";
-name = "[632]";
+name = "Black [632]";
 paths = (
 {
 closed = 1;
@@ -69904,12 +69883,11 @@ width = 1000;
 },
 {
 glyphname = zero.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = zero;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -69935,7 +69913,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = zero;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -69952,12 +69929,11 @@ unicode = FF10;
 },
 {
 glyphname = one.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = one;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -69970,7 +69946,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = one;
 transform = "{1, 0, 0, 1, 180, 0}";
 }
@@ -69983,7 +69958,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = one;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70000,12 +69974,11 @@ unicode = FF11;
 },
 {
 glyphname = two.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = two;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -70031,7 +70004,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = two;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70048,12 +70020,11 @@ unicode = FF12;
 },
 {
 glyphname = three.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = three;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -70079,7 +70050,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = three;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70096,12 +70066,11 @@ unicode = FF13;
 },
 {
 glyphname = four.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = four;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -70114,7 +70083,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = four;
 transform = "{1, 0, 0, 1, 180, 0}";
 }
@@ -70127,7 +70095,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = four;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70144,12 +70111,11 @@ unicode = FF14;
 },
 {
 glyphname = five.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = five;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -70162,7 +70128,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = five;
 transform = "{1, 0, 0, 1, 180, 0}";
 }
@@ -70175,7 +70140,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = five;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70192,12 +70156,11 @@ unicode = FF15;
 },
 {
 glyphname = six.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = six;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -70210,7 +70173,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = six;
 transform = "{1, 0, 0, 1, 180, 0}";
 }
@@ -70223,7 +70185,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = six;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70245,7 +70206,7 @@ transform = "{1, 0, 0, 1, 187, 0}";
 layerId = "845DCEEE-3ADF-4F33-90C0-AD90A8FDC575";
 leftMetricsKey = "=six+187";
 rightMetricsKey = "=six+186";
-name = "{232}";
+name = "Light {232}";
 width = 1000;
 }
 );
@@ -70255,12 +70216,11 @@ unicode = FF16;
 },
 {
 glyphname = seven.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = seven;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -70273,7 +70233,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = seven;
 transform = "{1, 0, 0, 1, 180, 0}";
 }
@@ -70286,7 +70245,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = seven;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70303,12 +70261,11 @@ unicode = FF17;
 },
 {
 glyphname = eight.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = eight;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -70321,7 +70278,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = eight;
 transform = "{1, 0, 0, 1, 180, 0}";
 }
@@ -70334,7 +70290,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = eight;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70351,12 +70306,11 @@ unicode = FF18;
 },
 {
 glyphname = nine.full;
-lastChange = "2022-06-15 05:55:46 +0000";
+lastChange = "2021-05-05 05:27:35 +0000";
 layers = (
 {
 components = (
 {
-alignment = -1;
 name = nine;
 transform = "{1, 0, 0, 1, 190, 0}";
 }
@@ -70369,7 +70323,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = nine;
 transform = "{1, 0, 0, 1, 180, 0}";
 }
@@ -70382,7 +70335,6 @@ width = 1000;
 {
 components = (
 {
-alignment = -1;
 name = nine;
 transform = "{1, 0, 0, 1, 170, 0}";
 }
@@ -70404,7 +70356,7 @@ transform = "{1, 0, 0, 1, 186, 0}";
 layerId = "C1D949CF-B0AC-4BB9-A6D4-47AECFE5B5F6";
 leftMetricsKey = "=nine+186";
 rightMetricsKey = "=nine+187";
-name = "{232}";
+name = "Light {232}";
 width = 1000;
 }
 );
@@ -71235,7 +71187,7 @@ width = 660;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "3D03EFA5-0996-450D-9A59-82CD731B5B58";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -72209,7 +72161,7 @@ transform = "{-1, 0, 0, -1, 627, 730}";
 }
 );
 layerId = "31B902A1-64BB-4F10-B869-8B6C050F1608";
-name = "{232}";
+name = "Light {232}";
 width = 627;
 }
 );
@@ -72466,7 +72418,7 @@ name = six;
 }
 );
 layerId = "0745D49E-A009-43C8-8130-02A8F62E6585";
-name = "{232}";
+name = "Light {232}";
 width = 627;
 }
 );
@@ -72582,7 +72534,7 @@ name = nine;
 }
 );
 layerId = "FDEF7D87-51C3-45A1-958B-1797E4BECC79";
-name = "{232}";
+name = "Light {232}";
 width = 627;
 }
 );
@@ -78455,7 +78407,7 @@ width = 634;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "6FBC072F-0893-4F53-9DFA-0F513A4733E7";
-name = "[499]";
+name = "Thin [499]";
 paths = (
 {
 closed = 1;
@@ -78627,7 +78579,7 @@ width = 641;
 {
 associatedMasterId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 layerId = "C3D35B24-96B7-446C-AE92-777951C65FB5";
-name = "[499]";
+name = "Medium [499]";
 paths = (
 {
 closed = 1;
@@ -78799,7 +78751,7 @@ width = 657;
 {
 associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
 layerId = "4B2625E9-6DFC-4E99-8911-FA9FAE3E74FA";
-name = "[499]";
+name = "Black [499]";
 paths = (
 {
 closed = 1;
@@ -80189,7 +80141,7 @@ transform = "{1, 0, 0, 1, 59, 0}";
 }
 );
 layerId = "41F184A2-9331-4D79-BFCD-7155A38FF63E";
-name = "[340]";
+name = "Black [340]";
 paths = (
 {
 closed = 1;
@@ -80239,7 +80191,7 @@ transform = "{1, 0, 0, 1, 53, 0}";
 }
 );
 layerId = "02FD2A7E-6721-4D98-93F7-9572671C1D39";
-name = "[340]";
+name = "Medium [340]";
 paths = (
 {
 closed = 1;
@@ -80289,7 +80241,7 @@ transform = "{1, 0, 0, 1, 46, 0}";
 }
 );
 layerId = "DA98775E-8633-4134-9A34-C0827C7076B9";
-name = "[340]";
+name = "Thin [340]";
 paths = (
 {
 closed = 1;
@@ -80339,7 +80291,7 @@ transform = "{1, 0, 0, 1, 46, 0}";
 }
 );
 layerId = "61E31A37-BE91-4371-84E6-9ED6DA82B7D4";
-name = "[660]";
+name = "Thin [660]";
 paths = (
 {
 closed = 1;
@@ -80389,7 +80341,7 @@ transform = "{1, 0, 0, 1, 53, 0}";
 }
 );
 layerId = "9C771523-60C9-462F-B2FC-064712594E88";
-name = "[660]";
+name = "Medium [660]";
 paths = (
 {
 closed = 1;
@@ -80439,7 +80391,7 @@ transform = "{1, 0, 0, 1, 59, 0}";
 }
 );
 layerId = "1D3717AD-AFE5-4546-B5C8-3FB52BEBF892";
-name = "[660]";
+name = "Black [660]";
 paths = (
 {
 closed = 1;
@@ -80733,7 +80685,7 @@ transform = "{1, 0, 0, 1, 40, 0}";
 }
 );
 layerId = "1C9020EC-6DD3-4100-A373-C973A0FF2939";
-name = "[440]";
+name = "Medium [440]";
 paths = (
 {
 closed = 1;
@@ -80849,7 +80801,7 @@ transform = "{1, 0, 0, 1, 49, 0}";
 }
 );
 layerId = "422032C6-AE2C-48D0-BAAE-14ED69508666";
-name = "[440]";
+name = "Black [440]";
 paths = (
 {
 closed = 1;
@@ -80899,7 +80851,7 @@ transform = "{1, 0, 0, 1, 31, 0}";
 }
 );
 layerId = "14A532DB-9A99-4DC1-A231-6AC41F367A0E";
-name = "[440]";
+name = "Thin [440]";
 paths = (
 {
 closed = 1;
@@ -81460,7 +81412,7 @@ transform = "{1, 0, 0, 1, 41, 0}";
 }
 );
 layerId = "AC6C9093-D896-4B58-A2B7-70A37D14BEA2";
-name = "[160]";
+name = "Thin [160]";
 paths = (
 {
 closed = 1;
@@ -81560,7 +81512,7 @@ transform = "{1, 0, 0, 1, 45, 0}";
 }
 );
 layerId = "05D21CDA-17FB-411A-ADEF-5046F3AF66B0";
-name = "[160]";
+name = "Medium [160]";
 paths = (
 {
 closed = 1;
@@ -81611,7 +81563,7 @@ transform = "{1, 0, 0, 1, 45, 0}";
 }
 );
 layerId = "1DCFFB69-7AAD-48E5-98C1-CCD167559B29";
-name = "[380]";
+name = "Medium [380]";
 paths = (
 {
 closed = 1;
@@ -81661,7 +81613,7 @@ transform = "{1, 0, 0, 1, 48, 0}";
 }
 );
 layerId = "047E6EDA-36E4-4CB5-8A43-18DF28C7F4DA";
-name = "[160]";
+name = "Black [160]";
 paths = (
 {
 closed = 1;
@@ -81759,7 +81711,7 @@ transform = "{1, 0, 0, 1, 48, 0}";
 }
 );
 layerId = "CFC73099-04B2-4A61-A43B-5AC1CFBB1704";
-name = "[380]";
+name = "Black [380]";
 paths = (
 {
 closed = 1;
@@ -81809,7 +81761,7 @@ transform = "{1, 0, 0, 1, 41, 0}";
 }
 );
 layerId = "8BB2EAC6-2C7D-4716-A03A-9EA2F10838D6";
-name = "[380]";
+name = "Thin [380]";
 paths = (
 {
 closed = 1;
@@ -83528,7 +83480,7 @@ width = 622;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "0472647F-7A67-46D2-ACD6-41536829FEE3";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -84300,7 +84252,7 @@ width = 830;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "9287BC22-24A5-4694-A2DC-0C75241D27AD";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -89345,7 +89297,7 @@ transform = "{1, 0, 0, 1, -717, 0}";
 }
 );
 layerId = "1B2825C4-9C79-4A65-B819-9ACCF1FED10B";
-name = "{232}";
+name = "Light {232}";
 width = 1000;
 },
 {
@@ -89398,7 +89350,7 @@ transform = "{1, 0, 0, 1, -750, 0}";
 }
 );
 layerId = "B35152C8-6EA4-4F3F-A37F-569798284384";
-name = "{232}";
+name = "Light {232}";
 width = 1000;
 },
 {
@@ -89502,7 +89454,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "B35152C8-6EA4-4F3F-A37F-569798284384";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -89788,7 +89740,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "3E89DD85-18CA-43CF-A3D2-6FDBED457CFC";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -89924,7 +89876,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "CB9B6C1F-6FFD-4358-A62B-A23FE3248332";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -90060,7 +90012,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "5485FC6F-06C9-48FF-BDE8-A7AC25387123";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -90180,7 +90132,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "2DCA66CC-4720-4241-90C4-3F826D20D63C";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
@@ -90445,7 +90397,7 @@ width = 1000;
 {
 associatedMasterId = "D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1";
 layerId = "EE83E60E-740C-4B82-B066-D05BCE1A9F1E";
-name = "{232}";
+name = "Light {232}";
 paths = (
 {
 closed = 1;
