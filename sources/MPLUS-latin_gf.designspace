@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="700" default="400">
+      <map input="100" output="100"/>
+      <map input="200" output="165"/>
+      <map input="300" output="232"/>
+      <map input="400" output="367"/>
+      <map input="500" output="500"/>
+      <map input="600" output="565"/>
+      <map input="700" output="633"/>
+    </axis>
+    <axis tag="wdth" name="Width" minimum="100" maximum="125" default="100">
+      <map input="100" output="50"/>
+      <map input="125" output="60"/>
+    </axis>
+  </axes>
+  <rules>
+    <rule name="BRACKET.234.633">
+      <conditionset>
+        <condition name="Weight" minimum="234" maximum="633"/>
+      </conditionset>
+      <sub name="colonsign" with="colonsign.BRACKET.234"/>
+      <sub name="naira" with="naira.BRACKET.234"/>
+      <sub name="won" with="won.BRACKET.234"/>
+    </rule>
+    <rule name="BRACKET.367.633">
+      <conditionset>
+        <condition name="Weight" minimum="367" maximum="633"/>
+      </conditionset>
+      <sub name="peso" with="peso.BRACKET.367"/>
+    </rule>
+    <rule name="BRACKET.499.633">
+      <conditionset>
+        <condition name="Weight" minimum="499" maximum="633"/>
+      </conditionset>
+      <sub name="cedi" with="cedi.BRACKET.499"/>
+      <sub name="cent" with="cent.BRACKET.499"/>
+      <sub name="dollar" with="dollar.BRACKET.499"/>
+      <sub name="guarani" with="guarani.BRACKET.499"/>
+    </rule>
+  </rules>
+  <sources>
+    <source filename="MplusCode-Thin.ufo" name="M PLUS Code Thin" familyname="M PLUS Code" stylename="Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Thin.ufo" name="M PLUS Code Thin Light-50 {232}" layer="Light-50 {232}">
+      <location>
+        <dimension name="Weight" xvalue="232"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Regular.ufo" name="M PLUS Code Regular" familyname="M PLUS Code" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="367"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Bold.ufo" name="M PLUS Code Bold" familyname="M PLUS Code" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="633"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Thin60.ufo" name="M PLUS Code Thin 60" familyname="M PLUS Code" stylename="Thin 60">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Width" xvalue="60"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Thin60.ufo" name="M PLUS Code Thin 60 Light-60 {232}" layer="Light-60 {232}">
+      <location>
+        <dimension name="Weight" xvalue="232"/>
+        <dimension name="Width" xvalue="60"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Regular60.ufo" name="M PLUS Code Regular 60" familyname="M PLUS Code" stylename="Regular 60">
+      <location>
+        <dimension name="Weight" xvalue="367"/>
+        <dimension name="Width" xvalue="60"/>
+      </location>
+    </source>
+    <source filename="MplusCode-Bold60.ufo" name="M PLUS Code Bold 60" familyname="M PLUS Code" stylename="Bold 60">
+      <location>
+        <dimension name="Weight" xvalue="633"/>
+        <dimension name="Width" xvalue="60"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="M PLUS Code 50 Thin" familyname="M PLUS Code 50" stylename="Thin" filename="instance_ufos/MplusCode50-Thin.ufo">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Thin</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS Code 50 ExtraLight" familyname="M PLUS Code 50" stylename="ExtraLight" filename="instance_ufos/MplusCode50-ExtraLight.ufo">
+      <location>
+        <dimension name="Weight" xvalue="165"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+            <real>0.75655</real>
+            <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+            <real>0.24345</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>ExtraLight</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS Code 50 Light" familyname="M PLUS Code 50" stylename="Light" filename="instance_ufos/MplusCode50-Light.ufo">
+      <location>
+        <dimension name="Weight" xvalue="232"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+            <real>0.50562</real>
+            <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+            <real>0.49438</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Light</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS Code 50 Regular" familyname="M PLUS Code 50" stylename="Regular" filename="instance_ufos/MplusCode50-Regular.ufo">
+      <location>
+        <dimension name="Weight" xvalue="367"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Regular</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS Code 50 Medium" familyname="M PLUS Code 50" stylename="Medium" filename="instance_ufos/MplusCode50-Medium.ufo">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+            <real>0.5</real>
+            <key>FC9CFCDA-9E80-4E73-BA51-8504D15957FA</key>
+            <real>0.5</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Medium</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS Code 50 SemiBold" familyname="M PLUS Code 50" stylename="SemiBold" filename="instance_ufos/MplusCode50-SemiBold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="565"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+            <real>0.25564</real>
+            <key>FC9CFCDA-9E80-4E73-BA51-8504D15957FA</key>
+            <real>0.74436</real>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>SemiBold</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+    <instance name="M PLUS Code 50 Bold" familyname="M PLUS Code 50" stylename="Bold" filename="instance_ufos/MplusCode50-Bold.ufo" stylemapfamilyname="M PLUS Code 50" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="633"/>
+        <dimension name="Width" xvalue="50"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>FC9CFCDA-9E80-4E73-BA51-8504D15957FA</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Bold</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>0F1A0AC1-B8D5-4257-ADED-894CB2B827EF</key>
+        <dict>
+          <key>HH</key>
+          <string>124</string>
+          <key>HV</key>
+          <string>140</string>
+          <key>OH</key>
+          <string>126</string>
+          <key>OV</key>
+          <string>144</string>
+          <key>nV</key>
+          <string>138</string>
+          <key>nd</key>
+          <string>120</string>
+          <key>oH</key>
+          <string>122</string>
+          <key>oV</key>
+          <string>140</string>
+        </dict>
+        <key>72F02222-BF87-41FD-9A7E-0ABB550ED2DB</key>
+        <dict>
+          <key>HH</key>
+          <string>72</string>
+          <key>HV</key>
+          <string>80</string>
+          <key>OH</key>
+          <string>72</string>
+          <key>OV</key>
+          <string>82</string>
+          <key>nV</key>
+          <string>78</string>
+          <key>nd</key>
+          <string>70</string>
+          <key>oH</key>
+          <string>70</string>
+          <key>oV</key>
+          <string>80</string>
+        </dict>
+        <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+        <dict>
+          <key>HH</key>
+          <string>100</string>
+          <key>HV</key>
+          <string>110</string>
+          <key>OH</key>
+          <string>100</string>
+          <key>OV</key>
+          <string>113</string>
+          <key>nV</key>
+          <string>108</string>
+          <key>oH</key>
+          <string>90</string>
+          <key>oV</key>
+          <string>108</string>
+          <key>tH</key>
+          <string>90</string>
+        </dict>
+        <key>9E6B41AB-2970-4C41-8B35-4DBE0D296A43</key>
+        <dict>
+          <key>HH</key>
+          <string>170</string>
+          <key>HV</key>
+          <string>200</string>
+          <key>OH</key>
+          <string>170</string>
+          <key>OV</key>
+          <string>205</string>
+          <key>nV</key>
+          <string>196</string>
+          <key>nd</key>
+          <string>160</string>
+          <key>oH</key>
+          <string>140</string>
+          <key>oV</key>
+          <string>196</string>
+          <key>tH</key>
+          <string>140</string>
+        </dict>
+        <key>D0C1F23C-2F9F-4D30-8C4D-098ED54EEF3D</key>
+        <dict>
+          <key>HH</key>
+          <string>20</string>
+          <key>HV</key>
+          <string>20</string>
+          <key>OH</key>
+          <string>20</string>
+          <key>OV</key>
+          <string>20</string>
+          <key>nV</key>
+          <string>20</string>
+          <key>nd</key>
+          <string>20</string>
+          <key>oH</key>
+          <string>20</string>
+          <key>oV</key>
+          <string>20</string>
+          <key>tH</key>
+          <string>20</string>
+        </dict>
+        <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+        <dict>
+          <key>HH</key>
+          <string>20</string>
+          <key>HV</key>
+          <string>20</string>
+          <key>OH</key>
+          <string>20</string>
+          <key>OV</key>
+          <string>20</string>
+          <key>nV</key>
+          <string>20</string>
+          <key>nd</key>
+          <string>20</string>
+          <key>oH</key>
+          <string>20</string>
+          <key>oV</key>
+          <string>20</string>
+          <key>tH</key>
+          <string>20</string>
+        </dict>
+        <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+        <dict>
+          <key>HH</key>
+          <string>72</string>
+          <key>HV</key>
+          <string>80</string>
+          <key>OH</key>
+          <string>72</string>
+          <key>OV</key>
+          <string>82</string>
+          <key>nV</key>
+          <string>78</string>
+          <key>nd</key>
+          <string>70</string>
+          <key>oH</key>
+          <string>70</string>
+          <key>oV</key>
+          <string>80</string>
+          <key>tH</key>
+          <string>70</string>
+        </dict>
+        <key>FC9CFCDA-9E80-4E73-BA51-8504D15957FA</key>
+        <dict>
+          <key>HH</key>
+          <string>124</string>
+          <key>HV</key>
+          <string>140</string>
+          <key>OH</key>
+          <string>126</string>
+          <key>OV</key>
+          <string>144</string>
+          <key>nV</key>
+          <string>138</string>
+          <key>nd</key>
+          <string>120</string>
+          <key>oH</key>
+          <string>122</string>
+          <key>oV</key>
+          <string>140</string>
+          <key>tH</key>
+          <string>118</string>
+        </dict>
+      </dict>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>S.001</string>
+        <string>a.001</string>
+        <string>a.002</string>
+        <string>b.001</string>
+        <string>f_f</string>
+        <string>f_f_i</string>
+        <string>f_f_l</string>
+        <string>fi</string>
+        <string>fl</string>
+        <string>guarani.001</string>
+        <string>l.001</string>
+        <string>m_p_l_u_s_f_o_n_t_s</string>
+        <string>n.001</string>
+        <string>o.001</string>
+        <string>s.001</string>
+        <string>s.002</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>
