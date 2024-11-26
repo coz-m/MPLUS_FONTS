@@ -83,36 +83,34 @@ def make_static(instance_descriptor, generator, prefix):
 
     style_name = instance.info.styleName
 
-    if prefix == "MplusCodeLatin":
+    if prefix == "MPLUSCodeLatin":
         prefix = instance_descriptor.familyName
 
     DSIG_modification(static_ttf)
+
     print ("["+prefix+"-"+str(style_name).replace(" ","")+"] Saving")
     output = "fonts/ttf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".ttf"
     outputOTF = "fonts/otf/"+prefix.replace(" ","")+"-"+str(style_name).replace(" ","")+".otf"
-    if "1" in str(output) or "2" in str(output):
-        GASP_set(static_ttf)
+    GASP_set(static_ttf)
     static_ttf.save(output)
     static_otf.save(outputOTF)
-    if "Latin" in output:
-        autohint(output)
 
     psautohint.__main__.main([outputOTF])
     cffsubr.__main__.main(["-i", outputOTF])
 
 
-def autohint(file):
-    print ("["+str(file).split("/")[2]+"] Autohinting")
-    subprocess.check_call(
-            [
-                "ttfautohint",
-                "--stem-width",
-                "nsn",
-                str(file),
-                str(file)[:-4]+"-hinted.ttf",
-            ]
-        )
-    shutil.move(str(file)[:-4]+"-hinted.ttf", str(file))
+# def autohint(file):
+#     print ("["+str(file).split("/")[2]+"] Autohinting")
+#     subprocess.check_call(
+#             [
+#                 "ttfautohint",
+#                 "--stem-width",
+#                 "nsn",
+#                 str(file),
+#                 str(file)[:-4]+"-hinted.ttf",
+#             ]
+#         )
+#     shutil.move(str(file)[:-4]+"-hinted.ttf", str(file))
 
 def build_variable(type:str, ds: DesignSpaceDocument) -> None:
     output = Path("fonts/ttf")
@@ -137,7 +135,8 @@ def build_variable(type:str, ds: DesignSpaceDocument) -> None:
 
         varFont.save(output/"MPLUSCodeLatin[wdth,wght].ttf")
         fixStat(output/"MPLUSCodeLatin[wdth,wght].ttf","sources/MPLUS_STAT.yaml")
-        autohint(output/"MPLUSCodeLatin[wdth,wght].ttf")
+        GASP_set(varFont)
+        #autohint(output/"MPLUSCodeLatin[wdth,wght].ttf")
         prefix = "MPLUSCodeLatin"
 
     if type == "one" or type == "two":
@@ -270,8 +269,9 @@ if __name__ == "__main__":
     if args.sources:
         print ("[MPLUS] Generating UFO sources")
         for file in sources.glob("*.glyphs"):
-            print ("["+str(file).split("/")[1]+"] generating source")
-            main(("glyphs2ufo", str(file), "--write-public-skip-export-glyphs"))
+            if "-U" not in str(file):
+                print ("["+str(file).split("/")[1]+"] generating source")
+                main(("glyphs2ufo", str(file), "--write-public-skip-export-glyphs"))
         
         print ("[MPLUS] Generating Japanese instances for code use") #these are needed as MPlus1 & Kanji don't have the same master positions as Code
 

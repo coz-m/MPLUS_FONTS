@@ -20,24 +20,24 @@
       <conditionset>
         <condition name="Weight" minimum="234" maximum="633"/>
       </conditionset>
-      <sub name="colonsign" with="colonsign.BRACKET.234"/>
-      <sub name="naira" with="naira.BRACKET.234"/>
-      <sub name="won" with="won.BRACKET.234"/>
+      <sub name="colonsign" with="colonsign.BRACKET.varAlt01"/>
+      <sub name="naira" with="naira.BRACKET.varAlt01"/>
+      <sub name="won" with="won.BRACKET.varAlt01"/>
     </rule>
     <rule name="BRACKET.367.633">
       <conditionset>
         <condition name="Weight" minimum="367" maximum="633"/>
       </conditionset>
-      <sub name="peso" with="peso.BRACKET.367"/>
+      <sub name="peso" with="peso.BRACKET.varAlt01"/>
     </rule>
     <rule name="BRACKET.499.633">
       <conditionset>
         <condition name="Weight" minimum="499" maximum="633"/>
       </conditionset>
-      <sub name="cedi" with="cedi.BRACKET.499"/>
-      <sub name="cent" with="cent.BRACKET.499"/>
-      <sub name="dollar" with="dollar.BRACKET.499"/>
-      <sub name="guarani" with="guarani.BRACKET.499"/>
+      <sub name="cedi" with="cedi.BRACKET.varAlt01"/>
+      <sub name="cent" with="cent.BRACKET.varAlt01"/>
+      <sub name="dollar" with="dollar.BRACKET.varAlt01"/>
+      <sub name="guarani" with="guarani.BRACKET.varAlt01"/>
     </rule>
   </rules>
   <sources>
@@ -47,7 +47,7 @@
         <dimension name="Width" xvalue="50"/>
       </location>
     </source>
-    <source filename="MplusCode-Thin.ufo" name="M PLUS Code Thin Light-50 {232}" layer="Light-50 {232}">
+    <source filename="MplusCode-Thin.ufo" name="M PLUS Code Thin Light-50 {232}" layer="{232, 50}">
       <location>
         <dimension name="Weight" xvalue="232"/>
         <dimension name="Width" xvalue="50"/>
@@ -75,7 +75,7 @@
         <dimension name="Width" xvalue="60"/>
       </location>
     </source>
-    <source filename="MplusCode-Thin60.ufo" name="M PLUS Code Thin 60 Light-60 {232}" layer="Light-60 {232}">
+    <source filename="MplusCode-Thin60.ufo" name="M PLUS Code Thin 60 Light-60 {232}" layer="{232, 60}">
       <location>
         <dimension name="Weight" xvalue="232"/>
         <dimension name="Width" xvalue="60"/>
