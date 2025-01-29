@@ -1,7 +1,7 @@
 {
 .appVersion = "3341";
 DisplayStrings = (
-"/uni3000/_cross \012/_cross/uni3000/_cross \012/uni3000/_cross/zu-kata"
+"/uni3000/_cross \012/_cross/uni3000/_cross \012/uni3000/_cross/di-kata/de-kata"
 );
 copyright = "Copyright 2021 The M+ FONTS Project Authors (https://github.com/coz-m/MPLUS_FONTS)";
 customParameters = (
@@ -61177,7 +61177,7 @@ unicode = 30C1;
 },
 {
 glyphname = "di-kata";
-lastChange = "2025-01-21 12:56:24 +0000";
+lastChange = "2025-01-29 03:12:24 +0000";
 layers = (
 {
 background = {
@@ -61267,7 +61267,7 @@ transform = "{1, 0, 0, 1, -262, 0}";
 }
 );
 layerId = "1E1E3F03-806B-4F3B-9731-F1DE3EB9EC08";
-name = "[632]";
+name = "[766]";
 paths = (
 {
 closed = 1;
@@ -61463,7 +61463,7 @@ transform = "{1, 0, 0, 1, -152, 0}";
 }
 );
 layerId = "495155D9-B9B3-473A-8E40-990B939F7863";
-name = "[632]";
+name = "[766]";
 paths = (
 {
 closed = 1;
@@ -61531,7 +61531,7 @@ transform = "{1, 0, 0, 1, -42, 0}";
 }
 );
 layerId = "A6018C18-FF38-4310-B64A-24677741A8B9";
-name = "[632]";
+name = "[766]";
 paths = (
 {
 closed = 1;
@@ -62178,7 +62178,7 @@ unicode = 30C6;
 },
 {
 glyphname = "de-kata";
-lastChange = "2025-01-21 12:56:24 +0000";
+lastChange = "2025-01-29 03:28:09 +0000";
 layers = (
 {
 background = {
@@ -62247,7 +62247,7 @@ transform = "{1, 0, 0, 1, -10, -10}";
 {
 alignment = -1;
 name = "_voicedcomb-kana_ORG";
-transform = "{1, 0, 0, 1, 0, -53}";
+transform = "{1, 0, 0, 1, -20, -53}";
 }
 );
 };
@@ -62255,7 +62255,7 @@ components = (
 {
 alignment = -1;
 name = "_voicedcomb-kana_ORG";
-transform = "{1, 0, 0, 1, 0, -53}";
+transform = "{1, 0, 0, 1, -20, -53}";
 }
 );
 layerId = "2889286F-66B4-4D6D-B19B-D7C6C47943A3";
@@ -62284,8 +62284,8 @@ nodes = (
 closed = 1;
 nodes = (
 "839 700 LINE",
-"740 691 LINE",
-"740 729 LINE",
+"720 691 LINE",
+"720 729 LINE",
 "839 720 LINE",
 "150 720 LINE",
 "150 700 LINE"
@@ -62361,7 +62361,7 @@ transform = "{1, 0, 0, 1, -10, -10}";
 {
 alignment = -1;
 name = "_voicedcomb-kana_ORG";
-transform = "{1, 0, 0, 1, 0, -8}";
+transform = "{1, 0, 0, 1, -20, -8}";
 }
 );
 };
@@ -62369,7 +62369,7 @@ components = (
 {
 alignment = -1;
 name = "_voicedcomb-kana_ORG";
-transform = "{1, 0, 0, 1, 0, -8}";
+transform = "{1, 0, 0, 1, -20, -8}";
 }
 );
 layerId = "C31A0981-0B26-43AB-A209-34075A111B26";
@@ -62398,8 +62398,8 @@ nodes = (
 closed = 1;
 nodes = (
 "885 648 LINE",
-"735 599 LINE",
-"735 793 LINE",
+"715 599 LINE",
+"715 793 LINE",
 "885 743 LINE",
 "145 743 LINE",
 "145 648 LINE"
@@ -62475,6 +62475,7 @@ transform = "{1, 0, 0, 1, -10, -10}";
 {
 alignment = -1;
 name = "_voicedcomb-kana_ORG";
+transform = "{1, 0, 0, 1, -20, 0}";
 }
 );
 };
@@ -62482,6 +62483,7 @@ components = (
 {
 alignment = -1;
 name = "_voicedcomb-kana_ORG";
+transform = "{1, 0, 0, 1, -20, 0}";
 }
 );
 layerId = "B52AD7A2-8F92-4768-81FA-0322F3C4C6A4";
@@ -62492,16 +62494,16 @@ closed = 1;
 nodes = (
 "190 -85 LINE",
 "456 -74 OFFCURVE",
-"620 79 OFFCURVE",
-"620 305 CURVE SMOOTH",
-"620 305 LINE",
-"940 305 LINE",
-"940 475 LINE",
-"40 475 LINE",
-"40 305 LINE",
-"420 305 LINE",
-"420 305 LINE SMOOTH",
-"420 177 OFFCURVE",
+"620 83 OFFCURVE",
+"620 309 CURVE SMOOTH",
+"620 309 LINE",
+"940 309 LINE",
+"940 479 LINE",
+"40 479 LINE",
+"40 309 LINE",
+"420 309 LINE",
+"420 309 LINE SMOOTH",
+"420 181 OFFCURVE",
 "326 98 OFFCURVE",
 "145 85 CURVE"
 );
