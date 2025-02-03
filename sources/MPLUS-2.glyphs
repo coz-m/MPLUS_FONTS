@@ -1,5 +1,5 @@
 {
-.appVersion = "3341";
+.appVersion = "3342";
 copyright = "Copyright 2021 The M+ FONTS Project Authors (https://github.com/coz-m/MPLUS_FONTS)";
 customParameters = (
 {
@@ -104,7 +104,7 @@ code = "lookupflag IgnoreMarks;\012sub m p l u s f o n t s by m_p_l_u_s_f_o_n_t_
 name = dlig;
 },
 {
-code = "lookupflag IgnoreMarks;\012sub f f i by f_f_i;\012sub f f l by f_f_l;\012sub f f by f_f;\012sub f i by fi;\012sub f l by fl;\012sub m p l u s f o n t s by m_p_l_u_s_f_o_n_t_s;";
+code = "lookupflag IgnoreMarks;\012sub f f i by f_f_i;\012sub f f l by f_f_l;\012sub f f by f_f;\012sub f i by fi;\012sub f l by fl;\012sub m p l s f by m_p_l_u_s_f_o_n_t_s;\012";
 name = liga;
 },
 {
@@ -40316,7 +40316,7 @@ unicode = 305F;
 },
 {
 glyphname = "da-hira";
-lastChange = "2025-01-26 11:27:47 +0000";
+lastChange = "2025-02-03 03:00:21 +0000";
 layers = (
 {
 background = {
@@ -40435,7 +40435,7 @@ transform = "{1, 0, 0, 1, -10, 10}";
 }
 );
 layerId = "8D17B779-E908-4F70-9813-CB204C62BB3D";
-name = "[632]";
+name = "[766]";
 paths = (
 {
 closed = 1;
@@ -40610,16 +40610,16 @@ transform = "{1, 0, 0, 1, -10, -10}";
 },
 {
 alignment = -1;
-name = "_voicedcomb-kana_ORG";
-transform = "{1, 0, 0, 1, 0, 10}";
+name = "_voicedcomb-kana_flat";
+transform = "{1, 0, 0, 1, -20, 20}";
 }
 );
 };
 components = (
 {
 alignment = -1;
-name = "_voicedcomb-kana_ORG";
-transform = "{1, 0, 0, 1, 0, 10}";
+name = "_voicedcomb-kana_flat";
+transform = "{1, 0, 0, 1, -20, 20}";
 }
 );
 layerId = "3A212F56-9FA8-4BF9-964D-07B03804299E";
@@ -40641,16 +40641,16 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"65 548 LINE",
-"313 552 OFFCURVE",
-"516 567 OFFCURVE",
-"804 603 CURVE",
-"709 549 LINE",
-"697 739 LINE",
-"798 695 LINE",
-"516 659 OFFCURVE",
-"314 644 OFFCURVE",
-"65 640 CURVE"
+"65 538 LINE",
+"313 542 OFFCURVE",
+"516 557 OFFCURVE",
+"804 593 CURVE",
+"769 539 LINE",
+"757 729 LINE",
+"798 685 LINE",
+"516 649 OFFCURVE",
+"314 634 OFFCURVE",
+"65 630 CURVE"
 );
 },
 {
@@ -40736,8 +40736,8 @@ nodes = (
 "320 499 OFFCURVE",
 "520 514 OFFCURVE",
 "841 554 CURVE",
-"595 455 LINE",
-"575 800 LINE",
+"605 455 LINE",
+"585 800 LINE",
 "828 719 LINE",
 "525 679 OFFCURVE",
 "329 664 OFFCURVE",
@@ -40796,101 +40796,6 @@ transform = "{1, 0, 0, 1, -10, -10}";
 },
 {
 alignment = -1;
-name = "_voicedcomb-kana_ORG";
-transform = "{1, 0, 0, 1, 0, 10}";
-}
-);
-};
-components = (
-{
-alignment = -1;
-name = "_voicedcomb-kana_ORG";
-transform = "{1, 0, 0, 1, 0, 10}";
-}
-);
-layerId = "933AC2F3-780D-4DB4-9923-2D8BB7A13F42";
-name = "[766]";
-paths = (
-{
-closed = 1;
-nodes = (
-"255 -85 LINE",
-"334 198 OFFCURVE",
-"392 493 OFFCURVE",
-"425 792 CURVE",
-"235 800 LINE",
-"195 488 OFFCURVE",
-"141 215 OFFCURVE",
-"64 -52 CURVE"
-);
-},
-{
-closed = 1;
-nodes = (
-"50 495 LINE",
-"330 499 OFFCURVE",
-"530 514 OFFCURVE",
-"851 554 CURVE",
-"645 455 LINE",
-"625 800 LINE",
-"838 719 LINE",
-"535 679 OFFCURVE",
-"339 664 OFFCURVE",
-"50 660 CURVE"
-);
-},
-{
-closed = 1;
-nodes = (
-"786 -70 OFFCURVE",
-"843 -65 OFFCURVE",
-"920 -50 CURVE",
-"900 120 LINE",
-"828 106 OFFCURVE",
-"771 100 OFFCURVE",
-"710 100 CURVE SMOOTH",
-"635 100 OFFCURVE",
-"590 117 OFFCURVE",
-"590 145 CURVE SMOOTH",
-"590 165 OFFCURVE",
-"613 194 OFFCURVE",
-"650 220 CURVE",
-"480 275 LINE",
-"419 225 OFFCURVE",
-"390 177 OFFCURVE",
-"390 125 CURVE SMOOTH",
-"390 3 OFFCURVE",
-"510 -70 OFFCURVE",
-"710 -70 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"454 293 LINE",
-"604 311 OFFCURVE",
-"754 323 OFFCURVE",
-"892 328 CURVE",
-"887 493 LINE",
-"745 488 OFFCURVE",
-"595 476 OFFCURVE",
-"438 457 CURVE"
-);
-}
-);
-width = 1000;
-},
-{
-associatedMasterId = "9E6B41AB-2970-4C41-8B35-4DBE0D296A43";
-background = {
-components = (
-{
-alignment = -1;
-name = "ta-hira";
-transform = "{1, 0, 0, 1, -10, -10}";
-},
-{
-alignment = -1;
 name = "_voicedcomb-kana_flat";
 transform = "{1, 0, 0, 1, -10, 10}";
 }
@@ -40904,7 +40809,7 @@ transform = "{1, 0, 0, 1, -10, 10}";
 }
 );
 layerId = "78C0387D-2250-46B4-9877-7FF6EB5AF573";
-name = "[632]";
+name = "[766]";
 paths = (
 {
 closed = 1;
@@ -40926,8 +40831,8 @@ nodes = (
 "324 499 OFFCURVE",
 "521 513 OFFCURVE",
 "829 551 CURVE",
-"725 453 LINE",
-"701 797 LINE",
+"735 453 LINE",
+"711 797 LINE",
 "814 716 LINE",
 "525 678 OFFCURVE",
 "331 664 OFFCURVE",
