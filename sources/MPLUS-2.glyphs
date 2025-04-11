@@ -1,5 +1,5 @@
 {
-.appVersion = "3343";
+.appVersion = "3410";
 copyright = "Copyright 2021 The M+ FONTS Project Authors (https://github.com/coz-m/MPLUS_FONTS)";
 customParameters = (
 {
@@ -9863,7 +9863,7 @@ unicode = 0051;
 },
 {
 glyphname = R;
-lastChange = "2021-05-05 05:28:01 +0000";
+lastChange = "2025-04-11 12:03:12 +0000";
 layers = (
 {
 anchors = (
@@ -9876,6 +9876,63 @@ name = top;
 position = "{345, 730}";
 }
 );
+background = {
+anchors = (
+{
+name = bottom;
+position = "{345, 0}";
+},
+{
+name = top;
+position = "{335, 730}";
+}
+);
+paths = (
+{
+closed = 1;
+nodes = (
+"85 0 LINE",
+"195 0 LINE",
+"195 688 LINE",
+"142 636 LINE",
+"205 645 OFFCURVE",
+"265 650 OFFCURVE",
+"310 650 CURVE SMOOTH",
+"446 650 OFFCURVE",
+"503 610 OFFCURVE",
+"503 515 CURVE SMOOTH",
+"503 420 OFFCURVE",
+"446 379 OFFCURVE",
+"310 379 CURVE SMOOTH",
+"265 379 OFFCURVE",
+"207 384 OFFCURVE",
+"146 393 CURVE",
+"140 306 LINE",
+"200 300 OFFCURVE",
+"256 296 OFFCURVE",
+"305 296 CURVE SMOOTH",
+"520 296 OFFCURVE",
+"615 365 OFFCURVE",
+"615 518 CURVE SMOOTH",
+"615 672 OFFCURVE",
+"520 740 OFFCURVE",
+"305 740 CURVE SMOOTH",
+"245 740 OFFCURVE",
+"164 735 OFFCURVE",
+"85 726 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"655 0 LINE",
+"371 339 LINE",
+"248 339 LINE",
+"527 0 LINE"
+);
+}
+);
+};
 layerId = "9527F797-22C1-480E-A1FE-2CDBEBE1FD4C";
 paths = (
 {
@@ -9916,8 +9973,8 @@ nodes = (
 closed = 1;
 nodes = (
 "655 0 LINE",
-"279 345 LINE",
-"140 345 LINE",
+"366 345 LINE",
+"227 345 LINE",
 "511 0 LINE"
 );
 }
@@ -9975,8 +10032,8 @@ nodes = (
 closed = 1;
 nodes = (
 "690 0 LINE",
-"421 327 LINE",
-"203 327 LINE",
+"461 327 LINE",
+"243 327 LINE",
 "462 0 LINE"
 );
 }
@@ -10034,9 +10091,9 @@ nodes = (
 closed = 1;
 nodes = (
 "620 0 LINE",
-"150 363 LINE",
-"117 363 LINE",
-"587 0 LINE"
+"280 351 LINE",
+"252 351 LINE",
+"592 0 LINE"
 );
 }
 );
