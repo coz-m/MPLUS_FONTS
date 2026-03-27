@@ -1,0 +1,26 @@
+lookup ligalookup01 {
+ lookupflag 0;
+    sub f i   by fi;
+    sub f l   by fl;
+    sub f f   by ff; 
+    sub f f i   by ffi; 
+    sub f f l   by ffl;
+} ligalookup01;
+
+feature liga {
+  script latn;
+    language dflt;
+        lookup ligalookup01;
+  script grek;
+    language dflt;
+        lookup ligalookup01;
+  script cyrl;
+    language dflt;
+        lookup ligalookup01;
+  script kana;
+    language dflt;
+        lookup ligalookup01;
+  script hani;
+    language dflt;
+        lookup ligalookup01;
+} liga;

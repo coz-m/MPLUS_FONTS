@@ -1,0 +1,49 @@
+#Mplus-1P#COMMON_SUBST=	s/%%FONTNAME_BASE%%/mplus-1p/;s/%%FAMILY%%/m+-1p/;s/%%MODULES_LATIN%%/latin_proportional1/;s/%%MODULES_KANA%%/hiragana1 katakana1 katakana_half1 miscellaneous1 latin_fullwidth1/;s/%%ALTERNATIVE_BASE%%//;s/%%MODULES_ALT%%//
+#Mplus-2P#COMMON_SUBST=	s/%%FONTNAME_BASE%%/mplus-2p/;s/%%FAMILY%%/m+-2p/;s/%%MODULES_LATIN%%/latin_proportional1 latin_proportional2/;s/%%MODULES_KANA%%/hiragana2 katakana_half1 katakana_half2 katakana2 miscellaneous1 miscellaneous2 latin_fullwidth1 latin_fullwidth2/;s/%%ALTERNATIVE_BASE%%//;s/%%MODULES_ALT%%//
+#Mplus-1C#COMMON_SUBST=	s/%%FONTNAME_BASE%%/mplus-1c/;s/%%FAMILY%%/m+-1c/;s/%%MODULES_LATIN%%/latin_clear1/;s/%%MODULES_KANA%%/hiragana1 katakana1 katakana_half1 miscellaneous1 latin_fullwidth1 latin_full_clear1/;s/%%ALTERNATIVE_BASE%%/mplus-1p/;s/%%MODULES_ALT%%/latin_proportional1/
+#Mplus-2C#COMMON_SUBST=	s/%%FONTNAME_BASE%%/mplus-2c/;s/%%FAMILY%%/m+-2c/;s/%%MODULES_LATIN%%/latin_clear1 latin_clear2/;s/%%MODULES_KANA%%/hiragana2 katakana2 katakana_half1 katakana_half2 miscellaneous1 miscellaneous2 latin_fullwidth1 latin_fullwidth2 latin_full_clear1 latin_full_clear2/;s/%%ALTERNATIVE_BASE%%/mplus-2p/;s/%%MODULES_ALT%%/latin_proportional1 latin_proportional2/
+#Mplus-1k#COMMON_SUBST=	s/%%FONTNAME_BASE%%/mplus-1k/;s/%%FAMILY%%/m+-1k/;s/%%MODULES_LATIN%%//;s/%%MODULES_KANA%%//;s/%%ALTERNATIVE_BASE%%//;s/%%MODULES_ALT%%//
+#Mplus-2k#COMMON_SUBST=	s/%%FONTNAME_BASE%%/mplus-2k/;s/%%FAMILY%%/m+-2k/;s/%%MODULES_LATIN%%//;s/%%MODULES_KANA%%//;s/%%ALTERNATIVE_BASE%%//;s/%%MODULES_ALT%%//
+
+TEMPLATE=	../../../scripts/target-Makefile.2.tmpl
+SUBDIRS=	black heavy bold medium regular light thin
+MAKEFILES=	black/Makefile heavy/Makefile bold/Makefile medium/Makefile \
+		regular/Makefile light/Makefile thin/Makefile
+
+all:: $(MAKEFILES)
+	for i in $(SUBDIRS) ;\
+	do \
+	(cd $$i && $(MAKE)) ;\
+	done
+
+otf: $(MAKEFILES)
+	for i in $(SUBDIRS) ;\
+	do \
+	(cd $$i && $(MAKE) otf) ;\
+	done
+
+black/Makefile: ${TEMPLATE}
+	sed '${COMMON_SUBST};s/%%WEIGHT%%/black/g' ${TEMPLATE} > $@
+
+heavy/Makefile: ${TEMPLATE}
+	sed '${COMMON_SUBST};s/%%WEIGHT%%/heavy/g' ${TEMPLATE} > $@
+
+bold/Makefile: ${TEMPLATE}
+	sed '${COMMON_SUBST};s/%%WEIGHT%%/bold/g' ${TEMPLATE} > $@
+
+medium/Makefile: ${TEMPLATE}
+	sed '${COMMON_SUBST};s/%%WEIGHT%%/medium/g' ${TEMPLATE} > $@
+
+regular/Makefile: ${TEMPLATE}
+	sed '${COMMON_SUBST};s/%%WEIGHT%%/regular/g' ${TEMPLATE} > $@
+
+light/Makefile: ${TEMPLATE}
+	sed '${COMMON_SUBST};s/%%WEIGHT%%/light/g' ${TEMPLATE} > $@
+
+thin/Makefile: ${TEMPLATE}
+	sed '${COMMON_SUBST};s/%%WEIGHT%%/thin/g' ${TEMPLATE} > $@
+
+clean:
+	rm -f *~
+	rm -f */*.ttf */build-ttf.pe */tmp.sfd
+	rm -f */*.fea

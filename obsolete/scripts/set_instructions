@@ -1,0 +1,24 @@
+# set 'prep'.
+#
+# B9 	PUSHW[2]
+# 01 FF
+# 00 00		=> Stack: 0x000001ff, 0x00000000, |- 
+# 8D	SCANTYPE[]
+#		n=0: rules 1, 2, 3 are invoked
+#	        (simple dropout control scan conversion including stubs)
+#		=> Stack: 0x000001ff |- 
+# 85	SCANCTRL[]
+#		n=0x000001ff:
+#		=> Stack: |-
+#		bit0-7 = 0xff : invoke dropout control for all sizes.
+#		bit8 = 1: set dropout control to TRUE
+#
+instr = "PUSHW_2 0x01ff 0x0 \
+         SCANTYPE \
+         SCANCTRL";
+AddInstrs("prep", 1, instr);
+
+# set 'maxp'.
+#
+depth = GetMaxpValue("MaxStackDepth")	# default is 64. how is it calculated?
+SetMaxpValue("MaxStackDepth", depth + 4)

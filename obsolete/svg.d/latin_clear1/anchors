@@ -1,0 +1,29 @@
+@lookup marklookup1 \mark
+@lookupflag IgnoreLigatures
+@script DFLT
+@script latn
+@script grek
+@script cyrl
+@pos base @Top
+#########|---black--|---heavy--|---bold---|--medium--|--regular-|---light--|---thin---|
+#########|   x |  y |   x |  y |   x |  y |   x |  y |   x |  y |   x |  y |   x |  y |
+ae          445  590   440  590   435  590   425  590   420  590   415  590   410  590
+uni0254     280  590   270  590   250  590   240  590   235  590   235  590   230  590
+uni0259     300  590   285  590   270  590   260  590   260  590   250  590   250  590
+uni025A     300  590   285  590   270  590   260  590   260  590   250  590   250  590
+uni028C     303  590   294  590   286  590   277  590   273  590   270  590   266  590
+@end
+@lookup marklookup2 \mark
+@lookupflag IgnoreLigatures
+@script DFLT
+@script latn
+@script cyrl
+@pos base @Bottom
+#########|---black--|---heavy--|---bold---|--medium--|--regular-|---light--|---thin---|
+#########|   x |  y |   x |  y |   x |  y |   x |  y |   x |  y |   x |  y |   x |  y |
+ae          445    0   440    0   435    0   425    0   420    0   415    0   410    0
+uni0254     280    0   270    0   250    0   240    0   235    0   235    0   230    0
+uni0259     300    0   285    0   270    0   260    0   260    0   250    0   250    0
+uni025A     300    0   285    0   270    0   260    0   260    0   250    0   250    0
+uni028C     303    0   294    0   286    0   277    0   273    0   270    0   266    0
+@end

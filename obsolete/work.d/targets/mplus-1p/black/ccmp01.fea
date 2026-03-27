@@ -1,0 +1,75 @@
+lookup ccmplookup01 {
+ lookupflag 0;
+    sub \uni304B \uni3099 by \uni304C; # HIRAGANA LETTER GA
+    sub \uni304D \uni3099 by \uni304E; # HIRAGANA LETTER GI
+    sub \uni304F \uni3099 by \uni3050; # HIRAGANA LETTER GU
+    sub \uni3051 \uni3099 by \uni3052; # HIRAGANA LETTER GE
+    sub \uni3053 \uni3099 by \uni3054; # HIRAGANA LETTER GO
+    sub \uni3055 \uni3099 by \uni3056; # HIRAGANA LETTER ZA
+    sub \uni3057 \uni3099 by \uni3058; # HIRAGANA LETTER ZI
+    sub \uni3059 \uni3099 by \uni305A; # HIRAGANA LETTER ZU
+    sub \uni305B \uni3099 by \uni305C; # HIRAGANA LETTER ZE
+    sub \uni305D \uni3099 by \uni305E; # HIRAGANA LETTER ZO
+    sub \uni305F \uni3099 by \uni3060; # HIRAGANA LETTER DA
+    sub \uni3061 \uni3099 by \uni3062; # HIRAGANA LETTER DI
+    sub \uni3064 \uni3099 by \uni3065; # HIRAGANA LETTER DU
+    sub \uni3066 \uni3099 by \uni3067; # HIRAGANA LETTER DE
+    sub \uni3068 \uni3099 by \uni3069; # HIRAGANA LETTER DO
+    sub \uni306F \uni3099 by \uni3070; # HIRAGANA LETTER BA
+    sub \uni306F \uni309A by \uni3071; # HIRAGANA LETTER PA
+    sub \uni3072 \uni3099 by \uni3073; # HIRAGANA LETTER BI
+    sub \uni3072 \uni309A by \uni3074; # HIRAGANA LETTER PI
+    sub \uni3075 \uni3099 by \uni3076; # HIRAGANA LETTER BU
+    sub \uni3075 \uni309A by \uni3077; # HIRAGANA LETTER PU
+    sub \uni3078 \uni3099 by \uni3079; # HIRAGANA LETTER BE
+    sub \uni3078 \uni309A by \uni307A; # HIRAGANA LETTER PE
+    sub \uni307B \uni3099 by \uni307C; # HIRAGANA LETTER BO
+    sub \uni307B \uni309A by \uni307D; # HIRAGANA LETTER PO
+    sub \uni3046 \uni3099 by \uni3094; # HIRAGANA LETTER VU
+    sub \uni309D \uni3099 by \uni309E; # HIRAGANA VOICED ITERATION MARK
+    sub \uni30AB \uni3099 by \uni30AC; # KATAKANA LETTER GA
+    sub \uni30AD \uni3099 by \uni30AE; # KATAKANA LETTER GI
+    sub \uni30AF \uni3099 by \uni30B0; # KATAKANA LETTER GU
+    sub \uni30B1 \uni3099 by \uni30B2; # KATAKANA LETTER GE
+    sub \uni30B3 \uni3099 by \uni30B4; # KATAKANA LETTER GO
+    sub \uni30B5 \uni3099 by \uni30B6; # KATAKANA LETTER ZA
+    sub \uni30B7 \uni3099 by \uni30B8; # KATAKANA LETTER ZI
+    sub \uni30B9 \uni3099 by \uni30BA; # KATAKANA LETTER ZU
+    sub \uni30BB \uni3099 by \uni30BC; # KATAKANA LETTER ZE
+    sub \uni30BD \uni3099 by \uni30BE; # KATAKANA LETTER ZO
+    sub \uni30BF \uni3099 by \uni30C0; # KATAKANA LETTER DA
+    sub \uni30C1 \uni3099 by \uni30C2; # KATAKANA LETTER DI
+    sub \uni30C4 \uni3099 by \uni30C5; # KATAKANA LETTER DU
+    sub \uni30C6 \uni3099 by \uni30C7; # KATAKANA LETTER DE
+    sub \uni30C8 \uni3099 by \uni30C9; # KATAKANA LETTER DO
+    sub \uni30CF \uni3099 by \uni30D0; # KATAKANA LETTER BA
+    sub \uni30CF \uni309A by \uni30D1; # KATAKANA LETTER PA
+    sub \uni30D2 \uni3099 by \uni30D3; # KATAKANA LETTER BI
+    sub \uni30D2 \uni309A by \uni30D4; # KATAKANA LETTER PI
+    sub \uni30D5 \uni3099 by \uni30D6; # KATAKANA LETTER BU
+    sub \uni30D5 \uni309A by \uni30D7; # KATAKANA LETTER PU
+    sub \uni30D8 \uni3099 by \uni30D9; # KATAKANA LETTER BE
+    sub \uni30D8 \uni309A by \uni30DA; # KATAKANA LETTER PE
+    sub \uni30DB \uni3099 by \uni30DC; # KATAKANA LETTER BO
+    sub \uni30DB \uni309A by \uni30DD; # KATAKANA LETTER PO
+    sub \uni30A6 \uni3099 by \uni30F4; # KATAKANA LETTER VU
+    sub \uni30EF \uni3099 by \uni30F7; # KATAKANA LETTER VA
+    sub \uni30F0 \uni3099 by \uni30F8; # KATAKANA LETTER VI
+    sub \uni30F1 \uni3099 by \uni30F9; # KATAKANA LETTER VE
+    sub \uni30F2 \uni3099 by \uni30FA; # KATAKANA LETTER VO
+    sub \uni30FD \uni3099 by \uni30FE; # KATAKANA VOICED ITERATION MARK
+} ccmplookup01;
+
+feature ccmp {
+  script hani;
+     language dflt ;
+      lookup ccmplookup01;
+  script kana;
+     language JAN  exclude_dflt;
+      lookup ccmplookup01;
+     language dflt ;
+      lookup ccmplookup01;
+  script latn;
+     language dflt ;
+      lookup ccmplookup01;
+} ccmp;

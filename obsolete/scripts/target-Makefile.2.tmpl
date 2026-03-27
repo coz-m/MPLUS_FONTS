@@ -1,0 +1,46 @@
+FONTNAME_BASE:=	%%FONTNAME_BASE%%
+MODULES_KANA:=	%%MODULES_KANA%%
+MODULES_LATIN:=	%%MODULES_LATIN%%
+ALTERNATIVE_BASE:=	%%ALTERNATIVE_BASE%%
+MODULES_ALT:=	%%MODULES_ALT%%
+ifdef MPLUS_FULLSET
+MODULES= $(MODULES_KANA) $(MODULES_ALT) $(MODULES_LATIN) kanji
+else
+MODULES= $(MODULES_ALT) $(MODULES_LATIN)
+endif
+
+WEIGHT:=	%%WEIGHT%%
+
+SCRIPTS=	ligature01.fea ccmp01.fea ccmp02.fea mark01.fea mplus.sfd
+
+ttf: ${FONTNAME_BASE}-${WEIGHT}.ttf
+
+otf: ${FONTNAME_BASE}-${WEIGHT}.otf
+
+${FONTNAME_BASE}-${WEIGHT}.ttf: build-ttf.py $(SCRIPTS)
+	fontforge -script build-ttf.py $@ $(MODULES)
+
+${FONTNAME_BASE}-${WEIGHT}.otf: build-ttf.py $(SCRIPTS)
+	fontforge -script build-ttf.py $@ $(MODULES)
+
+build-ttf.py: ../../../../scripts/build-ttf.py
+	ln -s ../../../../scripts/build-ttf.py $@
+
+mplus.sfd: ../../../../scripts/mplus.sfd
+	ln -s ../../../../scripts/mplus.sfd $@
+
+ligature01.fea: ../../../../scripts/ligature01.fea
+	ln -s ../../../../scripts/ligature01.fea $@
+
+ccmp01.fea: ../../../../scripts/ccmp01.fea
+	ln -s ../../../../scripts/$@ $@
+
+ccmp02.fea: ../../../../scripts/ccmp02.fea
+	ln -s ../../../../scripts/$@ $@
+
+mark01.fea: $(wildcard ../../../../svg.d/*/anchors)
+	perl ../../../../scripts/split-anchors.pl ${WEIGHT} $(MODULES) > $@
+
+clean:
+	rm -f *~ *.ttf build-ttf.py *.sfd
+	rm -f *.fea
