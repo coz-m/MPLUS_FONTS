@@ -1,13 +1,13 @@
 # black, heavy is not designed in monospace fonts, so it's in `ABRIDGED_GROUPS'
-UNABRIDGED_GROUPS:=	latin_proportional1 latin_proportional2 \
-			latin_clear1 latin_clear2
-ABRIDGED_GROUPS:=	latin_monospace1 latin_monospace2 \
-			latin_mono_new1 # latin_mono_new2
-JAPANESE_GROUPS:=	hiragana1 katakana1 miscellaneous1 \
-   			hiragana2 katakana2 miscellaneous2 \
+UNABRIDGED_GROUPS:=	hiragana1 katakana1 miscellaneous1 \
+			hiragana2 katakana2 miscellaneous2 \
 			katakana_half1 \
+			latin_proportional1 latin_proportional2 \
+			latin_clear1 latin_clear2 \
 			latin_fullwidth1 latin_fullwidth2 \
 			latin_full_clear1 latin_full_clear2
+ABRIDGED_GROUPS:=	latin_monospace1 latin_monospace2 \
+			latin_mono_new1 # latin_mono_new2
 OPTIONAL_GROUPS:=	kanji/k1 kanji/k2 kanji/k3 kanji/k4 kanji/k5 kanji/k6 \
 			kanji/j1 kanji/j2 kanji/j3 kanji/j4 kanji/j5 \
 			kanji/l100 kanji/l101 kanji/l102 kanji/l103 kanji/l104 \
@@ -16,7 +16,7 @@ OPTIONAL_GROUPS:=	kanji/k1 kanji/k2 kanji/k3 kanji/k4 kanji/k5 kanji/k6 \
 			kanji/l209 kanji/l210 kanji/l211 kanji/l212 kanji/l213 \
 			kanji/l214 kanji/l215 kanji/l216
 ifdef MPLUS_FULLSET
-UNABRIDGED_GROUPS+=	${OPTIONAL_GROUPS} ${JAPANESE_GROUPS}
+UNABRIDGED_GROUPS+=	${OPTIONAL_GROUPS}
 endif
 GROUPS:=		${UNABRIDGED_GROUPS} ${ABRIDGED_GROUPS}
 BLACK_WEIGHTS:=		black heavy
