@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="700" default="400">
+      <map input="100" output="100"/>
+      <map input="200" output="165"/>
+      <map input="300" output="232"/>
+      <map input="400" output="367"/>
+      <map input="0" output="0"/>
+      <map input="600" output="565"/>
+      <map input="700" output="633"/>
+    </axis>
+  </axes>
+  <rules>
+    <rule name="BRACKET.Weight_499_633">
+      <conditionset>
+        <condition name="Weight" minimum="499" maximum="633"/>
+      </conditionset>
+      <sub name="guarani" with="guarani.BRACKET.varAlt01"/>
+      <sub name="dollar" with="dollar.BRACKET.varAlt01"/>
+      <sub name="cent" with="cent.BRACKET.varAlt01"/>
+      <sub name="cedi" with="cedi.BRACKET.varAlt01"/>
+      <sub name="peso" with="peso.BRACKET.varAlt01"/>
+      <sub name="won" with="won.BRACKET.varAlt01"/>
+      <sub name="naira" with="naira.BRACKET.varAlt01"/>
+      <sub name="colonsign" with="colonsign.BRACKET.varAlt01"/>
+    </rule>
+    <rule name="BRACKET.Weight_367_633">
+      <conditionset>
+        <condition name="Weight" minimum="367" maximum="633"/>
+      </conditionset>
+      <sub name="peso" with="peso.BRACKET.varAlt01"/>
+      <sub name="won" with="won.BRACKET.varAlt01"/>
+      <sub name="naira" with="naira.BRACKET.varAlt01"/>
+      <sub name="colonsign" with="colonsign.BRACKET.varAlt01"/>
+    </rule>
+    <rule name="BRACKET.Weight_234_633">
+      <conditionset>
+        <condition name="Weight" minimum="234" maximum="633"/>
+      </conditionset>
+      <sub name="won" with="won.BRACKET.varAlt01"/>
+      <sub name="naira" with="naira.BRACKET.varAlt01"/>
+      <sub name="colonsign" with="colonsign.BRACKET.varAlt01"/>
+    </rule>
+  </rules>
+  <sources>
+    <source filename="merged_ufo/MPLUS1Code-Thin.ufo" name="M PLUS 1 Code Thin" familyname="M PLUS 1 Code" stylename="Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="merged_ufo/MPLUS1Code-Regular.ufo" name="M PLUS 1 Code Regular" familyname="M PLUS 1 Code" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="367"/>
+      </location>
+    </source>
+    <source filename="merged_ufo/MPLUS1Code-Bold.ufo" name="M PLUS 1 Code Bold" familyname="M PLUS 1 Code" stylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="633"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="M PLUS 1 Code Thin" familyname="M PLUS 1 Code" stylename="Thin" filename="../../instance_ufos/MPLUS1Code-Thin.ufo" stylemapfamilyname="M PLUS 1 Code Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="M PLUS 1 Code ExtraLight" familyname="M PLUS 1 Code" stylename="ExtraLight" filename="../../instance_ufos/MPLUS1Code-ExtraLight.ufo" stylemapfamilyname="M PLUS 1 Code ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="165"/>
+      </location>
+    </instance>
+    <instance name="M PLUS 1 Code Light" familyname="M PLUS 1 Code" stylename="Light" filename="../../instance_ufos/MPLUS1Code-Light.ufo" stylemapfamilyname="M PLUS 1 Code Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="232"/>
+      </location>
+    </instance>
+    <instance name="M PLUS 1 Code Regular" familyname="M PLUS 1 Code" stylename="Regular" filename="../../instance_ufos/MPLUS1Code-Regular.ufo" stylemapfamilyname="M PLUS 1 Code" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="367"/>
+      </location>
+    </instance>
+    <instance name="M PLUS 1 Code Medium" familyname="M PLUS 1 Code" stylename="Medium" filename="../../instance_ufos/MPLUS1Code-Medium.ufo" stylemapfamilyname="M PLUS 1 Code Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </instance>
+    <instance name="M PLUS 1 Code SemiBold" familyname="M PLUS 1 Code" stylename="SemiBold" filename="../../instance_ufos/MPLUS1Code-SemiBold.ufo" stylemapfamilyname="M PLUS 1 Code SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="565"/>
+      </location>
+    </instance>
+    <instance name="M PLUS 1 Code Bold" familyname="M PLUS 1 Code" stylename="Bold" filename="../../instance_ufos/MPLUS1Code-Bold.ufo" stylemapfamilyname="M PLUS 1 Code" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="633"/>
+      </location>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>0F1A0AC1-B8D5-4257-ADED-894CB2B827EF</key>
+        <dict>
+          <key>HH</key>
+          <string>124</string>
+          <key>HV</key>
+          <string>140</string>
+          <key>OH</key>
+          <string>126</string>
+          <key>OV</key>
+          <string>144</string>
+          <key>nV</key>
+          <string>138</string>
+          <key>nd</key>
+          <string>120</string>
+          <key>oH</key>
+          <string>122</string>
+          <key>oV</key>
+          <string>140</string>
+        </dict>
+        <key>72F02222-BF87-41FD-9A7E-0ABB5ED2DB</key>
+        <dict>
+          <key>HH</key>
+          <string>72</string>
+          <key>HV</key>
+          <string>80</string>
+          <key>OH</key>
+          <string>72</string>
+          <key>OV</key>
+          <string>82</string>
+          <key>nV</key>
+          <string>78</string>
+          <key>nd</key>
+          <string>70</string>
+          <key>oH</key>
+          <string>70</string>
+          <key>oV</key>
+          <string>80</string>
+        </dict>
+        <key>9527F797-22C1-480E-A1FE-2CDBEBE1FD4C</key>
+        <dict>
+          <key>HH</key>
+          <string>100</string>
+          <key>HV</key>
+          <string>110</string>
+          <key>OH</key>
+          <string>100</string>
+          <key>OV</key>
+          <string>113</string>
+          <key>nV</key>
+          <string>108</string>
+          <key>oH</key>
+          <string>90</string>
+          <key>oV</key>
+          <string>108</string>
+          <key>tH</key>
+          <string>90</string>
+        </dict>
+        <key>9E6B41AB-2970-4C41-8B35-4DBE0D296A43</key>
+        <dict>
+          <key>HH</key>
+          <string>170</string>
+          <key>HV</key>
+          <string>200</string>
+          <key>OH</key>
+          <string>170</string>
+          <key>OV</key>
+          <string>205</string>
+          <key>nV</key>
+          <string>196</string>
+          <key>nd</key>
+          <string>160</string>
+          <key>oH</key>
+          <string>140</string>
+          <key>oV</key>
+          <string>196</string>
+          <key>tH</key>
+          <string>140</string>
+        </dict>
+        <key>D0C1F23C-2F9F-4D30-8C4D-098ED54EEF3D</key>
+        <dict>
+          <key>HH</key>
+          <string>20</string>
+          <key>HV</key>
+          <string>20</string>
+          <key>OH</key>
+          <string>20</string>
+          <key>OV</key>
+          <string>20</string>
+          <key>nV</key>
+          <string>20</string>
+          <key>nd</key>
+          <string>20</string>
+          <key>oH</key>
+          <string>20</string>
+          <key>oV</key>
+          <string>20</string>
+          <key>tH</key>
+          <string>20</string>
+        </dict>
+        <key>D65C9A1E-0FCA-4B2D-8EDF-9F36CA9182A1</key>
+        <dict>
+          <key>HH</key>
+          <string>20</string>
+          <key>HV</key>
+          <string>20</string>
+          <key>OH</key>
+          <string>20</string>
+          <key>OV</key>
+          <string>20</string>
+          <key>nV</key>
+          <string>20</string>
+          <key>nd</key>
+          <string>20</string>
+          <key>oH</key>
+          <string>20</string>
+          <key>oV</key>
+          <string>20</string>
+          <key>tH</key>
+          <string>20</string>
+        </dict>
+        <key>E27A6A66-A1F8-4E1B-8224-7C0FE77551F2</key>
+        <dict>
+          <key>HH</key>
+          <string>72</string>
+          <key>HV</key>
+          <string>80</string>
+          <key>OH</key>
+          <string>72</string>
+          <key>OV</key>
+          <string>82</string>
+          <key>nV</key>
+          <string>78</string>
+          <key>nd</key>
+          <string>70</string>
+          <key>oH</key>
+          <string>70</string>
+          <key>oV</key>
+          <string>80</string>
+          <key>tH</key>
+          <string>70</string>
+        </dict>
+        <key>FC9CFCDA-9E80-4E73-BA51-84D15957FA</key>
+        <dict>
+          <key>HH</key>
+          <string>124</string>
+          <key>HV</key>
+          <string>140</string>
+          <key>OH</key>
+          <string>126</string>
+          <key>OV</key>
+          <string>144</string>
+          <key>nV</key>
+          <string>138</string>
+          <key>nd</key>
+          <string>120</string>
+          <key>oH</key>
+          <string>122</string>
+          <key>oV</key>
+          <string>140</string>
+          <key>tH</key>
+          <string>118</string>
+        </dict>
+      </dict>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>S.001</string>
+        <string>a.001</string>
+        <string>a.002</string>
+        <string>b.001</string>
+        <string>f_f</string>
+        <string>f_f_i</string>
+        <string>f_f_l</string>
+        <string>fi</string>
+        <string>fl</string>
+        <string>guarani.001</string>
+        <string>l.001</string>
+        <string>n.001</string>
+        <string>o.001</string>
+        <string>s.001</string>
+        <string>s.002</string>
+        <string>zero.001</string>
+      </array>
+    </dict>
+  </lib>
+</designspace>

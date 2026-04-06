@@ -1,0 +1,478 @@
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn TAT;
+languagesystem latn TRK;
+languagesystem latn ROM;
+languagesystem latn MOL;
+languagesystem latn CAT;
+
+
+# Prefix: BASE
+table BASE {
+  HorizAxis.BaseTagList     icfb  icft  ideo  romn;
+  HorizAxis.BaseScriptList  
+                DFLT  ideo   -70   830  -120     0,
+                hani  ideo   -70   830  -120     0,
+                kana  ideo   -70   830  -120     0,
+                latn  romn   -70   830  -120     0,
+                cyrl  romn   -70   830  -120     0,
+                grek  romn   -70   830  -120     0;
+
+  VertAxis.BaseTagList      icfb  icft  ideo  romn;
+  VertAxis.BaseScriptList 
+                DFLT  ideo    46   954     0   120,
+                hani  ideo    46   954     0   120,
+                kana  ideo    46   954     0   120,
+                latn  romn    46   954     0   120,
+                cyrl  romn    46   954     0   120,
+                grek  romn    46   954     0   120;
+} BASE;
+
+feature aalt {
+# automatic
+feature locl;
+feature sups;
+feature frac;
+feature ordn;
+feature pnum;
+feature tnum;
+feature case;
+feature fwid;
+feature vert;
+feature vkna;
+feature vrt2;
+feature jp04;
+
+} aalt;
+
+feature ccmp {
+# automatic
+lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	@CombiningNonTopAccents = [brevebelowcomb cedillacomb dieresisbelowcomb dotbelowcomb macronbelowcomb ogonekcomb horncomb];
+	sub [i j]' @CombiningTopAccents by [idotless jdotless];
+	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+} ccmp_Other_1;
+
+} ccmp;
+
+feature locl {
+# automatic
+lookup locl_latn_0 {
+	script latn;
+	language AZE;
+	sub i by idotaccent;
+	language CRT;
+	sub i by idotaccent;
+	language KAZ;
+	sub i by idotaccent;
+	language TAT;
+	sub i by idotaccent;
+	language TRK;
+	sub i by idotaccent;
+} locl_latn_0;
+
+lookup locl_latn_1 {
+	script latn;
+	language ROM;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+	language MOL;
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+	sub Tcedilla by Tcommaaccent;
+	sub tcedilla by tcommaaccent;
+} locl_latn_1;
+
+lookup locl_latn_2 {
+	script latn;
+	language CAT;
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT;
+} locl_latn_2;
+
+} locl;
+
+feature sups {
+# automatic
+sub zero by zerosuperior;
+sub one by onesuperior;
+sub two by twosuperior;
+sub three by threesuperior;
+sub four by foursuperior;
+
+} sups;
+
+feature frac {
+# automatic
+sub one slash four by onequarter;
+sub one slash two by onehalf;
+sub three slash four by threequarters;
+
+} frac;
+
+feature ordn {
+# automatic
+sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+sub N o period by numero;
+
+} ordn;
+
+feature pnum {
+# automatic
+sub zero by zero.lf;
+sub one by one.lf;
+sub two by two.lf;
+sub three by three.lf;
+sub four by four.lf;
+sub five by five.lf;
+sub six by six.lf;
+sub seven by seven.lf;
+sub eight by eight.lf;
+sub nine by nine.lf;
+
+} pnum;
+
+feature tnum {
+# automatic
+sub zero.lf by zero;
+sub one.lf by one;
+sub two.lf by two;
+sub three.lf by three;
+sub four.lf by four;
+sub five.lf by five;
+sub six.lf by six;
+sub seven.lf by seven;
+sub eight.lf by eight;
+sub nine.lf by nine;
+
+} tnum;
+
+feature case {
+# automatic
+sub zero by zero.lf;
+sub one by one.lf;
+sub two by two.lf;
+sub three by three.lf;
+sub four by four.lf;
+sub five by five.lf;
+sub six by six.lf;
+sub seven by seven.lf;
+sub eight by eight.lf;
+sub nine by nine.lf;
+
+} case;
+
+feature dlig {
+# automatic
+lookupflag IgnoreMarks;
+sub m p l u s f o n t s by m_p_l_u_s_f_o_n_t_s;
+
+} dlig;
+
+feature liga {
+lookupflag IgnoreMarks;
+sub f f i by f_f_i;
+sub f f l by f_f_l;
+sub f f by f_f;
+sub f i by fi;
+sub f l by fl;
+sub m p l u s f o n t s by m_p_l_u_s_f_o_n_t_s;
+} liga;
+
+feature fwid {
+# automatic
+sub zero by zero.full;
+sub one by one.full;
+sub two by two.full;
+sub three by three.full;
+sub four by four.full;
+sub five by five.full;
+sub six by six.full;
+sub seven by seven.full;
+sub eight by eight.full;
+sub nine by nine.full;
+sub colon by colon.full;
+sub exclam by exclam.full;
+sub question by question.full;
+sub parenleft by parenleft.full;
+sub parenright by parenright.full;
+sub equal by equal.full;
+
+} fwid;
+
+
+feature vert {
+# automatic
+sub asmall-hira by asmall-hira.vert;
+sub ismall-hira by ismall-hira.vert;
+sub usmall-hira by usmall-hira.vert;
+sub esmall-hira by esmall-hira.vert;
+sub osmall-hira by osmall-hira.vert;
+sub tusmall-hira by tusmall-hira.vert;
+sub yasmall-hira by yasmall-hira.vert;
+sub yusmall-hira by yusmall-hira.vert;
+sub yosmall-hira by yosmall-hira.vert;
+sub wasmall-hira by wasmall-hira.vert;
+sub asmall-kata by asmall-kata.vert;
+sub ismall-kata by ismall-kata.vert;
+sub usmall-kata by usmall-kata.vert;
+sub esmall-kata by esmall-kata.vert;
+sub osmall-kata by osmall-kata.vert;
+sub kasmall-kata by kasmall-kata.vert;
+sub kesmall-kata by kesmall-kata.vert;
+sub tusmall-kata by tusmall-kata.vert;
+sub yasmall-kata by yasmall-kata.vert;
+sub yusmall-kata by yusmall-kata.vert;
+sub yosmall-kata by yosmall-kata.vert;
+sub wasmall-kata by wasmall-kata.vert;
+sub colon.full by colon.full.vert;
+sub anglebracketleft by anglebracketleft.vert;
+sub anglebracketright by anglebracketright.vert;
+sub cornerbracketleft by cornerbracketleft.vert;
+sub cornerbracketright by cornerbracketright.vert;
+sub parenleft.full by parenleft.full.vert;
+sub parenright.full by parenright.full.vert;
+sub whitecornerbracketleft by whitecornerbracketleft.vert;
+sub whitecornerbracketright by whitecornerbracketright.vert;
+sub horizontalbar by horizontalbar.vert;
+sub wavedash by wavedash.vert;
+sub comma-han by comma-han.vert;
+sub period-han by period-han.vert;
+sub equal.full by equal.full.vert;
+sub prolonged-kana by prolonged-kana.vert;
+
+} vert;
+
+feature vkna {
+# automatic
+sub asmall-hira by asmall-hira.vert;
+sub ismall-hira by ismall-hira.vert;
+sub usmall-hira by usmall-hira.vert;
+sub esmall-hira by esmall-hira.vert;
+sub osmall-hira by osmall-hira.vert;
+sub tusmall-hira by tusmall-hira.vert;
+sub yasmall-hira by yasmall-hira.vert;
+sub yusmall-hira by yusmall-hira.vert;
+sub yosmall-hira by yosmall-hira.vert;
+sub wasmall-hira by wasmall-hira.vert;
+sub asmall-kata by asmall-kata.vert;
+sub ismall-kata by ismall-kata.vert;
+sub usmall-kata by usmall-kata.vert;
+sub esmall-kata by esmall-kata.vert;
+sub osmall-kata by osmall-kata.vert;
+sub kasmall-kata by kasmall-kata.vert;
+sub kesmall-kata by kesmall-kata.vert;
+sub tusmall-kata by tusmall-kata.vert;
+sub yasmall-kata by yasmall-kata.vert;
+sub yusmall-kata by yusmall-kata.vert;
+sub yosmall-kata by yosmall-kata.vert;
+sub wasmall-kata by wasmall-kata.vert;
+
+} vkna;
+
+feature vrt2 {
+# automatic
+sub asmall-hira by asmall-hira.vert;
+sub ismall-hira by ismall-hira.vert;
+sub usmall-hira by usmall-hira.vert;
+sub esmall-hira by esmall-hira.vert;
+sub osmall-hira by osmall-hira.vert;
+sub tusmall-hira by tusmall-hira.vert;
+sub yasmall-hira by yasmall-hira.vert;
+sub yusmall-hira by yusmall-hira.vert;
+sub yosmall-hira by yosmall-hira.vert;
+sub wasmall-hira by wasmall-hira.vert;
+sub asmall-kata by asmall-kata.vert;
+sub ismall-kata by ismall-kata.vert;
+sub usmall-kata by usmall-kata.vert;
+sub esmall-kata by esmall-kata.vert;
+sub osmall-kata by osmall-kata.vert;
+sub kasmall-kata by kasmall-kata.vert;
+sub kesmall-kata by kesmall-kata.vert;
+sub tusmall-kata by tusmall-kata.vert;
+sub yasmall-kata by yasmall-kata.vert;
+sub yusmall-kata by yusmall-kata.vert;
+sub yosmall-kata by yosmall-kata.vert;
+sub wasmall-kata by wasmall-kata.vert;
+sub colon.full by colon.full.vert;
+sub anglebracketleft by anglebracketleft.vert;
+sub anglebracketright by anglebracketright.vert;
+sub cornerbracketleft by cornerbracketleft.vert;
+sub cornerbracketright by cornerbracketright.vert;
+sub parenleft.full by parenleft.full.vert;
+sub parenright.full by parenright.full.vert;
+sub whitecornerbracketleft by whitecornerbracketleft.vert;
+sub whitecornerbracketright by whitecornerbracketright.vert;
+sub horizontalbar by horizontalbar.vert;
+sub wavedash by wavedash.vert;
+sub comma-han by comma-han.vert;
+sub period-han by period-han.vert;
+sub equal.full by equal.full.vert;
+sub prolonged-kana by prolonged-kana.vert;
+
+} vrt2;
+
+feature jp04 {
+# automatic
+sub uni5026 by uni5026.jp04;
+sub uni50C5 by uni50C5.jp04;
+sub uni5132 by uni5132.jp04;
+sub uni514E by uni514E.jp04;
+sub uni51A4 by uni51A4.jp04;
+sub uni537F by uni537F.jp04;
+sub uni53A9 by uni53A9.jp04;
+sub uni53DB by uni53DB.jp04;
+sub uni53DF by uni53DF.jp04;
+sub uni54E8 by uni54E8.jp04;
+sub uni55B0 by uni55B0.jp04;
+sub uni5632 by uni5632.jp04;
+sub uni5642 by uni5642.jp04;
+sub uni564C by uni564C.jp04;
+sub uni56C0 by uni56C0.jp04;
+sub uni5835 by uni5835.jp04;
+sub uni5A29 by uni5A29.jp04;
+sub uni5C51 by uni5C51.jp04;
+sub uni5C60 by uni5C60.jp04;
+sub uni5DF7 by uni5DF7.jp04;
+sub uni5E96 by uni5E96.jp04;
+sub uni5EDF by uni5EDF.jp04;
+sub uni5F98 by uni5F98.jp04;
+sub uni5FBD by uni5FBD.jp04;
+sub uni6062 by uni6062.jp04;
+sub uni6108 by uni6108.jp04;
+sub uni6241 by uni6241.jp04;
+sub uni633D by uni633D.jp04;
+sub uni6357 by uni6357.jp04;
+sub uni6372 by uni6372.jp04;
+sub uni63C3 by uni63C3.jp04;
+sub uni647A by uni647A.jp04;
+sub uni64B0 by uni64B0.jp04;
+sub uni64E2 by uni64E2.jp04;
+sub uni6666 by uni6666.jp04;
+sub uni6753 by uni6753.jp04;
+sub uni68D8 by uni68D8.jp04;
+sub uni6962 by uni6962.jp04;
+sub uni696F by uni696F.jp04;
+sub uni698A by uni698A.jp04;
+sub uni6994 by uni6994.jp04;
+sub uni69CC by uni69CC.jp04;
+sub uni6A0B by uni6A0B.jp04;
+sub uni6A3D by uni6A3D.jp04;
+sub uni6A59 by uni6A59.jp04;
+sub uni6ADB by uni6ADB.jp04;
+sub uni6B4E by uni6B4E.jp04;
+sub uni6C72 by uni6C72.jp04;
+sub uni6DEB by uni6DEB.jp04;
+sub uni6EA2 by uni6EA2.jp04;
+sub uni6EBA by uni6EBA.jp04;
+sub uni6F23 by uni6F23.jp04;
+sub uni7015 by uni7015.jp04;
+sub uni701E by uni701E.jp04;
+sub uni7026 by uni7026.jp04;
+sub uni7058 by uni7058.jp04;
+sub uni7078 by uni7078.jp04;
+sub uni707C by uni707C.jp04;
+sub uni7149 by uni7149.jp04;
+sub uni714E by uni714E.jp04;
+sub uni717D by uni717D.jp04;
+sub uni724C by uni724C.jp04;
+sub uni7259 by uni7259.jp04;
+sub uni727D by uni727D.jp04;
+sub uni7337 by uni7337.jp04;
+sub uni7511 by uni7511.jp04;
+sub uni7515 by uni7515.jp04;
+sub uni75BC by uni75BC.jp04;
+sub uni77A5 by uni77A5.jp04;
+sub uni7941 by uni7941.jp04;
+sub uni7947 by uni7947.jp04;
+sub uni795F by uni795F.jp04;
+sub uni79B0 by uni79B0.jp04;
+sub uni79E4 by uni79E4.jp04;
+sub uni7A17 by uni7A17.jp04;
+sub uni7A7F by uni7A7F.jp04;
+sub uni7AC8 by uni7AC8.jp04;
+sub uni7B08 by uni7B08.jp04;
+sub uni7B75 by uni7B75.jp04;
+sub uni7BAD by uni7BAD.jp04;
+sub uni7BB8 by uni7BB8.jp04;
+sub uni7BC7 by uni7BC7.jp04;
+sub uni7BDD by uni7BDD.jp04;
+sub uni7C3E by uni7C3E.jp04;
+sub uni7C7E by uni7C7E.jp04;
+sub uni7C82 by uni7C82.jp04;
+sub uni7FEB by uni7FEB.jp04;
+sub uni7FF0 by uni7FF0.jp04;
+sub uni8171 by uni8171.jp04;
+sub uni817F by uni817F.jp04;
+sub uni818F by uni818F.jp04;
+sub uni8258 by uni8258.jp04;
+sub uni8292 by uni8292.jp04;
+sub uni82A6 by uni82A6.jp04;
+sub uni8328 by uni8328.jp04;
+sub uni845B by uni845B.jp04;
+sub uni84EC by uni84EC.jp04;
+sub uni8511 by uni8511.jp04;
+sub uni853D by uni853D.jp04;
+sub uni85A9 by uni85A9.jp04;
+sub uni85AF by uni85AF.jp04;
+sub uni85F7 by uni85F7.jp04;
+sub uni8654 by uni8654.jp04;
+sub uni86F8 by uni86F8.jp04;
+sub uni8755 by uni8755.jp04;
+sub uni87F9 by uni87F9.jp04;
+sub uni8805 by uni8805.jp04;
+sub uni8956 by uni8956.jp04;
+sub uni8A0A by uni8A0A.jp04;
+sub uni8A1D by uni8A1D.jp04;
+sub uni8A3B by uni8A3B.jp04;
+sub uni8A6E by uni8A6E.jp04;
+sub uni8AB9 by uni8AB9.jp04;
+sub uni8AFA by uni8AFA.jp04;
+sub uni8B0E by uni8B0E.jp04;
+sub uni8B2C by uni8B2C.jp04;
+sub uni8C79 by uni8C79.jp04;
+sub uni8CED by uni8CED.jp04;
+sub uni8FBB by uni8FBB.jp04;
+sub uni8FBF by uni8FBF.jp04;
+sub uni8FC2 by uni8FC2.jp04;
+sub uni8FC4 by uni8FC4.jp04;
+sub uni8FE6 by uni8FE6.jp04;
+sub uni9017 by uni9017.jp04;
+sub uni9019 by uni9019.jp04;
+sub uni9022 by uni9022.jp04;
+sub uni903C by uni903C.jp04;
+sub uni9041 by uni9041.jp04;
+sub uni905C by uni905C.jp04;
+sub uni9061 by uni9061.jp04;
+sub uni912D by uni912D.jp04;
+sub uni914B by uni914B.jp04;
+sub uni9306 by uni9306.jp04;
+sub uni939A by uni939A.jp04;
+sub uni9453 by uni9453.jp04;
+sub uni9699 by uni9699.jp04;
+sub uni9744 by uni9744.jp04;
+sub uni9784 by uni9784.jp04;
+sub uni9798 by uni9798.jp04;
+sub uni98F4 by uni98F4.jp04;
+sub uni9905 by uni9905.jp04;
+sub uni990C by uni990C.jp04;
+sub uni9910 by uni9910.jp04;
+sub uni9957 by uni9957.jp04;
+sub uni9A19 by uni9A19.jp04;
+sub uni9BD6 by uni9BD6.jp04;
+sub uni9C2F by uni9C2F.jp04;
+sub uni9C52 by uni9C52.jp04;
+sub uni9D09 by uni9D09.jp04;
+sub uni9D60 by uni9D60.jp04;
+
+} jp04;
