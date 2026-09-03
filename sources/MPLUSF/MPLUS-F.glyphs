@@ -42,7 +42,10 @@ oóôöòőōõ rŕřŗ sśšşș tťţț /lcommaaccent.loclMAH/ncommaaccent.loc
 
 uúûüùűūųůũ wẃŵẅẁ yýŷÿỳỹ zźžż
 
-́ ̆ ̂ ̈ ̀ ̄ ̨ ̊ ̃ ̇ ̌ ̧ ̦ /caroncomb.alt ' ̋ ̒"
+́ ̆ ̂ ̈ ̀ ̄ ̨ ̊ ̃ ̇ ̌ ̧ ̦ /caroncomb.alt ' ̋ ̒",
+"HHĲHHIJHH
+
+Ĳ"
 );
 axes = (
 {
@@ -8062,6 +8065,8 @@ unicode = 296;
 },
 {
 glyphname = IJ;
+kernLeft = H;
+lastChange = "2026-09-03 11:24:26 +0000";
 layers = (
 {
 layerId = m004;
@@ -8070,78 +8075,96 @@ shapes = (
 ref = I;
 },
 {
-pos = (250,0);
+alignment = -1;
+pos = (191,0);
 ref = J;
 }
 );
-width = 510;
+width = 432;
 },
 {
 layerId = m005;
 shapes = (
 {
+alignment = -1;
+pos = (-16,0);
 ref = I;
 },
 {
-pos = (302,0);
+alignment = -1;
+pos = (256,0);
 ref = J;
 }
 );
-width = 610;
+width = 548;
 },
 {
 layerId = m006;
 shapes = (
 {
+alignment = -1;
+pos = (-12,0);
 ref = I;
 },
 {
-pos = (354,0);
+alignment = -1;
+pos = (302,0);
 ref = J;
 }
 );
-width = 708;
+width = 644;
 },
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
+pos = (-10,0);
 ref = I;
 },
 {
-pos = (260,0);
+alignment = -1;
+pos = (230,0);
 ref = J;
 }
 );
-width = 530;
+width = 480;
 },
 {
 layerId = m002;
 shapes = (
 {
+alignment = -1;
+pos = (-16,0);
 ref = I;
 },
 {
-pos = (306,0);
+alignment = -1;
+pos = (260,0);
 ref = J;
 }
 );
-width = 628;
+width = 566;
 },
 {
 layerId = m003;
 shapes = (
 {
+alignment = -1;
+pos = (-12,0);
 ref = I;
 },
 {
-pos = (354,0);
+alignment = -1;
+pos = (302,0);
 ref = J;
 }
 );
-width = 728;
+width = 664;
 }
 );
+metricLeft = "=H";
+metricRight = "=|";
 unicode = 306;
 },
 {
