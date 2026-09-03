@@ -24,9 +24,9 @@ HHľ^Hď%HH ľ%ľ^
 &$=><~^%",
 "AÁĂÂÄÀĀĄÅÃ CĆČÇĊ DÐĎĐ 
 
-EÉĚÊËĖÈĒĘẼƏ
+EÉĚÊËĖÈĒĘẼƏ GĞĢĠḠ HĦ
 
-GĞĢĠḠ IÍÎÏİÌĪĮĨ J/Jacute  KĶ LĹĽĻĿ NŃŇŅÑ
+IÍÎÏİÌĪĮĨĲ J/Jacute  KĶ LĹĽĻĿŁ NŃŇŅÑ
 
 OÓÔÖŐŌÕ RŔŘŖ SŚŠŞȘ TŤŢȚ
 
@@ -42,10 +42,7 @@ oóôöòőōõ rŕřŗ sśšşș tťţț /lcommaaccent.loclMAH/ncommaaccent.loc
 
 uúûüùűūųůũ wẃŵẅẁ yýŷÿỳỹ zźžż
 
-́ ̆ ̂ ̈ ̀ ̄ ̨ ̊ ̃ ̇ ̌ ̧ ̦ /caroncomb.alt ' ̋ ̒",
-"HHĲHHIJHH
-
-Ĳ"
+́ ̆ ̂ ̈ ̀ ̄ ̨ ̊ ̃ ̇ ̌ ̧ ̦ /caroncomb.alt ' ̋ ̒"
 );
 axes = (
 {
@@ -10039,8 +10036,8 @@ unicode = 313;
 {
 glyphname = Lcaron;
 kernLeft = H;
-kernRight = L;
-lastChange = "2026-09-02 10:08:56 +0000";
+kernRight = U;
+lastChange = "2026-09-03 11:46:28 +0000";
 layers = (
 {
 layerId = m004;
@@ -10214,8 +10211,8 @@ unicode = 315;
 color = 4;
 glyphname = Ldot;
 kernLeft = H;
-kernRight = L;
-lastChange = "2026-09-02 11:17:56 +0000";
+kernRight = u;
+lastChange = "2026-09-03 11:46:02 +0000";
 layers = (
 {
 layerId = m004;
@@ -10458,32 +10455,127 @@ unicode = 319;
 },
 {
 glyphname = Lslash;
+kernLeft = f;
+kernRight = L;
+lastChange = "2026-09-03 11:44:14 +0000";
 layers = (
 {
 layerId = m004;
-width = 600;
+shapes = (
+{
+pos = (79,0);
+ref = L;
+},
+{
+closed = 1;
+nodes = (
+(432,489,l),
+(432,510,l),
+(18,360,l),
+(18,338,l)
+);
+}
+);
+width = 653;
 },
 {
 layerId = m005;
-width = 600;
+shapes = (
+{
+pos = (71,0);
+ref = L;
+},
+{
+closed = 1;
+nodes = (
+(477,456,l),
+(477,544,l),
+(15,373,l),
+(15,286,l)
+);
+}
+);
+width = 668;
 },
 {
 layerId = m006;
-width = 600;
+shapes = (
+{
+pos = (62,0);
+ref = L;
+},
+{
+closed = 1;
+nodes = (
+(520,427,l),
+(520,572,l),
+(12,382,l),
+(12,238,l)
+);
+}
+);
+width = 678;
 },
 {
 layerId = m01;
-width = 600;
+shapes = (
+{
+pos = (76,0);
+ref = L;
+},
+{
+closed = 1;
+nodes = (
+(433,489,l),
+(433,510,l),
+(19,360,l),
+(19,338,l)
+);
+}
+);
+width = 606;
 },
 {
 layerId = m002;
-width = 600;
+shapes = (
+{
+pos = (69,0);
+ref = L;
+},
+{
+closed = 1;
+nodes = (
+(477,456,l),
+(477,544,l),
+(15,373,l),
+(15,286,l)
+);
+}
+);
+width = 627;
 },
 {
 layerId = m003;
-width = 600;
+shapes = (
+{
+pos = (62,0);
+ref = L;
+},
+{
+closed = 1;
+nodes = (
+(520,427,l),
+(520,572,l),
+(12,382,l),
+(12,238,l)
+);
 }
 );
+width = 644;
+}
+);
+metricLeft = "=f";
+metricRight = "=L";
 unicode = 321;
 },
 {
