@@ -28,7 +28,7 @@ EÉĚÊËĖÈĒĘẼƏ GĞĢĠḠ HĦ
 
 IÍÎÏİÌĪĮĨĲ J/Jacute  KĶ LĹĽĻĿŁ NŃŇŅÑ
 
-OÓÔÖŐŌØÕ RŔŘŖ SŚŠŞȘ TŤŢȚ
+OÓÔÖŐŌØÕŒ RŔŘŖ SŚŠŞȘ TŤŢȚ
 
 UÚÛÜÙŰŪŲŮŨ WẂŴẄẀ YÝŶŸỲỸ
 
@@ -43,9 +43,7 @@ oóôöòőōõ rŕřŗ sśšşș tťţț /lcommaaccent.loclMAH/ncommaaccent.loc
 uúûüùűūųůũ wẃŵẅẁ yýŷÿỳỹ zźžż
 
 
-́ ̆ ̂ ̈ ̀ ̄ ̨ ̊ ̃ ̇ ̌ ̧ ̦ /caroncomb.alt ' ̋ ̒",
-"HuØHOH
-O Đ Ł Ø"
+́ ̆ ̂ ̈ ̀ ̄ ̨ ̊ ̃ ̇ ̌ ̧ ̦ /caroncomb.alt ' ̋ ̒"
 );
 axes = (
 {
@@ -12729,7 +12727,7 @@ unicode = 332;
 glyphname = Oslash;
 kernLeft = O;
 kernRight = O;
-lastChange = "2026-09-04 07:24:42 +0000";
+lastChange = "2026-09-04 07:55:20 +0000";
 layers = (
 {
 layerId = m004;
@@ -13086,32 +13084,277 @@ unicode = 213;
 },
 {
 glyphname = OE;
+kernLeft = O;
+kernRight = E;
+lastChange = "2026-09-04 08:41:16 +0000";
 layers = (
 {
 layerId = m004;
-width = 600;
+shapes = (
+{
+alignment = -1;
+pos = (372,0);
+ref = E;
+},
+{
+closed = 1;
+nodes = (
+(409,-20,o),
+(454,-10,o),
+(493,9,c),
+(482,26,l),
+(446,9,o),
+(405,0,o),
+(358,0,cs),
+(182,0,o),
+(78,127,o),
+(78,345,cs),
+(78,385,ls),
+(78,603,o),
+(182,730,o),
+(358,730,cs),
+(405,730,o),
+(446,721,o),
+(482,704,c),
+(493,721,l),
+(454,740,o),
+(409,750,o),
+(358,750,cs),
+(170,750,o),
+(58,613,o),
+(58,385,cs),
+(58,345,ls),
+(58,117,o),
+(170,-20,o),
+(358,-20,cs)
+);
+}
+);
+width = 935;
 },
 {
 layerId = m005;
-width = 600;
+shapes = (
+{
+alignment = -1;
+pos = (369,0);
+ref = E;
+},
+{
+closed = 1;
+nodes = (
+(435,-20,o),
+(495,-3,o),
+(543,28,c),
+(486,120,l),
+(454,97,o),
+(414,85,o),
+(367,85,cs),
+(235,85,o),
+(157,181,o),
+(157,345,cs),
+(157,385,ls),
+(157,549,o),
+(235,645,o),
+(367,645,cs),
+(414,645,o),
+(454,633,o),
+(486,610,c),
+(543,702,l),
+(495,733,o),
+(435,750,o),
+(367,750,cs),
+(170,750,o),
+(47,610,o),
+(47,385,cs),
+(47,345,ls),
+(47,120,o),
+(170,-20,o),
+(367,-20,cs)
+);
+}
+);
+width = 959;
 },
 {
 layerId = m006;
-width = 600;
+shapes = (
+{
+alignment = -1;
+pos = (366,0);
+ref = E;
+},
+{
+closed = 1;
+nodes = (
+(469,-20,o),
+(546,9,o),
+(604,60,c),
+(478,215,l),
+(454,186,o),
+(419,170,o),
+(376,170,cs),
+(288,170,o),
+(236,235,o),
+(236,345,cs),
+(236,385,ls),
+(236,495,o),
+(288,560,o),
+(376,560,cs),
+(419,560,o),
+(454,544,o),
+(478,515,c),
+(604,670,l),
+(546,721,o),
+(469,750,o),
+(376,750,cs),
+(169,750,o),
+(36,607,o),
+(36,385,cs),
+(36,345,ls),
+(36,123,o),
+(169,-20,o),
+(376,-20,cs)
+);
+}
+);
+width = 980;
 },
 {
 layerId = m01;
-width = 600;
+shapes = (
+{
+alignment = -1;
+pos = (460,0);
+ref = E;
+},
+{
+closed = 1;
+nodes = (
+(503,-20,o),
+(552,-11,o),
+(597,5,c),
+(573,18,l),
+(535,6,o),
+(494,0,o),
+(450,0,cs),
+(234,0,o),
+(80,152,o),
+(80,365,cs),
+(80,365,ls),
+(80,578,o),
+(234,730,o),
+(450,730,cs),
+(494,730,o),
+(535,724,o),
+(573,712,c),
+(597,725,l),
+(552,741,o),
+(503,750,o),
+(450,750,cs),
+(223,750,o),
+(60,589,o),
+(60,365,cs),
+(60,365,ls),
+(60,141,o),
+(223,-20,o),
+(450,-20,cs)
+);
+}
+);
+width = 1010;
 },
 {
 layerId = m002;
-width = 600;
+shapes = (
+{
+alignment = -1;
+pos = (428,0);
+ref = E;
+},
+{
+closed = 1;
+nodes = (
+(511,-20,o),
+(574,-6,o),
+(628,20,c),
+(552,104,l),
+(519,92,o),
+(482,85,o),
+(443,85,cs),
+(278,85,o),
+(162,201,o),
+(162,365,cs),
+(162,365,ls),
+(162,529,o),
+(278,645,o),
+(443,645,cs),
+(482,645,o),
+(519,638,o),
+(552,626,c),
+(628,710,l),
+(574,736,o),
+(511,750,o),
+(443,750,cs),
+(213,750,o),
+(48,589,o),
+(48,365,cs),
+(48,365,ls),
+(48,141,o),
+(213,-20,o),
+(443,-20,cs)
+);
+}
+);
+width = 992;
 },
 {
 layerId = m003;
-width = 600;
+shapes = (
+{
+alignment = -1;
+pos = (396,0);
+ref = E;
+},
+{
+closed = 1;
+nodes = (
+(540,-20,o),
+(630,12,o),
+(699,67,c),
+(575,225,l),
+(541,190,o),
+(493,170,o),
+(436,170,cs),
+(323,170,o),
+(244,250,o),
+(244,365,cs),
+(244,365,ls),
+(244,480,o),
+(323,560,o),
+(436,560,cs),
+(493,560,o),
+(541,540,o),
+(575,505,c),
+(699,663,l),
+(630,718,o),
+(540,750,o),
+(436,750,cs),
+(203,750,o),
+(36,589,o),
+(36,365,cs),
+(36,365,ls),
+(36,141,o),
+(203,-20,o),
+(436,-20,cs)
+);
 }
 );
+width = 970;
+}
+);
+metricLeft = "=O";
+metricRight = "=E";
 unicode = 338;
 },
 {
@@ -15914,7 +16157,7 @@ color = 4;
 glyphname = T;
 kernLeft = T;
 kernRight = T;
-lastChange = "2026-09-02 08:46:44 +0000";
+lastChange = "2026-09-04 07:45:32 +0000";
 layers = (
 {
 anchors = (
@@ -17486,7 +17729,7 @@ color = 4;
 glyphname = V;
 kernLeft = V;
 kernRight = V;
-lastChange = "2026-09-02 08:48:44 +0000";
+lastChange = "2026-09-04 07:38:45 +0000";
 layers = (
 {
 layerId = m002;
@@ -17625,7 +17868,7 @@ color = 4;
 glyphname = W;
 kernLeft = W;
 kernRight = W;
-lastChange = "2026-09-02 08:49:42 +0000";
+lastChange = "2026-09-04 07:39:38 +0000";
 layers = (
 {
 anchors = (
@@ -18946,7 +19189,7 @@ color = 4;
 glyphname = Y;
 kernLeft = Y;
 kernRight = Y;
-lastChange = "2026-09-02 08:52:56 +0000";
+lastChange = "2026-09-04 07:41:11 +0000";
 layers = (
 {
 anchors = (
@@ -67663,6 +67906,7 @@ parenleft = -40;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -40;
 "@MMK_R_x" = 30;
+Oslash = 20;
 parenleft = 0;
 semicolon = 10;
 t = -20;
@@ -67810,6 +68054,7 @@ j = -20;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -80;
 "@MMK_R_x" = 10;
+Oslash = -30;
 braceleft = -100;
 j = -30;
 parenleft = -30;
@@ -67838,6 +68083,7 @@ parenleft = -30;
 "@MMK_R_u" = -60;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -120;
+Oslash = -40;
 parenleft = -50;
 };
 "@MMK_L_O" = {
@@ -68117,6 +68363,7 @@ j = -10;
 "@MMK_R_v" = -60;
 "@MMK_R_x" = 0;
 "@MMK_R_z" = -30;
+Oslash = 0;
 greater = 10;
 j = 0;
 parenleft = -40;
@@ -68203,6 +68450,7 @@ j = -10;
 "@MMK_R_unsco" = 40;
 "@MMK_R_v" = -20;
 "@MMK_R_x" = 30;
+Oslash = 20;
 backslash = -100;
 comma = 30;
 exclamdown = -20;
@@ -69037,6 +69285,13 @@ Ncommaaccent.loclMAH = {
 J = 120;
 j = 80;
 };
+Oslash = {
+"@MMK_R_T" = -10;
+"@MMK_R_V" = 0;
+"@MMK_R_W" = 0;
+"@MMK_R_X" = 0;
+"@MMK_R_Y" = 10;
+};
 Q = {
 "@MMK_R_." = -50;
 "@MMK_R_A" = -20;
@@ -69198,6 +69453,7 @@ k = {
 "@MMK_R_space" = -20;
 "@MMK_R_u" = -10;
 "@MMK_R_x" = 10;
+Oslash = 0;
 colon = -20;
 exclam = -10;
 exclamdown = 0;
@@ -69391,6 +69647,7 @@ parenleft = -20;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -40;
 "@MMK_R_x" = 20;
+Oslash = 10;
 parenleft = -10;
 semicolon = 10;
 t = -30;
@@ -69538,6 +69795,7 @@ j = -30;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -70;
 "@MMK_R_x" = 10;
+Oslash = -30;
 braceleft = -90;
 j = -20;
 parenleft = -30;
@@ -69566,6 +69824,7 @@ parenleft = -30;
 "@MMK_R_u" = -40;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -90;
+Oslash = -30;
 parenleft = -30;
 };
 "@MMK_L_O" = {
@@ -69845,6 +70104,7 @@ j = -10;
 "@MMK_R_v" = -60;
 "@MMK_R_x" = -10;
 "@MMK_R_z" = -20;
+Oslash = -10;
 greater = 0;
 j = -10;
 parenleft = -40;
@@ -69931,6 +70191,7 @@ j = -10;
 "@MMK_R_unsco" = 30;
 "@MMK_R_v" = -30;
 "@MMK_R_x" = 20;
+Oslash = 0;
 backslash = -120;
 comma = 20;
 exclamdown = -20;
@@ -70765,6 +71026,13 @@ Ncommaaccent.loclMAH = {
 J = 110;
 j = 60;
 };
+Oslash = {
+"@MMK_R_T" = -10;
+"@MMK_R_V" = 0;
+"@MMK_R_W" = 0;
+"@MMK_R_X" = -10;
+"@MMK_R_Y" = 0;
+};
 Q = {
 "@MMK_R_." = -40;
 "@MMK_R_A" = -20;
@@ -70926,6 +71194,7 @@ k = {
 "@MMK_R_space" = -20;
 "@MMK_R_u" = -20;
 "@MMK_R_x" = 10;
+Oslash = -10;
 colon = -20;
 exclam = -10;
 exclamdown = -10;
@@ -71119,6 +71388,7 @@ parenleft = 0;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -40;
 "@MMK_R_x" = 10;
+Oslash = 0;
 parenleft = -20;
 semicolon = 10;
 t = -40;
@@ -71266,6 +71536,7 @@ j = -40;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -60;
 "@MMK_R_x" = 10;
+Oslash = -30;
 braceleft = -80;
 j = -10;
 parenleft = -30;
@@ -71294,6 +71565,7 @@ parenleft = -30;
 "@MMK_R_u" = -20;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -60;
+Oslash = -20;
 parenleft = -10;
 };
 "@MMK_L_O" = {
@@ -71573,6 +71845,7 @@ j = -10;
 "@MMK_R_v" = -60;
 "@MMK_R_x" = -20;
 "@MMK_R_z" = -10;
+Oslash = -20;
 greater = -10;
 j = -20;
 parenleft = -40;
@@ -71659,6 +71932,7 @@ j = -10;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -40;
 "@MMK_R_x" = 10;
+Oslash = -20;
 backslash = -140;
 comma = 10;
 exclamdown = -20;
@@ -72493,6 +72767,13 @@ Ncommaaccent.loclMAH = {
 J = 100;
 j = 40;
 };
+Oslash = {
+"@MMK_R_T" = -10;
+"@MMK_R_V" = 0;
+"@MMK_R_W" = 0;
+"@MMK_R_X" = -20;
+"@MMK_R_Y" = -10;
+};
 Q = {
 "@MMK_R_." = -30;
 "@MMK_R_A" = -20;
@@ -72654,6 +72935,7 @@ k = {
 "@MMK_R_space" = -20;
 "@MMK_R_u" = -20;
 "@MMK_R_x" = 10;
+Oslash = -20;
 colon = -20;
 exclam = -10;
 exclamdown = -20;
@@ -72847,6 +73129,7 @@ parenleft = -20;
 "@MMK_R_unsco" = 40;
 "@MMK_R_v" = -60;
 "@MMK_R_x" = 30;
+Oslash = -30;
 parenleft = -20;
 semicolon = 10;
 t = -50;
@@ -72994,6 +73277,7 @@ j = -20;
 "@MMK_R_unsco" = 40;
 "@MMK_R_v" = -100;
 "@MMK_R_x" = 10;
+Oslash = -70;
 braceleft = -120;
 j = -30;
 parenleft = -40;
@@ -73022,6 +73306,7 @@ parenleft = -40;
 "@MMK_R_u" = -60;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -120;
+Oslash = -100;
 parenleft = -80;
 };
 "@MMK_L_O" = {
@@ -73301,6 +73586,7 @@ j = -10;
 "@MMK_R_v" = -70;
 "@MMK_R_x" = 0;
 "@MMK_R_z" = -30;
+Oslash = -50;
 greater = 10;
 j = 0;
 parenleft = -50;
@@ -73387,6 +73673,7 @@ j = -10;
 "@MMK_R_unsco" = 40;
 "@MMK_R_v" = -30;
 "@MMK_R_x" = 30;
+Oslash = -20;
 backslash = -120;
 comma = 30;
 exclamdown = -20;
@@ -74221,6 +74508,13 @@ Ncommaaccent.loclMAH = {
 J = 160;
 j = 100;
 };
+Oslash = {
+"@MMK_R_T" = -70;
+"@MMK_R_V" = -40;
+"@MMK_R_W" = -20;
+"@MMK_R_X" = -40;
+"@MMK_R_Y" = -60;
+};
 Q = {
 "@MMK_R_." = -60;
 "@MMK_R_A" = -40;
@@ -74382,6 +74676,7 @@ k = {
 "@MMK_R_space" = -20;
 "@MMK_R_u" = -10;
 "@MMK_R_x" = 10;
+Oslash = -30;
 colon = -20;
 exclam = -10;
 exclamdown = -10;
@@ -74575,6 +74870,7 @@ parenleft = -10;
 "@MMK_R_unsco" = 40;
 "@MMK_R_v" = -60;
 "@MMK_R_x" = 20;
+Oslash = -30;
 parenleft = -30;
 semicolon = 10;
 t = -50;
@@ -74722,6 +75018,7 @@ j = -30;
 "@MMK_R_unsco" = 40;
 "@MMK_R_v" = -90;
 "@MMK_R_x" = 10;
+Oslash = -70;
 braceleft = -110;
 j = -20;
 parenleft = -40;
@@ -74750,6 +75047,7 @@ parenleft = -40;
 "@MMK_R_u" = -40;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -100;
+Oslash = -80;
 parenleft = -50;
 };
 "@MMK_L_O" = {
@@ -75029,6 +75327,7 @@ j = -10;
 "@MMK_R_v" = -70;
 "@MMK_R_x" = -10;
 "@MMK_R_z" = -20;
+Oslash = -50;
 greater = 0;
 j = -10;
 parenleft = -50;
@@ -75115,6 +75414,7 @@ j = -10;
 "@MMK_R_unsco" = 30;
 "@MMK_R_v" = -40;
 "@MMK_R_x" = 20;
+Oslash = -30;
 backslash = -140;
 comma = 20;
 exclamdown = -20;
@@ -75949,6 +76249,13 @@ Ncommaaccent.loclMAH = {
 J = 140;
 j = 80;
 };
+Oslash = {
+"@MMK_R_T" = -60;
+"@MMK_R_V" = -30;
+"@MMK_R_W" = -20;
+"@MMK_R_X" = -40;
+"@MMK_R_Y" = -50;
+};
 Q = {
 "@MMK_R_." = -50;
 "@MMK_R_A" = -40;
@@ -76110,6 +76417,7 @@ k = {
 "@MMK_R_space" = -20;
 "@MMK_R_u" = -20;
 "@MMK_R_x" = 10;
+Oslash = -30;
 colon = -20;
 exclam = -10;
 exclamdown = -20;
@@ -76303,6 +76611,7 @@ parenleft = 0;
 "@MMK_R_unsco" = 40;
 "@MMK_R_v" = -60;
 "@MMK_R_x" = 10;
+Oslash = -30;
 parenleft = -40;
 semicolon = 10;
 t = -50;
@@ -76450,6 +76759,7 @@ j = -40;
 "@MMK_R_unsco" = 40;
 "@MMK_R_v" = -80;
 "@MMK_R_x" = 10;
+Oslash = -70;
 braceleft = -100;
 j = -10;
 parenleft = -40;
@@ -76478,6 +76788,7 @@ parenleft = -40;
 "@MMK_R_u" = -20;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -80;
+Oslash = -60;
 parenleft = -20;
 };
 "@MMK_L_O" = {
@@ -76757,6 +77068,7 @@ j = -10;
 "@MMK_R_v" = -70;
 "@MMK_R_x" = -20;
 "@MMK_R_z" = -10;
+Oslash = -50;
 greater = -10;
 j = -20;
 parenleft = -50;
@@ -76843,6 +77155,7 @@ j = -10;
 "@MMK_R_unsco" = 20;
 "@MMK_R_v" = -50;
 "@MMK_R_x" = 10;
+Oslash = -40;
 backslash = -160;
 comma = 10;
 exclamdown = -20;
@@ -77677,6 +77990,13 @@ Ncommaaccent.loclMAH = {
 J = 120;
 j = 60;
 };
+Oslash = {
+"@MMK_R_T" = -50;
+"@MMK_R_V" = -20;
+"@MMK_R_W" = -20;
+"@MMK_R_X" = -40;
+"@MMK_R_Y" = -40;
+};
 Q = {
 "@MMK_R_." = -40;
 "@MMK_R_A" = -40;
@@ -77838,6 +78158,7 @@ k = {
 "@MMK_R_space" = -20;
 "@MMK_R_u" = -20;
 "@MMK_R_x" = 10;
+Oslash = -30;
 colon = -20;
 exclam = -10;
 exclamdown = -30;
