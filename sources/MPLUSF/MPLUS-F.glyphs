@@ -28,7 +28,7 @@ EÉĚÊËĖÈĒĘẼƏ GĞĢĠḠ HĦ
 
 IÍÎÏİÌĪĮĨĲ J/Jacute  KĶ LĹĽĻĿŁ NŃŇŅÑ
 
-OÓÔÖŐŌÕ RŔŘŖ SŚŠŞȘ TŤŢȚ
+OÓÔÖŐŌØÕ RŔŘŖ SŚŠŞȘ TŤŢȚ
 
 UÚÛÜÙŰŪŲŮŨ WẂŴẄẀ YÝŶŸỲỸ
 
@@ -42,7 +42,10 @@ oóôöòőōõ rŕřŗ sśšşș tťţț /lcommaaccent.loclMAH/ncommaaccent.loc
 
 uúûüùűūųůũ wẃŵẅẁ yýŷÿỳỹ zźžż
 
-́ ̆ ̂ ̈ ̀ ̄ ̨ ̊ ̃ ̇ ̌ ̧ ̦ /caroncomb.alt ' ̋ ̒"
+
+́ ̆ ̂ ̈ ̀ ̄ ̨ ̊ ̃ ̇ ̌ ̧ ̦ /caroncomb.alt ' ̋ ̒",
+"HuØHOH
+O Đ Ł Ø"
 );
 axes = (
 {
@@ -10208,11 +10211,10 @@ width = 582;
 unicode = 315;
 },
 {
-color = 4;
 glyphname = Ldot;
 kernLeft = H;
 kernRight = u;
-lastChange = "2026-09-03 11:46:02 +0000";
+lastChange = "2026-09-03 11:51:22 +0000";
 layers = (
 {
 layerId = m004;
@@ -12725,32 +12727,274 @@ unicode = 332;
 },
 {
 glyphname = Oslash;
+kernLeft = O;
+kernRight = O;
+lastChange = "2026-09-04 07:24:42 +0000";
 layers = (
 {
 layerId = m004;
-width = 600;
+metricLeft = "=O";
+shapes = (
+{
+pos = (1,0);
+ref = O;
+},
+{
+attr = {
+strokeHeight = 20;
+strokeWidth = 20;
+};
+closed = 0;
+nodes = (
+(652,730,l),
+(540,590,l)
+);
+},
+{
+attr = {
+strokeHeight = 20;
+strokeWidth = 20;
+};
+closed = 0;
+nodes = (
+(540,590,l),
+(178,140,l)
+);
+},
+{
+attr = {
+strokeHeight = 20;
+strokeWidth = 20;
+};
+closed = 0;
+nodes = (
+(178,140,l),
+(66,0,l)
+);
+}
+);
+width = 718;
 },
 {
 layerId = m005;
-width = 600;
+metricLeft = "=O*.88";
+shapes = (
+{
+pos = (2,0);
+ref = O;
+},
+{
+attr = {
+strokeHeight = 90;
+strokeWidth = 90;
+};
+closed = 0;
+nodes = (
+(662,730,l),
+(550,590,l)
+);
+},
+{
+attr = {
+strokeHeight = 90;
+strokeWidth = 90;
+};
+closed = 0;
+nodes = (
+(550,590,l),
+(188,140,l)
+);
+},
+{
+attr = {
+strokeHeight = 90;
+strokeWidth = 90;
+};
+closed = 0;
+nodes = (
+(188,140,l),
+(76,0,l)
+);
+}
+);
+width = 738;
 },
 {
 layerId = m006;
-width = 600;
+metricLeft = "=O*.76";
+shapes = (
+{
+pos = (3,0);
+ref = O;
+},
+{
+attr = {
+strokeHeight = 150;
+strokeWidth = 150;
+};
+closed = 0;
+nodes = (
+(672,730,l),
+(560,590,l)
+);
+},
+{
+attr = {
+strokeHeight = 120;
+strokeWidth = 120;
+};
+closed = 0;
+nodes = (
+(560,590,l),
+(198,140,l)
+);
+},
+{
+attr = {
+strokeHeight = 150;
+strokeWidth = 150;
+};
+closed = 0;
+nodes = (
+(198,140,l),
+(86,0,l)
+);
+}
+);
+width = 758;
 },
 {
 layerId = m01;
-width = 600;
+metricLeft = "=O";
+shapes = (
+{
+ref = O;
+},
+{
+attr = {
+strokeHeight = 20;
+strokeWidth = 20;
+};
+closed = 0;
+nodes = (
+(743,730,l),
+(631,590,l)
+);
+},
+{
+attr = {
+strokeHeight = 20;
+strokeWidth = 20;
+};
+closed = 0;
+nodes = (
+(631,590,l),
+(269,140,l)
+);
+},
+{
+attr = {
+strokeHeight = 20;
+strokeWidth = 20;
+};
+closed = 0;
+nodes = (
+(269,140,l),
+(157,0,l)
+);
+}
+);
+width = 900;
 },
 {
 layerId = m002;
-width = 600;
+metricLeft = "=O";
+shapes = (
+{
+ref = O;
+},
+{
+attr = {
+strokeHeight = 90;
+strokeWidth = 90;
+};
+closed = 0;
+nodes = (
+(736,730,l),
+(624,590,l)
+);
+},
+{
+attr = {
+strokeHeight = 90;
+strokeWidth = 90;
+};
+closed = 0;
+nodes = (
+(624,590,l),
+(262,140,l)
+);
+},
+{
+attr = {
+strokeHeight = 90;
+strokeWidth = 90;
+};
+closed = 0;
+nodes = (
+(262,140,l),
+(150,0,l)
+);
+}
+);
+width = 886;
 },
 {
 layerId = m003;
-width = 600;
+metricLeft = "=O";
+shapes = (
+{
+ref = O;
+},
+{
+attr = {
+strokeHeight = 150;
+strokeWidth = 150;
+};
+closed = 0;
+nodes = (
+(729,730,l),
+(617,590,l)
+);
+},
+{
+attr = {
+strokeHeight = 120;
+strokeWidth = 120;
+};
+closed = 0;
+nodes = (
+(617,590,l),
+(255,140,l)
+);
+},
+{
+attr = {
+strokeHeight = 150;
+strokeWidth = 150;
+};
+closed = 0;
+nodes = (
+(255,140,l),
+(143,0,l)
+);
 }
 );
+width = 872;
+}
+);
+metricLeft = "=O*.98";
+metricRight = "=|";
 unicode = 216;
 },
 {
@@ -28828,11 +29072,10 @@ metricRight = "=i";
 unicode = 106;
 },
 {
-color = 4;
 glyphname = jdotless;
 kernLeft = H;
 kernRight = H;
-lastChange = "2026-09-02 06:24:19 +0000";
+lastChange = "2026-09-03 11:50:54 +0000";
 layers = (
 {
 anchors = (
@@ -30599,11 +30842,10 @@ width = 338;
 unicode = 316;
 },
 {
-color = 4;
 glyphname = ldot;
 kernLeft = H;
 kernRight = ldot;
-lastChange = "2026-09-02 07:33:49 +0000";
+lastChange = "2026-09-03 11:51:39 +0000";
 layers = (
 {
 layerId = m004;
