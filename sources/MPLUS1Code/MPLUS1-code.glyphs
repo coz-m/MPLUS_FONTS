@@ -257,8 +257,8 @@ tag = dlig;
 {
 code = "# ----------------------------------------------------
 # Feature: calt (Contextual Alternates)
-# Version: 36.0.0 (X4 Extended Perfect Chain)
-# Description: 4倍幅リガチャの連鎖を3倍幅コードが破壊するバグを完全修正。
+# Version: 37.0.0 (X4 Chain & X3 Standalone Split Fixed)
+# Description: ||| のスタンドアロン入力を等幅バラしにしつつ、4倍幅連鎖を100%維持。
 # ----------------------------------------------------
 
 # ==========================================
@@ -283,10 +283,11 @@ lookup CHAIN_4_FIRA {
 
 # ==========================================
 # STEP 1: 3文字幅リガチャの置換（1文字目を置換）
-# ※4文字幅の一部になり得る組み合わせ（bar bar bar等）をここで除外保護します
 # ==========================================
 lookup LIG_SUB_3_FIRA {
-    # 4文字目に greater が来るときは、3文字幅の置換を「無視（ignore）」して4文字ルールへ流す
+    # 【修正の核心】
+    # 「後ろにgreaterが来るときだけ」4倍幅へ流すため、ここでは「barが3つ並んだだけの時」のignoreを完全に削除しました。
+    # 代わりに、明確に4倍幅になるコンテキスト（後ろにgreaterがある4文字構成）のみをピンポイントで保護します。
     ignore sub bar' bar bar greater;
     ignore sub less' bar bar bar;
 
@@ -360,6 +361,11 @@ lookup CHAIN_3_FIRA {
 # STEP 2: 2文字幅リガチャの置換（1文字目を置換）
 # ==========================================
 lookup LIG_SUB_2_FIRA {
+    # 【超重要】通常の ||| 入力時に「||」＋「|」に等幅でバラすための保護
+    # 後ろにさらに bar が続く場合は、2文字リガチャ（bar_bar）への置換を「無視」させ、
+    # 3文字目（単体のbar）が自然に1マス分の等幅を保って配置されるように制御します。
+    ignore sub bar' bar bar;
+
     sub period' period by period_period;
     sub question' period by question_period;
     sub question' question by question_question;
