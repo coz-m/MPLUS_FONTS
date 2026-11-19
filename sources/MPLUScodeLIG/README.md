@@ -7,7 +7,7 @@
 
 <!-- 2. Ligature List - Category 1 -->
 <p align="center" style="margin: 2em 0;">
-  <a href="./images/original/ligature-list-01.svg"
+  <a href="https://raw.githubusercontent.com/coz-m/MPLUS_FONTS/blob/master/sources/MPLUScodeLIG/images/original/ligature-list-01.svg"
      target="_blank"
      rel="noopener">
     <img src="./images/preview/ligature-list-01.png"
