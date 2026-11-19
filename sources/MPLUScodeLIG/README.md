@@ -1,5 +1,3 @@
-# M PLUS Code LIG
-
 <!-- 1. Eye-catching video -->
 <!-- Replace with the video URL uploaded through GitHub's README editor. -->
 VIDEO_ASSET_URL
