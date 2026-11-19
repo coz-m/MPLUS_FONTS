@@ -110,4 +110,4 @@ Please share your feedback through [GitHub Issues](../../issues).
 
 ## License
 
-See [LICENSE](../../OFT.txt) for license information.
+See [LICENSE](../../OFL.txt) for license information.
