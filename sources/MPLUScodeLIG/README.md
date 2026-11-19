@@ -1,5 +1,5 @@
 <!-- 1. Eye-catching video -->
-<img src="https://github.com/user-attachments/assets/9348970e-1cf2-4bc1-94c5-bdf355a3af25" width="100%" alt="M PLUS Code LIG">
+<img src="https://github.com/user-attachments/assets/9348970e-1cf2-4bc1-94c5-bdf355a3af25" width="80%" alt="M PLUS Code LIG">
 
 <!-- 2. Ligature List - Category 1 -->
 <p align="center" style="margin: 2em 0;">
@@ -7,24 +7,24 @@
      target="_blank"
      rel="noopener">
     <img src="./images/preview/ligature-list-01.png"
-         width="100%"
+         width="80%"
          alt="M PLUS Code LIG - Ligature List 01">
   </a>
 </p>
 
 <!-- 3. Ligature List - Category 2 -->
 <a href="./images/original/ligature-list-02.svg">
-  <img src="./images/preview/ligature-list-02.png" width="100%" alt="M PLUS Code LIG - Ligature List 02">
+  <img src="./images/preview/ligature-list-02.png" width="80%" alt="M PLUS Code LIG - Ligature List 02">
 </a>
 
 <!-- 4. Code Sample -->
 <a href="./images/original/LIG_sample.png">
-  <img src="./images/preview/code-sample.png" width="100%" alt="M PLUS Code LIG - Code Sample">
+  <img src="./images/preview/code-sample.png" width="80%" alt="M PLUS Code LIG - Code Sample">
 </a>
 
 <!-- 5. Font Options -->
 <a href="./images/original/LIG_option.png">
-  <img src="./images/preview/font-options.png" width="100%" alt="M PLUS Code LIG - Font Options">
+  <img src="./images/preview/font-options.png" width="80%" alt="M PLUS Code LIG - Font Options">
 </a>
 
 ---
