@@ -6,10 +6,9 @@
 </p>
 
 <!-- 2. Ligature List - Category 1 -->
-<p align="center" style="margin: 2em 0;">
-  <a href="https://raw.githubusercontent.com/coz-m/MPLUS_FONTS/blob/master/sources/MPLUScodeLIG/images/original/ligature-list-01.svg"
-     target="_blank"
-     rel="noopener">
+<a href="https://raw.githubusercontent.com/coz-m/MPLUS_FONTS/master/sources/MPLUScodeLIG/images/original/ligature-list-01.svg"
+   target="_blank"
+   rel="noopener">
     <img src="./images/preview/ligature-list-01.png"
          width="80%"
          alt="M PLUS Code LIG - Ligature List 01">
