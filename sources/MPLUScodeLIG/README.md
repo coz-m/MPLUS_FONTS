@@ -79,7 +79,7 @@ The font is still under development. Your feedback and suggestions are welcome a
 
 The experimental release includes:
 
-- **Variable Font** — Adjustable font weights
+- **Variable Font** — Adjustable font weights and widths
 - **Regular 60** — Static regular weight
 - **Bold 60** — Static bold weight
 
@@ -98,7 +98,9 @@ See the settings example below to enable ligatures and customize character style
 
 ## Complete Ligature List
 
-[View the Complete Ligature List (SVG)](./MPLUS1CodeLIG-Ligature-List.svg)
+
+[View the Complete Ligature List 1 (SVG)](./images/original/ligature-list-01.svg)
+[View the Complete Ligature List 2 (SVG)](./images/original/ligature-list-02.svg)
 
 ## Feedback
 
