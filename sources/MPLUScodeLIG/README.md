@@ -94,7 +94,7 @@ The experimental release includes:
 
 See the settings example below to enable ligatures and customize character styles.
 
-[Download Settings Example](./MPLUS1CodeLIG-settings.jsonc)
+[View Settings Example](./MPLUSCodeLIG-settings.jsonc)
 
 ## Complete Ligature List
 
