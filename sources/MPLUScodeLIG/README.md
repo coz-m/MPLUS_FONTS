@@ -104,9 +104,10 @@ See the settings example below to enable ligatures and customize character style
 
 ## Feedback
 
-Found a problem or have a suggestion?
+Found a bug or have an idea?
+We'd love to hear your feedback!
 
-Please share your feedback through [GitHub Issues](../../issues).
+[Report an Issue](https://github.com/coz-m/MPLUS_FONTS/issues)
 
 ## License
 
