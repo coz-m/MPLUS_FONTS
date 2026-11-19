@@ -1,0 +1,19 @@
+{
+   // Our M, W, and w a bit too wild for you?
+   // Relax! More familiar shapes are just a setting away.
+   // Prefer dots over bars? Zero has options, too!
+   // Feature switches:
+   // calt : Ligatures and contextual alternates
+   // cv02 : M W w -> conventional shapes
+   // cv01 : 0 -> dotted zero
+   // ss01 : 0 -> slashed zero
+   // Choose your preferred combination below:
+   // Original M W w + Original vertical-bar zero
+   "editor.fontLigatures": "\"calt\" on"
+   // Conventional M W w + slashed zero:
+   // "editor.fontLigatures": "\"calt\" on, \"cv02\" on, \"ss01\" on"
+   // Conventional M W w + dotted zero:
+   // "editor.fontLigatures": "\"calt\" on, \"cv02\" on, \"cv01\" on"
+   // Original M W w + dotted zero:
+   // "editor.fontLigatures": "\"calt\" on, \"cv01\" on"
+}
