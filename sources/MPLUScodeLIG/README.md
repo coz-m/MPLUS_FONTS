@@ -1,6 +1,5 @@
 <!-- 1. Eye-catching video -->
-<!-- Replace with the video URL uploaded through GitHub's README editor. -->
-VIDEO_ASSET_URL
+<img src="https://github.com/user-attachments/assets/9348970e-1cf2-4bc1-94c5-bdf355a3af25" width="100%" alt="M PLUS Code LIG">
 
 <!-- 2. Ligature List - Category 1 -->
 <a href="./images/original/ligature-list-01.svg">
