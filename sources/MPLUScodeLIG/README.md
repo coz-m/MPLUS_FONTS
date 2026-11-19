@@ -1,5 +1,9 @@
 <!-- 1. Eye-catching video -->
-<img src="https://github.com/user-attachments/assets/9348970e-1cf2-4bc1-94c5-bdf355a3af25" width="80%" alt="M PLUS Code LIG">
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9348970e-1cf2-4bc1-94c5-bdf355a3af25"
+    width="80%"
+    alt="M PLUS Code LIG">
+</p>
 
 <!-- 2. Ligature List - Category 1 -->
 <p align="center" style="margin: 2em 0;">
