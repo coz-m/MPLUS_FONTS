@@ -17,19 +17,37 @@
 </p>
 
 <!-- 3. Ligature List - Category 2 -->
-<a href="./images/original/ligature-list-02.svg">
-  <img src="./images/preview/ligature-list-02.png" width="80%" alt="M PLUS Code LIG - Ligature List 02">
-</a>
+<p align="center" style="margin: 2em 0;">
+  <a href="./images/original/ligature-list-02.svg"
+     target="_blank"
+     rel="noopener">
+    <img src="./images/preview/ligature-list-02.png"
+         width="80%"
+         alt="M PLUS Code LIG - Ligature List 02">
+  </a>
+</p>
 
 <!-- 4. Code Sample -->
-<a href="./images/original/LIG_sample.png">
-  <img src="./images/preview/code-sample.png" width="80%" alt="M PLUS Code LIG - Code Sample">
-</a>
+<p align="center" style="margin: 2em 0;">
+  <a href="./images/original/LIG_sample.png"
+     target="_blank"
+     rel="noopener">
+    <img src="./images/preview/code-sample.png"
+         width="80%"
+         alt="M PLUS Code LIG - Code Sample">
+  </a>
+</p>
 
 <!-- 5. Font Options -->
-<a href="./images/original/LIG_option.png">
-  <img src="./images/preview/font-options.png" width="80%" alt="M PLUS Code LIG - Font Options">
-</a>
+<p align="center" style="margin: 2em 0;">
+  <a href="./images/original/LIG_option.png"
+     target="_blank"
+     rel="noopener">
+    <img src="./images/preview/font-options.png"
+         width="80%"
+         alt="M PLUS Code LIG - Font Options">
+  </a>
+</p>
 
 ---
 
