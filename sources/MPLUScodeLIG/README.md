@@ -2,9 +2,15 @@
 <img src="https://github.com/user-attachments/assets/9348970e-1cf2-4bc1-94c5-bdf355a3af25" width="100%" alt="M PLUS Code LIG">
 
 <!-- 2. Ligature List - Category 1 -->
-<a href="./images/original/ligature-list-01.svg">
-  <img src="./images/preview/ligature-list-01.png" width="100%" alt="M PLUS Code LIG - Ligature List 01">
-</a>
+<p align="center" style="margin: 2em 0;">
+  <a href="./images/original/ligature-list-01.svg"
+     target="_blank"
+     rel="noopener">
+    <img src="./images/preview/ligature-list-01.png"
+         width="100%"
+         alt="M PLUS Code LIG - Ligature List 01">
+  </a>
+</p>
 
 <!-- 3. Ligature List - Category 2 -->
 <a href="./images/original/ligature-list-02.svg">
