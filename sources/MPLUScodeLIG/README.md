@@ -6,6 +6,7 @@
 </p>
 
 <!-- 2. Ligature List - Category 1 -->
+<p align="center" style="margin: 4em 0;">
 <a href="https://raw.githubusercontent.com/coz-m/MPLUS_FONTS/master/sources/MPLUScodeLIG/images/original/ligature-list-01.svg"
    target="_blank"
    rel="noopener">
@@ -16,7 +17,7 @@
 </p>
 
 <!-- 3. Ligature List - Category 2 -->
-<p align="center" style="margin: 2em 0;">
+<p align="center" style="margin: 4em 0;">
   <a href="https://raw.githubusercontent.com/coz-m/MPLUS_FONTS/master/sources/MPLUScodeLIG/images/original/ligature-list-02.svg"
      target="_blank"
      rel="noopener">
@@ -27,7 +28,7 @@
 </p>
 
 <!-- 4. Code Sample -->
-<p align="center" style="margin: 2em 0;">
+<p align="center" style="margin: 4em 0;">
   <a href="https://raw.githubusercontent.com/coz-m/MPLUS_FONTS/master/sources/MPLUScodeLIG/images/original/LIG_sample.png"
      target="_blank"
      rel="noopener">
@@ -38,7 +39,7 @@
 </p>
 
 <!-- 5. Font Options -->
-<p align="center" style="margin: 2em 0;">
+<p align="center" style="margin: 4em 0;">
   <a href="https://raw.githubusercontent.com/coz-m/MPLUS_FONTS/master/sources/MPLUScodeLIG/images/original/LIG_option.png"
      target="_blank"
      rel="noopener">
