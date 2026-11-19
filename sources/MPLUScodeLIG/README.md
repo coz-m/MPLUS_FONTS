@@ -12,7 +12,8 @@
    rel="noopener">
     <img src="./images/preview/ligature-list-01.png"
          width="80%"
-         alt="M PLUS Code LIG - Ligature List 01">
+         alt="M PLUS Code LIG - Ligature List 01"
+         style="border: 1px solid #666666;">
   </a>
 </p>
 
@@ -23,7 +24,8 @@
      rel="noopener">
     <img src="./images/preview/ligature-list-02.png"
          width="80%"
-         alt="M PLUS Code LIG - Ligature List 02">
+         alt="M PLUS Code LIG - Ligature List 02"
+         style="border: 1px solid #666666;">
   </a>
 </p>
 
