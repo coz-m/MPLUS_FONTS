@@ -81,7 +81,7 @@ The experimental release includes:
 
 - **Variable Font** — Adjustable font weights and widths
 - **Regular 60** — Static regular weight
-- **Bold 60** — Static bold weight
+- **SemiBold 60** — Static bold weight
 
 ## Installation
 
