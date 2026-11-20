@@ -139,12 +139,14 @@ For more details about these options, see [MPLUScodeLIG-settings.jsonc](MPLUSCod
 
 See the settings example below to enable ligatures and customize character styles.
 
-[View Settings Example](./MPLUSCodeLIG-settings.jsonc)
+[Conventional M, W, w + Slashed Zero](./images/cv02ss01.png)<br>
+[Conventional M, W, w + Dotted Zero](./images/cv02cv01.png)<br>
+[Original M, W, w + Dotted Zero](./images/cv01.png)
 
 ## Complete Ligature List
 
 
-[View the Complete Ligature List 1 (SVG)](./images/original/ligature-list-01.svg)
+[View the Complete Ligature List 1 (SVG)](./images/original/ligature-list-01.svg)<br>
 [View the Complete Ligature List 2 (SVG)](./images/original/ligature-list-02.svg)
 
 ## Feedback
