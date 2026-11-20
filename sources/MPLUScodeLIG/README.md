@@ -92,7 +92,7 @@ The experimental release includes:
 
 ### Using with Visual Studio Code
 
-1. Install **MPLUScodeLIG** on your system.
+1. Install **M PLUS code LIG** on your system.
 2. Restart Visual Studio Code if it is already running.
 3. Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS).
 4. Select **Preferences: Open User Settings (JSON)**.
