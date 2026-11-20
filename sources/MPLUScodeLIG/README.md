@@ -27,7 +27,7 @@
      rel="noopener">
     <img src="./images/preview/ligature-list-02.png"
          width="80%"
-         alt="M PLUS Code LIG - Ligature List 02>
+         alt="M PLUS Code LIG - Ligature List 02">
   </a>
 </p>
 
@@ -89,6 +89,51 @@ The experimental release includes:
 2. Install the font on your system.
 3. Select **M PLUS Code LIG** in your code editor.
 4. Enable font ligatures to enjoy the full experience.
+
+### Using with Visual Studio Code
+
+1. Install **MPLUScodeLIG** on your system.
+2. Restart Visual Studio Code if it is already running.
+3. Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS).
+4. Select **Preferences: Open User Settings (JSON)**.
+5. Add or update the following settings:
+
+```json
+{
+  "editor.fontFamily": "MPLUScodeLIG",
+  "editor.fontLigatures": "\"calt\" on"
+}
+```
+
+The `calt` feature enables contextual substitutions, including programming ligatures.
+
+#### Font Options
+
+You can customize the appearance of certain characters by enabling additional OpenType features. Choose one of the configurations below and replace the value of `editor.fontLigatures` in your settings:
+
+- **Original M, W, w + Vertical-bar Zero**
+  ```json
+  "editor.fontLigatures": "\"calt\" on"
+  ```
+
+- **Conventional M, W, w + Slashed Zero**
+  ```json
+  "editor.fontLigatures": "\"calt\" on, \"cv02\" on, \"ss01\" on"
+  ```
+
+- **Conventional M, W, w + Dotted Zero**
+  ```json
+  "editor.fontLigatures": "\"calt\" on, \"cv02\" on, \"cv01\" on"
+  ```
+
+- **Original M, W, w + Dotted Zero**
+  ```json
+  "editor.fontLigatures": "\"calt\" on, \"cv01\" on"
+  ```
+
+For more details about these options, see [MPLUScodeLIG-settings.jsonc](MPLUSCodeLIG-settings.jsonc).
+
+**Note:** Use only one of the configurations above at a time. You can switch between them whenever you like.
 
 ## Ligature Settings
 
