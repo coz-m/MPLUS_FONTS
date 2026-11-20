@@ -79,9 +79,9 @@ The font is still under development. Your feedback and suggestions are welcome a
 
 The experimental release includes:
 
-- **Variable Font** — Adjustable font weights and widths
+- **Variable Font** — Adjustable font weights (Thin–Bold) and widths (500–600)
 - **Regular 60** — Static regular weight
-- **SemiBold 60** — Static bold weight
+- **SemiBold 60** — Static semibold weight
 
 ## Installation
 
