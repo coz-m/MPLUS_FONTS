@@ -6,7 +6,7 @@ help:
 	@echo "###"
 	@echo
 	@echo "  make build:         Builds all fonts and places them in the fonts/ directory"
-	@echo "  make build_MPLUS3:  Builds only MPLUS3 (Japanese, with the shared Kanji)"
+	@echo "  make build_<name>:  Builds a single family: MPLUS1 MPLUS2 MPLUS3 MPLUSU MPLUS1Code MPLUSCodeLatin"
 	@echo "  make check_MPLUS3:  Prints the Kanji merge plan for MPLUS3 (builds nothing)"
 	@echo
 
@@ -77,10 +77,26 @@ compile: compile_MPLUS1 compile_MPLUS2 compile_MPLUS3 compile_MPLUSU compile_MPL
 ####################### Build scripts #######################
 #############################################################
 
-# Merges the shared Kanji into MPLUS1 / MPLUS2 / MPLUSU, builds the Code fonts' sources.
-# NOTE: merge.py deletes the fonts/ directory first.
+# Merges the shared Kanji into MPLUS1 / MPLUS2 / MPLUSU and prepares the Code fonts.
+# Without arguments merge.py processes every family and deletes the whole fonts/ directory first.
 merge: venv
 	. venv/bin/activate; python3 sources/scripts/merge.py;
+
+# Same, but for one family only (deletes only fonts/<name>)
+merge_MPLUS1: venv
+	. venv/bin/activate; python3 sources/scripts/merge.py MPLUS1;
+
+merge_MPLUS2: venv
+	. venv/bin/activate; python3 sources/scripts/merge.py MPLUS2;
+
+merge_MPLUSU: venv
+	. venv/bin/activate; python3 sources/scripts/merge.py MPLUSU;
+
+merge_MPLUS1Code: venv
+	. venv/bin/activate; python3 sources/scripts/merge.py MPLUS1Code;
+
+merge_MPLUSCodeLatin: venv
+	. venv/bin/activate; python3 sources/scripts/merge.py MPLUSCodeLatin;
 
 # Merges the shared Kanji into MPLUS3 (interpolates the Kanji if no matching master exists)
 merge_MPLUS3: venv
@@ -90,7 +106,7 @@ merge_MPLUS3: venv
 check_MPLUS3: venv
 	. venv/bin/activate; python3 sources/scripts/check_mplus3.py;
 
-# Creates interpolated instances (needed for the Code fonts)
+# Creates interpolated instances (needed only by the Code fonts)
 instancer: venv
 	. venv/bin/activate; python3 sources/scripts/instancer.py;
 
@@ -103,5 +119,23 @@ clean:
 # Builds everything. merge_MPLUS3 must run after merge (merge deletes fonts/).
 build: venv clean prep instancer merge merge_MPLUS3 compile
 
-# Builds only MPLUS3 (Japanese). Does not touch the other families.
+#############################################################
+################## Build a single family ####################
+#############################################################
+# These do not run 'clean'. If the sources changed a lot, run 'make clean' first.
+
+# MPLUS1 / MPLUS2 / MPLUSU: base source + shared Kanji
+build_MPLUS1: venv prep_MPLUS1 prep_MPLUSKanji merge_MPLUS1 compile_MPLUS1
+
+build_MPLUS2: venv prep_MPLUS2 prep_MPLUSKanji merge_MPLUS2 compile_MPLUS2
+
+build_MPLUSU: venv prep_MPLUSU prep_MPLUSKanji merge_MPLUSU compile_MPLUSU
+
+# MPLUS3: Japanese version (own Kanji handling in merge_mplus3.py)
 build_MPLUS3: venv prep_MPLUS3 prep_MPLUSKanji merge_MPLUS3 compile_MPLUS3
+
+# MPLUS1Code: width-500 masters of the Code source + Kana from MPLUS1 + shared Kanji (needs instances)
+build_MPLUS1Code: venv prep_MPLUS1 prep_MPLUS1Code prep_MPLUSKanji instancer merge_MPLUS1Code compile_MPLUS1Code
+
+# MPLUSCodeLatin: Latin-only copy of the Code source (width 500 and 600)
+build_MPLUSCodeLatin: venv prep_MPLUS1Code merge_MPLUSCodeLatin compile_MPLUSCodeLatin

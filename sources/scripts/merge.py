@@ -10,10 +10,27 @@ import sys
 
 SOURCE = Path("sources")
 
-if Path("fonts").exists():
-    shutil.rmtree("fonts")
+ALL_FONTS = ["MPLUS1", "MPLUS2", "MPLUSU", "MPLUS1Code", "MPLUSCodeLatin"]
 
-for font in ["MPLUS1", "MPLUS2", "MPLUSU", "MPLUS1Code", "MPLUSCodeLatin"]:
+# Usage:
+#   python3 sources/scripts/merge.py                  -> all fonts (deletes the whole fonts/ directory first)
+#   python3 sources/scripts/merge.py MPLUS1 MPLUS2    -> only the named fonts (deletes only fonts/<name>)
+targets = sys.argv[1:] or ALL_FONTS
+unknown = [t for t in targets if t not in ALL_FONTS]
+if unknown:
+    sys.exit("Unknown font(s): " + ", ".join(unknown) + "\nAvailable: " + ", ".join(ALL_FONTS))
+
+if len(sys.argv) == 1:
+    if Path("fonts").exists():
+        shutil.rmtree("fonts")
+else:
+    for t in targets:
+        if Path("fonts/" + t).exists():
+            shutil.rmtree("fonts/" + t)
+
+for font in ALL_FONTS:
+    if font not in targets:
+        continue
 
     print ("*** *** *** *** Processing "+font+" *** *** *** ***")
     os.makedirs("sources/"+font+"/merged_ufo/", exist_ok=True)
