@@ -1,1 +1,1 @@
-<img src="MPLUS2.svg" width="100%">
+<img src="../../sources/MPLUS2/MPLUS2.svg" width="100%">
