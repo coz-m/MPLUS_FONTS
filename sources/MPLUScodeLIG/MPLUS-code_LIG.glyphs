@@ -1853,6 +1853,7 @@ lookup LIG_2 {
 	sub percent' percent by percent_percent;
 	sub period' asciicircum by period_asciicircum;
 	sub period' asciitilde by period_asciitilde;
+	ignore sub period' asterisk asterisk;
 	sub period' asterisk by period_asterisk;
 	sub period' backslash by period_backslash;
 	sub period' braceleft by period_braceleft;
@@ -1892,7 +1893,8 @@ lookup LIG_2 {
 	sub slash' greater by slash_greater;
 	sub slash' slash by slash_slash;
 	sub underscore' asterisk by underscore_asterisk;
-} LIG_2;";
+} LIG_2;
+";
 tag = calt;
 },
 {
