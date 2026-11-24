@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9348970e-1cf2-4bc1-94c5-bdf355a3af25"
     width="80%"
-    alt="M PLUS code LIG">
+    alt="M PLUS Code LIG">
 </p>
 
 <p>&nbsp;</p>
@@ -14,7 +14,7 @@
    rel="noopener">
     <img src="./images/preview/ligature-list-01.png"
          width="80%"
-         alt="M PLUS code LIG - Ligature List 01">
+         alt="M PLUS Code LIG - Ligature List 01">
   </a>
 </p>
 
@@ -27,7 +27,7 @@
      rel="noopener">
     <img src="./images/preview/ligature-list-02.png"
          width="80%"
-         alt="M PLUS code LIG - Ligature List 02">
+         alt="M PLUS Code LIG - Ligature List 02">
   </a>
 </p>
 
@@ -40,7 +40,7 @@
      rel="noopener">
     <img src="./images/preview/code-sample.png"
          width="80%"
-         alt="M PLUS code LIG - Code Sample">
+         alt="M PLUS Code LIG - Code Sample">
   </a>
 </p>
 
@@ -53,7 +53,7 @@
      rel="noopener">
     <img src="./images/preview/font-options.png"
          width="80%"
-         alt="M PLUS code LIG - Font Options">
+         alt="M PLUS Code LIG - Font Options">
   </a>
 </p>
 
@@ -63,7 +63,7 @@
 
 ## About
 
-**M PLUS code LIG** is a monospaced programming font designed to make coding a little more fun.
+**M PLUS Code LIG** is a monospaced programming font designed to make coding a little more fun.
 
 With a wide range of programming ligatures and distinctive character designs, it brings a playful touch to your code while maintaining readability.
 
@@ -71,7 +71,7 @@ With a wide range of programming ligatures and distinctive character designs, it
 
 ## Font Files
 
-M PLUS code LIG is built as two families:
+M PLUS Code LIG is built as two families:
 
 - **M PLUS 1 Code LIG** — Japanese version (half-width 50 + Kana + Kanji). Variable font (weight Thin–Bold) and static fonts (7 weights).
 - **M PLUS Code LIG Latin** — Latin version. Variable font (weight Thin–Bold, width 50–60; the default is Regular, width 60) and static fonts for both widths (`50` and `60`, 7 weights each).
