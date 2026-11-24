@@ -2,7 +2,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9348970e-1cf2-4bc1-94c5-bdf355a3af25"
     width="80%"
-    alt="M PLUS Code LIG">
+    alt="M PLUS code LIG">
 </p>
 
 <p>&nbsp;</p>
@@ -14,7 +14,7 @@
    rel="noopener">
     <img src="./images/preview/ligature-list-01.png"
          width="80%"
-         alt="M PLUS Code LIG - Ligature List 01">
+         alt="M PLUS code LIG - Ligature List 01">
   </a>
 </p>
 
@@ -27,7 +27,7 @@
      rel="noopener">
     <img src="./images/preview/ligature-list-02.png"
          width="80%"
-         alt="M PLUS Code LIG - Ligature List 02">
+         alt="M PLUS code LIG - Ligature List 02">
   </a>
 </p>
 
@@ -40,7 +40,7 @@
      rel="noopener">
     <img src="./images/preview/code-sample.png"
          width="80%"
-         alt="M PLUS Code LIG - Code Sample">
+         alt="M PLUS code LIG - Code Sample">
   </a>
 </p>
 
@@ -53,7 +53,7 @@
      rel="noopener">
     <img src="./images/preview/font-options.png"
          width="80%"
-         alt="M PLUS Code LIG - Font Options">
+         alt="M PLUS code LIG - Font Options">
   </a>
 </p>
 
@@ -63,24 +63,23 @@
 
 ## About
 
-**M PLUS Code LIG** is a monospaced programming font designed to make coding a little more fun.
+**M PLUS code LIG** is a monospaced programming font designed to make coding a little more fun.
 
 With a wide range of programming ligatures and distinctive character designs, it brings a playful touch to your code while maintaining readability.
 
 **Fun with Code.**
 
-## Experimental Release
-
-This is an experimental release of M PLUS Code LIG.
-
-The font is still under development. Your feedback and suggestions are welcome and will help improve the final release.
-
 ## Font Files
 
-M PLUS Code LIG is built as two families:
+M PLUS code LIG is built as two families:
 
 - **M PLUS 1 Code LIG** — Japanese version (half-width 50 + Kana + Kanji). Variable font (weight Thin–Bold) and static fonts (7 weights).
 - **M PLUS Code LIG Latin** — Latin version. Variable font (weight Thin–Bold, width 50–60; the default is Regular, width 60) and static fonts for both widths (`50` and `60`, 7 weights each).
+
+Which one should I use?
+
+- Use **M PLUS 1 Code LIG** if you write Japanese in your editor.
+- Use **M PLUS Code LIG Latin** if you only need Latin characters. Choose width **60** for a roomier look, or width **50** for a narrower one.
 
 All fonts are in [`fonts/`](../../fonts) (`otf/`, `ttf/`, `variable/`, `webfonts/`).
 
@@ -132,7 +131,7 @@ You can customize the appearance of certain characters by enabling additional Op
   "editor.fontLigatures": "\"calt\" on, \"cv01\" on"
   ```
 
-For more details about these options, see [MPLUScodeLIG-settings.jsonc](MPLUSCodeLIG-settings.jsonc).
+For more details about these options, see [MPLUSCodeLIG-settings.jsonc](MPLUSCodeLIG-settings.jsonc).
 
 **Note:** Use only one of the configurations above at a time. You can switch between them whenever you like.
 
@@ -145,7 +144,6 @@ See the settings example below to enable ligatures and customize character style
 [Original M, W, w + Dotted Zero](./images/cv01.png)
 
 ## Complete Ligature List
-
 
 [View the Complete Ligature List 1 (SVG)](./images/original/ligature-list-01.svg)<br>
 [View the Complete Ligature List 2 (SVG)](./images/original/ligature-list-02.svg)
