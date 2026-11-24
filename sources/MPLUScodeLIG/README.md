@@ -77,30 +77,31 @@ The font is still under development. Your feedback and suggestions are welcome a
 
 ## Font Files
 
-The experimental release includes:
+M PLUS code LIG is built as two families:
 
-- **Variable Font** — Adjustable font weights (Thin–Bold) and widths (500–600)
-- **Regular 60** — Static regular weight
-- **SemiBold 60** — Static semibold weight
+- **M PLUS 1 Code LIG** — Japanese version (half-width 50 + Kana + Kanji). Variable font (weight Thin–Bold) and static fonts (7 weights).
+- **M PLUS Code LIG Latin** — Latin version. Variable font (weight Thin–Bold, width 50–60; the default is Regular, width 60) and static fonts for both widths (`50` and `60`, 7 weights each).
+
+All fonts are in [`fonts/`](../../fonts) (`otf/`, `ttf/`, `variable/`, `webfonts/`).
 
 ## Installation
 
 1. Download the font files.
 2. Install the font on your system.
-3. Select **M PLUS code LIG** in your code editor.
+3. Select **M PLUS 1 Code LIG** (Japanese) or **M PLUS Code LIG Latin** (Latin) in your code editor.
 4. Enable font ligatures to enjoy the full experience.
 
 ### Using with Visual Studio Code
 
-1. Install **M PLUS code LIG** on your system.
+1. Install the font on your system.
 2. Restart Visual Studio Code if it is already running.
 3. Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS).
 4. Select **Preferences: Open User Settings (JSON)**.
-5. Add or update the following settings:
+5. Add or update the following settings (use `"M PLUS Code LIG Latin"` for the Latin version):
 
 ```json
 {
-  "editor.fontFamily": "M PLUS code LIG",
+  "editor.fontFamily": "M PLUS 1 Code LIG",
   "editor.fontLigatures": "\"calt\" on"
 }
 ```

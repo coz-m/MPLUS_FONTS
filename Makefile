@@ -6,7 +6,7 @@ help:
 	@echo "###"
 	@echo
 	@echo "  make build:         Builds all fonts and places them in the fonts/ directory"
-	@echo "  make build_<name>:  Builds a single family: MPLUS1 MPLUS2 MPLUS3 MPLUSU MPLUS1Code MPLUSCodeLatin"
+	@echo "  make build_<name>:  Builds a single family: MPLUS1 MPLUS2 MPLUS3 MPLUSU MPLUS1Code MPLUSCodeLatin MPLUS1CodeLIG MPLUSCodeLIGLatin"
 	@echo "  make check_MPLUS3:  Prints the Kanji merge plan for MPLUS3 (builds nothing)"
 	@echo
 
@@ -46,7 +46,10 @@ prep_MPLUSKanji: venv
 prep_MPLUSU: venv
 	. venv/bin/activate; fontmake -g sources/MPLUSU/MPLUS-U.glyphs --master-dir sources/MPLUSU/masters -o ufo;
 
-prep: prep_MPLUS1 prep_MPLUS2 prep_MPLUS3 prep_MPLUSU prep_MPLUSKanji prep_MPLUS1Code
+prep_MPLUScodeLIG: venv
+	. venv/bin/activate; fontmake -g sources/MPLUScodeLIG/MPLUS-code_LIG.glyphs --master-dir sources/MPLUScodeLIG/masters -o ufo;
+
+prep: prep_MPLUS1 prep_MPLUS2 prep_MPLUS3 prep_MPLUSU prep_MPLUSKanji prep_MPLUS1Code prep_MPLUScodeLIG
 
 #############################################################
 ###################### Compile scripts ######################
@@ -71,7 +74,13 @@ compile_MPLUS1Code: venv
 compile_MPLUSCodeLatin: venv
 	. venv/bin/activate; gftools builder sources/MPLUSCodeLatin/config.yaml;
 
-compile: compile_MPLUS1 compile_MPLUS2 compile_MPLUS3 compile_MPLUSU compile_MPLUS1Code compile_MPLUSCodeLatin
+compile_MPLUS1CodeLIG: venv
+	. venv/bin/activate; gftools builder sources/MPLUS1CodeLIG/config.yaml;
+
+compile_MPLUSCodeLIGLatin: venv
+	. venv/bin/activate; gftools builder sources/MPLUSCodeLIGLatin/config.yaml;
+
+compile: compile_MPLUS1 compile_MPLUS2 compile_MPLUS3 compile_MPLUSU compile_MPLUS1Code compile_MPLUSCodeLatin compile_MPLUS1CodeLIG compile_MPLUSCodeLIGLatin
 
 #############################################################
 ####################### Build scripts #######################
@@ -102,6 +111,24 @@ merge_MPLUSCodeLatin: venv
 merge_MPLUS3: venv
 	. venv/bin/activate; python3 sources/scripts/merge_mplus3.py;
 
+# Prints the master layout of the LIG source and how Kanji / Kana will be matched (changes nothing)
+check_LIG: venv
+	. venv/bin/activate; python3 sources/scripts/check_lig.py;
+
+# M PLUS Code LIG: patches the LIG masters (one-cell ligature advances) and builds the sources of
+# MPLUS1CodeLIG (width 50 + Kana + Kanji) and MPLUSCodeLIGLatin (widths 50 and 60). Needs 'instancer' for MPLUS1CodeLIG.
+merge_MPLUS1CodeLIG: venv
+	. venv/bin/activate; python3 sources/scripts/merge_lig.py MPLUS1CodeLIG;
+
+merge_MPLUSCodeLIGLatin: venv
+	. venv/bin/activate; python3 sources/scripts/merge_lig.py MPLUSCodeLIGLatin;
+
+merge_LIG: merge_MPLUS1CodeLIG merge_MPLUSCodeLIGLatin
+
+# Lists glyphs of the LIG source that stop the build: open contours, masters with different structure
+check_LIG_glyphs: venv
+	. venv/bin/activate; python3 sources/scripts/check_lig_glyphs.py;
+
 # Prints how the Kanji will be merged into each MPLUS3 master; changes nothing
 check_MPLUS3: venv
 	. venv/bin/activate; python3 sources/scripts/check_mplus3.py;
@@ -116,8 +143,8 @@ clean:
 	find . -depth -type d -name "merged_ufo" -exec rm -rf {} +
 	find . -depth -type d -name "instances" -exec rm -rf {} +
 
-# Builds everything. merge_MPLUS3 must run after merge (merge deletes fonts/).
-build: venv clean prep instancer merge merge_MPLUS3 compile
+# Builds everything. merge_MPLUS3 and merge_LIG must run after merge (merge deletes fonts/).
+build: venv clean prep instancer merge merge_MPLUS3 merge_LIG compile
 
 #############################################################
 ################## Build a single family ####################
@@ -139,3 +166,9 @@ build_MPLUS1Code: venv prep_MPLUS1 prep_MPLUS1Code prep_MPLUSKanji instancer mer
 
 # MPLUSCodeLatin: Latin-only copy of the Code source (width 500 and 600)
 build_MPLUSCodeLatin: venv prep_MPLUS1Code merge_MPLUSCodeLatin compile_MPLUSCodeLatin
+
+# MPLUS1CodeLIG: LIG width-50 masters + Kana from MPLUS1 + shared Kanji (needs instances)
+build_MPLUS1CodeLIG: venv prep_MPLUScodeLIG prep_MPLUS1 prep_MPLUSKanji instancer merge_MPLUS1CodeLIG compile_MPLUS1CodeLIG
+
+# MPLUSCodeLIGLatin: Latin-only LIG (width 50 and 60)
+build_MPLUSCodeLIGLatin: venv prep_MPLUScodeLIG merge_MPLUSCodeLIGLatin compile_MPLUSCodeLIGLatin
