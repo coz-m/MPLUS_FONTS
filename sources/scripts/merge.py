@@ -13,20 +13,32 @@ SOURCE = Path("sources")
 ALL_FONTS = ["MPLUS1", "MPLUS2", "MPLUSU", "MPLUS1Code", "MPLUSCodeLatin"]
 
 # Usage:
-#   python3 sources/scripts/merge.py                  -> all fonts (deletes the whole fonts/ directory first)
-#   python3 sources/scripts/merge.py MPLUS1 MPLUS2    -> only the named fonts (deletes only fonts/<name>)
+#   python3 sources/scripts/merge.py                  -> all fonts (deletes the generated folders in fonts/<name> first; README.md is kept)
+#   python3 sources/scripts/merge.py MPLUS1 MPLUS2    -> only the named fonts (deletes only the generated folders of fonts/<name>)
 targets = sys.argv[1:] or ALL_FONTS
 unknown = [t for t in targets if t not in ALL_FONTS]
 if unknown:
     sys.exit("Unknown font(s): " + ", ".join(unknown) + "\nAvailable: " + ", ".join(ALL_FONTS))
 
+GENERATED = ["otf", "ttf", "variable", "webfonts"]   # build output; anything else in fonts/<name> (e.g. README.md) is kept
+
+
+def clean_family_dir(d):
+    """Delete only the generated sub-folders of fonts/<name>; keep README.md and other hand-made files."""
+    for sub in GENERATED:
+        p = Path(d) / sub
+        if p.exists():
+            shutil.rmtree(p)
+
+
 if len(sys.argv) == 1:
     if Path("fonts").exists():
-        shutil.rmtree("fonts")
+        for d in Path("fonts").iterdir():
+            if d.is_dir():
+                clean_family_dir(d)
 else:
     for t in targets:
-        if Path("fonts/" + t).exists():
-            shutil.rmtree("fonts/" + t)
+        clean_family_dir("fonts/" + t)
 
 for font in ALL_FONTS:
     if font not in targets:
